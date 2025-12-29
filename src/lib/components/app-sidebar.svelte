@@ -1,57 +1,3 @@
-<script lang="ts" module>
-	import BotIcon from '@lucide/svelte/icons/bot';
-	import SquareTerminalIcon from '@lucide/svelte/icons/square-terminal';
-
-	const data = {
-		user: {
-			name: 'shadcn',
-			email: 'm@example.com',
-			avatar: '/avatars/shadcn.jpg'
-		},
-		navMain: [
-			{
-				title: 'Playground',
-				url: '#',
-				icon: SquareTerminalIcon,
-				isActive: true,
-				items: [
-					{
-						title: 'History',
-						url: '#'
-					},
-					{
-						title: 'Starred',
-						url: '#'
-					},
-					{
-						title: 'Settings',
-						url: '#'
-					}
-				]
-			},
-			{
-				title: 'Models',
-				url: '#',
-				icon: BotIcon,
-				items: [
-					{
-						title: 'Genesis',
-						url: '#'
-					},
-					{
-						title: 'Explorer',
-						url: '#'
-					},
-					{
-						title: 'Quantum',
-						url: '#'
-					}
-				]
-			}
-		]
-	};
-</script>
-
 <script lang="ts">
 	import NavMain from './nav-main.svelte';
 	import NavUser from './nav-user.svelte';
@@ -59,24 +5,64 @@
 	import CommandIcon from '@lucide/svelte/icons/command';
 	import type { ComponentProps } from 'svelte';
 
-	let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
+	import UploadIcon from '@lucide/svelte/icons/upload';
+	import LayoutDashboardIcon from '@lucide/svelte/icons/layout-dashboard';
+	import { resolve } from '$app/paths';
+
+	interface Props extends ComponentProps<typeof Sidebar.Root> {
+		user: {
+			name: string;
+			email: string;
+			image: string | null;
+		} | null;
+	}
+
+	let { ref = $bindable(null), user, ...restProps }: Props = $props();
+
+	const navMain = [
+		{
+			title: 'Dashboard',
+			url: '/',
+			icon: LayoutDashboardIcon,
+			isActive: true,
+			items: [
+				{
+					title: 'Campaigns',
+					url: '/campaigns'
+				},
+				{
+					title: 'Keywords',
+					url: '/keywords'
+				},
+				{
+					title: 'Products',
+					url: '/products'
+				}
+			]
+		},
+		{
+			title: 'Upload Data',
+			url: '/upload',
+			icon: UploadIcon
+		}
+	];
 </script>
 
-<Sidebar.Root bind:ref variant="inset" {...restProps}>
+<Sidebar.Root bind:ref variant="floating" collapsible="icon" {...restProps}>
 	<Sidebar.Header>
 		<Sidebar.Menu>
 			<Sidebar.MenuItem>
 				<Sidebar.MenuButton size="lg">
 					{#snippet child({ props })}
-						<a href="##" {...props}>
+						<a href={resolve('/')} {...props}>
 							<div
 								class="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground"
 							>
 								<CommandIcon class="size-4" />
 							</div>
 							<div class="grid flex-1 text-start text-sm leading-tight">
-								<span class="truncate font-medium">Acme Inc</span>
-								<span class="truncate text-xs">Enterprise</span>
+								<span class="truncate font-medium">Napco</span>
+								<span class="truncate text-xs">Talabat Ads</span>
 							</div>
 						</a>
 					{/snippet}
@@ -85,9 +71,11 @@
 		</Sidebar.Menu>
 	</Sidebar.Header>
 	<Sidebar.Content>
-		<NavMain items={data.navMain} />
+		<NavMain items={navMain} />
 	</Sidebar.Content>
 	<Sidebar.Footer>
-		<NavUser user={data.user} />
+		{#if user}
+			<NavUser {user} />
+		{/if}
 	</Sidebar.Footer>
 </Sidebar.Root>
