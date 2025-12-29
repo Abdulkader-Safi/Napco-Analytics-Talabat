@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { resolve } from '$app/paths';
+	import Button from '$lib/components/ui/button/button.svelte';
 
 	let { data } = $props();
 	let loading = $state(false);
@@ -17,7 +18,9 @@
 	</div>
 {/if}
 
-<main class="flex min-h-svh w-full flex-col items-center justify-center gap-4 bg-gray-900 text-white">
+<main
+	class="flex min-h-svh w-full flex-col items-center justify-center gap-4 bg-gray-900 text-white"
+>
 	<h1 class="text-3xl font-bold">Welcome {data.name}</h1>
 
 	{#if data.name !== 'Guest'}
@@ -32,13 +35,7 @@
 				};
 			}}
 		>
-			<button
-				type="submit"
-				class="cursor-pointer bg-red-500 px-4 py-2 text-white hover:bg-red-600 disabled:opacity-50"
-				disabled={loading}
-			>
-				Logout
-			</button>
+			<Button type="submit" variant="destructive" disabled={loading}>Logout</Button>
 		</form>
 	{:else}
 		<a

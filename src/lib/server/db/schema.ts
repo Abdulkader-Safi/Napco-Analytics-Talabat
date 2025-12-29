@@ -1,5 +1,14 @@
 import { relations } from 'drizzle-orm';
-import { pgTable, text, timestamp, boolean, index, doublePrecision, integer } from 'drizzle-orm/pg-core';
+import {
+	pgTable,
+	text,
+	timestamp,
+	boolean,
+	index,
+	doublePrecision,
+	integer,
+	date
+} from 'drizzle-orm/pg-core';
 
 export const user = pgTable('user', {
 	id: text('id').primaryKey(),
@@ -97,82 +106,73 @@ export const accountRelations = relations(account, ({ one }) => ({
 	})
 }));
 
-export const napcoData = pgTable(
-	'napco_data',
+export const reports = pgTable(
+	'reports',
 	{
-		// Primary Key
 		id: text('id').primaryKey(),
 
-		// Source Identification
-		dataSource: text('data_source').notNull(), // 'ad_platform' or 'sellout'
+		// Source & Date
 		sourceFile: text('source_file'),
-		reportDate: timestamp('report_date'),
+		reportDate: date('report_date'),
 
-		// Geographic Information
+		// Geographic
 		country: text('country'),
-		city: text('city'),
 		currency: text('currency'),
 
-		// Account Information (Ad Platform)
+		// Account
 		accountId: text('account_id'),
 		accountName: text('account_name'),
 		accountBillingName: text('account_billing_name'),
 		accountType: text('account_type'),
 
-		// Brand & Company
+		// Brand
 		brandOwner: text('brand_owner'),
 		brand: text('brand'),
-		company: text('company'), // 'Top 5 Companies' from sellout
 
-		// Category Information
-		// Main category from Sellout: Household Care, Feminine Care, Baby Care
+		// Category
 		category: text('category'),
-		// Subcategory from Report (Category Name L2): Facial Tissues, Large Bags, 1-2 Years, etc.
 		subcategory: text('subcategory'),
-		// Original category ID from Report files
 		categoryId: text('category_id'),
 
-		// Chain/Store Information
+		// Chain/Store
 		chainId: text('chain_id'),
 		chainName: text('chain_name'),
 		vendorId: text('vendor_id'),
 		vendorName: text('vendor_name'),
 
-		// Product Information
+		// Product
 		productId: text('product_id'),
 		productName: text('product_name'),
-		sku: text('sku'),
-		barcode: text('barcode'),
 
-		// Search & Targeting
+		// Targeting
 		keyword: text('keyword'),
 		assetType: text('asset_type'),
 		biddingType: text('bidding_type'),
 		placement: text('placement'),
 
-		// Campaign Information
+		// Campaign
 		campaignId: text('campaign_id'),
 		campaignName: text('campaign_name'),
 		campaignDescription: text('campaign_description'),
 		campaignStatus: text('campaign_status'),
 		campaignType: text('campaign_type'),
 		campaignBudget: doublePrecision('campaign_budget'),
-		campaignStartDate: timestamp('campaign_start_date'),
-		campaignEndDate: timestamp('campaign_end_date'),
+		campaignStartDate: date('campaign_start_date'),
+		campaignEndDate: date('campaign_end_date'),
 		campaignCreatedBy: text('campaign_created_by'),
 
-		// Wallet Information
+		// Wallet
 		walletId: text('wallet_id'),
 		walletName: text('wallet_name'),
 		walletBookingOrderId: text('wallet_booking_order_id'),
 		walletCreatedBalance: doublePrecision('wallet_created_balance'),
 		walletRemainingBalance: doublePrecision('wallet_remaining_balance'),
 		walletCreatedBy: text('wallet_created_by'),
-		walletStartDate: timestamp('wallet_start_date'),
-		walletEndDate: timestamp('wallet_end_date'),
+		walletStartDate: date('wallet_start_date'),
+		walletEndDate: date('wallet_end_date'),
 		walletPaymentMode: text('wallet_payment_mode'),
 
-		// Performance Metrics (Ad Platform)
+		// Performance Metrics
 		impressions: integer('impressions').default(0),
 		clicks: integer('clicks').default(0),
 		ctr: doublePrecision('ctr').default(0),
@@ -181,60 +181,82 @@ export const napcoData = pgTable(
 		unitsSold: integer('units_sold').default(0),
 		averageAdPosition: doublePrecision('average_ad_position'),
 
-		// Cost Metrics (Ad Platform)
+		// Cost Metrics
 		totalAdSpend: doublePrecision('total_ad_spend').default(0),
 		cpc: doublePrecision('cpc').default(0),
 		cpa: doublePrecision('cpa').default(0),
 		roas: doublePrecision('roas').default(0),
-
-		// Revenue Metrics
 		salesRevenue: doublePrecision('sales_revenue').default(0),
-		averageSalePrice: doublePrecision('average_sale_price'),
-		totalQuantity: integer('total_quantity'),
 
 		// Metadata
 		createdAt: timestamp('created_at').defaultNow(),
 		updatedAt: timestamp('updated_at').defaultNow()
 	},
 	(table) => [
-		// Date-based queries
-		index('idx_report_date').on(table.reportDate),
+		index('idx_reports_date').on(table.reportDate),
+		index('idx_reports_country').on(table.country),
+		index('idx_reports_brand').on(table.brand),
+		index('idx_reports_product_id').on(table.productId),
+		index('idx_reports_product_name').on(table.productName),
+		index('idx_reports_category').on(table.category),
+		index('idx_reports_subcategory').on(table.subcategory),
+		index('idx_reports_keyword').on(table.keyword),
+		index('idx_reports_campaign_id').on(table.campaignId),
+		index('idx_reports_campaign_status').on(table.campaignStatus),
+		index('idx_reports_vendor_id').on(table.vendorId)
+	]
+);
 
-		// Source filtering
-		index('idx_data_source').on(table.dataSource),
+// ============================================================
+// SELLOUT TABLE (Sales Data)
+// Source: *_Sellout_Categorized.xlsx files
+// ============================================================
 
-		// Geographic queries
-		index('idx_country').on(table.country),
-		index('idx_city').on(table.city),
+export const sellout = pgTable(
+	'sellout',
+	{
+		id: text('id').primaryKey(),
 
-		// Product & Brand queries
-		index('idx_brand').on(table.brand),
-		index('idx_product_name').on(table.productName),
-		index('idx_barcode').on(table.barcode),
-		index('idx_sku').on(table.sku),
+		// Source & Date
+		sourceFile: text('source_file'),
+		reportDate: date('report_date'),
+		reportMonth: text('report_month'),
 
-		// Category queries
-		index('idx_category').on(table.category),
-		index('idx_subcategory').on(table.subcategory),
-		index('idx_category_subcategory').on(table.category, table.subcategory),
+		// Geographic
+		country: text('country'),
+		city: text('city'),
 
-		// Campaign queries
-		index('idx_campaign_id').on(table.campaignId),
-		index('idx_campaign_name').on(table.campaignName),
-		index('idx_campaign_status').on(table.campaignStatus),
+		// Company & Brand
+		company: text('company'),
+		brand: text('brand'),
 
-		// Keyword/Search queries
-		index('idx_keyword').on(table.keyword),
+		// Category
+		category: text('category'),
+		finalCategory: text('final_category'),
 
-		// Performance queries
-		index('idx_impressions').on(table.impressions),
-		index('idx_revenue').on(table.salesRevenue),
+		// Product
+		sku: text('sku'),
+		barcode: text('barcode'),
 
-		// Composite indexes
-		index('idx_date_source').on(table.reportDate, table.dataSource),
-		index('idx_brand_date').on(table.brand, table.reportDate),
-		index('idx_campaign_date').on(table.campaignId, table.reportDate),
-		index('idx_category_date').on(table.category, table.reportDate)
+		// Sales Metrics
+		averageSalePrice: doublePrecision('average_sale_price'),
+		totalQuantity: integer('total_quantity'),
+		totalRevenue: doublePrecision('total_revenue'),
+
+		// Metadata
+		createdAt: timestamp('created_at').defaultNow(),
+		updatedAt: timestamp('updated_at').defaultNow()
+	},
+	(table) => [
+		index('idx_sellout_date').on(table.reportDate),
+		index('idx_sellout_month').on(table.reportMonth),
+		index('idx_sellout_country').on(table.country),
+		index('idx_sellout_city').on(table.city),
+		index('idx_sellout_company').on(table.company),
+		index('idx_sellout_brand').on(table.brand),
+		index('idx_sellout_category').on(table.category),
+		index('idx_sellout_sku').on(table.sku),
+		index('idx_sellout_barcode').on(table.barcode)
 	]
 );
 
@@ -242,43 +264,8 @@ export const napcoData = pgTable(
 // Type Exports
 // ============================================================
 
-export type NapcoData = typeof napcoData.$inferSelect;
-export type NewNapcoData = typeof napcoData.$inferInsert;
+export type Report = typeof reports.$inferSelect;
+export type NewReport = typeof reports.$inferInsert;
 
-// ============================================================
-// Category Reference (for documentation)
-// ============================================================
-//
-// Main Categories (from Sellout files):
-//   - Household Care
-//   - Feminine Care
-//   - Baby Care
-//
-// Subcategories (from Report files - Category Name L2):
-//   Baby Care:
-//     - 6 - 12 Months
-//     - 1 - 2 Years
-//     - 2 - 3 Years
-//     - 3+ Years
-//     - Size 6+
-//     - Baby Wipes
-//     - Cotton Buds & Pads
-//
-//   Household Care:
-//     - Facial Tissues
-//     - Kitchen Rolls
-//     - Toilet Paper
-//     - Large Bags
-//     - Medium Bags
-//     - Small Bags
-//     - Aluminum Foil
-//     - Baking Paper
-//     - Cling Film
-//     - Food Storage Bags
-//     - Cups & Straws
-//     - Table Covers
-//
-//   Feminine Care:
-//     - Feminine Pads
-//     - Panty Liners
-// ============================================================
+export type Sellout = typeof sellout.$inferSelect;
+export type NewSellout = typeof sellout.$inferInsert;
