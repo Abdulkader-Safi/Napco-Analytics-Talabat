@@ -60,7 +60,9 @@ export const POST: RequestHandler = async ({ request, locals, url }) => {
 					totalSelloutInserted += result.recordsInserted;
 				}
 			} else {
-				errors.push(`${file.name}: Unknown file type. File must contain 'Report' or 'Sellout' in name.`);
+				errors.push(
+					`${file.name}: Unknown file type. File must contain 'Report' or 'Sellout' in name.`
+				);
 			}
 		}
 
