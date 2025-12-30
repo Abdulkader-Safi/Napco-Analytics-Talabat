@@ -12,7 +12,7 @@ const sessionHandle: Handle = async ({ event, resolve }) => {
 	const session = await auth.api.getSession({
 		headers: event.request.headers
 	});
-	console.log(session);
+	// console.log(session);
 	event.locals.user = session?.user;
 	return await resolve(event);
 };

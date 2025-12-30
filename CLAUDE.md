@@ -1,135 +1,87 @@
-You are able to use the Svelte MCP server, where you have access to comprehensive Svelte 5 and SvelteKit documentation. Here's how to use the available tools effectively:
+# CLAUDE.md
 
-## Available MCP Tools:
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-### 1. list-sections
+## Commands
 
-Use this FIRST to discover all available documentation sections. Returns a structured list with titles, use_cases, and paths.
-When asked about Svelte or SvelteKit topics, ALWAYS use this tool at the start of the chat to find relevant sections.
+```bash
+bun run dev          # Start development server
+bun run build        # Build for production
+bun run check        # Type check with svelte-check
+bun run lint         # Run prettier + eslint
+bun run format       # Format code with prettier
 
-### 2. get-documentation
+# Database (Drizzle ORM with PostgreSQL)
+bun run db:push      # Push schema to database
+bun run db:generate  # Generate migrations
+bun run db:migrate   # Run migrations
+bun run db:studio    # Open Drizzle Studio
+```
 
-Retrieves full documentation content for specific sections. Accepts single or multiple sections.
-After calling the list-sections tool, you MUST analyze the returned documentation sections (especially the use_cases field) and then use the get-documentation tool to fetch ALL documentation sections that are relevant for the user's task.
+## Architecture
 
-### 3. svelte-autofixer
+### Tech Stack
+- **Framework:** SvelteKit with Svelte 5 (runes: `$state`, `$props`, `$derived`, `$effect`)
+- **Database:** PostgreSQL with Drizzle ORM
+- **Auth:** better-auth with email/password
+- **Styling:** Tailwind CSS v4 + shadcn-svelte components
+- **Data Tables:** TanStack Table (`@tanstack/table-core`)
 
-Analyzes Svelte code and returns issues and suggestions.
-You MUST use this tool whenever writing Svelte code before sending it to the user. Keep calling it until no issues or suggestions are returned.
+### Project Structure
+```
+src/
+├── lib/
+│   ├── auth.ts              # better-auth server config
+│   ├── auth-client.ts       # better-auth client
+│   ├── server/
+│   │   ├── db/
+│   │   │   ├── index.ts     # Drizzle db instance
+│   │   │   └── schema.ts    # Database schema (user, session, reports, sellout)
+│   │   └── services/        # Business logic (e.g., excelImporter.ts)
+│   └── components/
+│       ├── ui/              # shadcn-svelte components
+│       ├── app-sidebar.svelte
+│       └── nav-user.svelte
+├── routes/
+│   ├── +layout.server.ts    # Auth guard (redirects to /auth/login if not authenticated)
+│   ├── auth/                # Login/signup pages
+│   ├── campaigns/           # Campaign analytics with TanStack Table
+│   └── upload/              # Excel file upload
+└── hooks.server.ts          # Auth middleware (session handling)
+```
 
-### 4. playground-link
+### Database Schema
+Two main data tables in `src/lib/server/db/schema.ts`:
+- **reports:** Ad campaign performance data (campaigns, products, keywords, metrics like ROAS, clicks, orders)
+- **sellout:** Sales data from Excel uploads
 
-Generates a Svelte Playground link with the provided code.
-After completing the code, ask the user if they want a playground link. Only call this tool after user confirmation and NEVER if code was written to files in their project.
+### Authentication Flow
+1. `hooks.server.ts` handles auth via better-auth's `svelteKitHandler`
+2. Session is attached to `event.locals.user`
+3. `+layout.server.ts` redirects unauthenticated users (except `/auth/*` routes)
 
+### Data Tables Pattern
+Uses TanStack Table with shadcn-svelte Table components:
+```typescript
+import { createSvelteTable, FlexRender, renderSnippet } from '$lib/components/ui/data-table';
+import { type Column, type ColumnDef, getCoreRowModel, getSortedRowModel, getPaginationRowModel, getFilteredRowModel } from '@tanstack/table-core';
+```
+
+## Svelte MCP Tools
+
+Use the Svelte MCP server for documentation and code validation:
+
+1. **list-sections** - Discover available Svelte 5/SvelteKit documentation
+2. **get-documentation** - Fetch specific documentation sections
+3. **svelte-autofixer** - Validate Svelte code before finalizing (always use this)
+4. **playground-link** - Generate Svelte Playground links (ask user first)
 
 ## shadcn-svelte
 
-> shadcn-svelte is a collection of beautifully-designed, accessible components for Svelte and SvelteKit. It is built with TypeScript, Tailwind CSS, and Bits UI primitives. Open Source. Open Code. AI-Ready. It also comes with a command-line tool to install and manage components and a registry system to publish and distribute code.
+Install components: `bunx shadcn-svelte@latest add <component>`
 
-### Overview
+Components are in `src/lib/components/ui/`. Reference docs at https://shadcn-svelte.com/docs/components/
 
-- [About](https://shadcn-svelte.com/docs/about.md): Powered by amazing open source projects.
-- [Changelog](https://shadcn-svelte.com/docs/changelog.md): Latest updates and announcements.
-- [shadcn-svelte](https://shadcn-svelte.com/docs/cli.md): Use the shadcn-svelte CLI to add components to your project.
-- [components.json](https://shadcn-svelte.com/docs/components-json.md): Configuration for your project.
-- [JavaScript](https://shadcn-svelte.com/docs/javascript.md): How to use shadcn-svelte with JavaScript.
-- [Legacy Docs](https://shadcn-svelte.com/docs/legacy.md): View the legacy docs for shadcn-svelte and Tailwind v3.
-- [Theming](https://shadcn-svelte.com/docs/theming.md): Use CSS Variables to customize the look and feel of your application.
+## Environment Variables
 
-### Components
-
-#### Form & Input
-
-- [Button](https://shadcn-svelte.com/docs/components/button.md): Displays a button or a component that looks like a button.
-- [Button Group](https://shadcn-svelte.com/docs/components/button-group.md): A container that groups related buttons together with consistent styling.
-- [Calendar](https://shadcn-svelte.com/docs/components/calendar.md): A calendar component that allows users to select dates.
-- [Checkbox](https://shadcn-svelte.com/docs/components/checkbox.md): A control that allows the user to toggle between checked and not checked.
-- [Combobox](https://shadcn-svelte.com/docs/components/combobox.md): Autocomplete input and command palette with a list of suggestions.
-- [Date Picker](https://shadcn-svelte.com/docs/components/date-picker.md): A date picker component with range and presets.
-- [Field](https://shadcn-svelte.com/docs/components/field.md): Combine labels, controls, and help text to compose accessible form fields and grouped inputs.
-- [Formsnap](https://shadcn-svelte.com/docs/components/form.md): Building forms with Formsnap, Superforms, & Zod.
-- [Input](https://shadcn-svelte.com/docs/components/input.md): Displays a form input field or a component that looks like an input field.
-- [Input Group](https://shadcn-svelte.com/docs/components/input-group.md): Display additional information or actions to an input or textarea.
-- [Input OTP](https://shadcn-svelte.com/docs/components/input-otp.md): Accessible one-time password component with copy paste functionality.
-- [Label](https://shadcn-svelte.com/docs/components/label.md): Renders an accessible label associated with controls.
-- [Native Select](https://shadcn-svelte.com/docs/components/native-select.md): A styled native HTML select element with consistent design system integration.
-- [Radio Group](https://shadcn-svelte.com/docs/components/radio-group.md): A set of checkable buttonsâ€”known as radio buttonsâ€”where no more than one of the buttons can be checked at a time.
-- [Select](https://shadcn-svelte.com/docs/components/select.md): Displays a list of options for the user to pick fromâ€”triggered by a button.
-- [Slider](https://shadcn-svelte.com/docs/components/slider.md): An input where the user selects a value from within a given range.
-- [Switch](https://shadcn-svelte.com/docs/components/switch.md): A control that allows the user to toggle between checked and not checked.
-- [Textarea](https://shadcn-svelte.com/docs/components/textarea.md): Displays a form textarea or a component that looks like a textarea.
-
-#### Layout & Navigation
-
-- [Accordion](https://shadcn-svelte.com/docs/components/accordion.md): A vertically stacked set of interactive headings that each reveal a section of content.
-- [Breadcrumb](https://shadcn-svelte.com/docs/components/breadcrumb.md): Displays the path to the current resource using a hierarchy of links.
-- [Navigation Menu](https://shadcn-svelte.com/docs/components/navigation-menu.md): A collection of links for navigating websites.
-- [Resizable](https://shadcn-svelte.com/docs/components/resizable.md): Accessible resizable panel groups and layouts with keyboard support.
-- [Scroll Area](https://shadcn-svelte.com/docs/components/scroll-area.md): Augments native scroll functionality for custom, cross-browser styling.
-- [Separator](https://shadcn-svelte.com/docs/components/separator.md): Visually or semantically separates content.
-- [Sidebar](https://shadcn-svelte.com/docs/components/sidebar.md): A composable, themeable and customizable sidebar component.
-- [Tabs](https://shadcn-svelte.com/docs/components/tabs.md): A set of layered sections of contentâ€”known as tab panelsâ€”that are displayed one at a time.
-
-#### Overlays & Dialogs
-
-- [Alert Dialog](https://shadcn-svelte.com/docs/components/alert-dialog.md): A modal dialog that interrupts the user with important content and expects a response.
-- [Command](https://shadcn-svelte.com/docs/components/command.md): Fast, composable, unstyled command menu for Svelte.
-- [Context Menu](https://shadcn-svelte.com/docs/components/context-menu.md): Displays a menu to the user â€” such as a set of actions or functions â€” triggered by right click.
-- [Dialog](https://shadcn-svelte.com/docs/components/dialog.md): A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
-- [Drawer](https://shadcn-svelte.com/docs/components/drawer.md): A drawer component for Svelte.
-- [Dropdown Menu](https://shadcn-svelte.com/docs/components/dropdown-menu.md): Displays a menu to the user â€” such as a set of actions or functions â€” triggered by a button.
-- [Hover Card](https://shadcn-svelte.com/docs/components/hover-card.md): For sighted users to preview content available behind a link.
-- [Menubar](https://shadcn-svelte.com/docs/components/menubar.md): A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.
-- [Popover](https://shadcn-svelte.com/docs/components/popover.md): Displays rich content in a portal, triggered by a button.
-- [Sheet](https://shadcn-svelte.com/docs/components/sheet.md): Extends the Dialog component to display content that complements the main content of the screen.
-- [Tooltip](https://shadcn-svelte.com/docs/components/tooltip.md): A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
-
-#### Feedback & Status
-
-- [Alert](https://shadcn-svelte.com/docs/components/alert.md): Displays a callout for user attention.
-- [Badge](https://shadcn-svelte.com/docs/components/badge.md): Displays a badge or a component that looks like a badge.
-- [Empty](https://shadcn-svelte.com/docs/components/empty.md): Use the Empty component to display a empty state.
-- [Progress](https://shadcn-svelte.com/docs/components/progress.md): Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
-- [Skeleton](https://shadcn-svelte.com/docs/components/skeleton.md): Use to show a placeholder while content is loading.
-- [Sonner](https://shadcn-svelte.com/docs/components/sonner.md): An opinionated toast component for Svelte.
-- [Spinner](https://shadcn-svelte.com/docs/components/spinner.md): An indicator that can be used to show a loading state.
-
-#### Display & Media
-
-- [Aspect Ratio](https://shadcn-svelte.com/docs/components/aspect-ratio.md): Displays content within a desired ratio.
-- [Avatar](https://shadcn-svelte.com/docs/components/avatar.md): An image element with a fallback for representing the user.
-- [Card](https://shadcn-svelte.com/docs/components/card.md): Displays a card with header, content, and footer.
-- [Carousel](https://shadcn-svelte.com/docs/components/carousel.md): A carousel with motion and swipe built using Embla.
-- [Chart](https://shadcn-svelte.com/docs/components/chart.md): Beautiful charts. Built using LayerChart. Copy and paste into your apps.
-- [Data Table](https://shadcn-svelte.com/docs/components/data-table.md): Powerful table and datagrids built using TanStack Table.
-- [Item](https://shadcn-svelte.com/docs/components/item.md): A versatile component that you can use to display any content.
-- [Kbd](https://shadcn-svelte.com/docs/components/kbd.md): Used to display textual user input from keyboard.
-- [Table](https://shadcn-svelte.com/docs/components/table.md): A responsive table component.
-- [Typography](https://shadcn-svelte.com/docs/components/typography.md): Styles for headings, paragraphs, lists...etc
-
-#### Misc
-
-- [Collapsible](https://shadcn-svelte.com/docs/components/collapsible.md): An interactive component which expands/collapses a panel.
-- [Pagination](https://shadcn-svelte.com/docs/components/pagination.md): Pagination with page navigation, next and previous links.
-- [Range Calendar](https://shadcn-svelte.com/docs/components/range-calendar.md): A calendar component that allows users to select a range of dates.
-- [Toggle](https://shadcn-svelte.com/docs/components/toggle.md): A two-state button that can be either on or off.
-- [Toggle Group](https://shadcn-svelte.com/docs/components/toggle-group.md): A set of two-state buttons that can be toggled on or off.
-
-## Dark Mode
-
-- [Astro](https://shadcn-svelte.com/docs/dark-mode/astro.md): Adding dark mode to your Astro site.
-- [Svelte](https://shadcn-svelte.com/docs/dark-mode/svelte.md): Adding dark mode to your Svelte site.
-
-## Migration
-
-- [Svelte 5](https://shadcn-svelte.com/docs/migration/svelte-5.md): How to migrate from Svelte 4 and Tailwind 3 to Svelte 5.
-- [Tailwind v4](https://shadcn-svelte.com/docs/migration/tailwind-v4.md): How to use shadcn-svelte with Tailwind v4 and Svelte 5.
-
-## Registry
-
-- [Examples](https://shadcn-svelte.com/docs/registry/examples.md): Examples of registry items: styles, components, css vars, etc.
-- [FAQ](https://shadcn-svelte.com/docs/registry/faq.md): Frequently asked questions about running a registry.
-- [Getting Started](https://shadcn-svelte.com/docs/registry/getting-started.md): Learn how to get setup and run your own component registry.
-- [registry-item.json](https://shadcn-svelte.com/docs/registry/registry-item-json.md): Specification for registry items.
-- [registry.json](https://shadcn-svelte.com/docs/registry/registry-json.md): Schema for running your own component registry.
+Required: `DATABASE_URL` (PostgreSQL connection string)
