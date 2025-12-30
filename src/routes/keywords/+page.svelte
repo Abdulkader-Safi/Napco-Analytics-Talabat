@@ -57,6 +57,16 @@
 			cell: ({ row }) => row.getValue('keyword') ?? 'N/A'
 		},
 		{
+			accessorKey: 'avgRoas',
+			header: ({ column }) => {
+				return renderSnippet(sortableHeader, { column, label: 'ROAS' });
+			},
+			cell: ({ row }) => {
+				const roas = row.getValue('avgRoas') as number;
+				return renderSnippet(roasBadge, { roas });
+			}
+		},
+		{
 			accessorKey: 'impressions',
 			header: ({ column }) => {
 				return renderSnippet(sortableHeader, { column, label: 'Impressions' });
@@ -95,16 +105,6 @@
 				const revenue = row.getValue('totalRevenue') as number;
 				const currency = row.original.currency ?? 'KWD';
 				return `${(revenue ?? 0).toFixed(2)} ${currency}`;
-			}
-		},
-		{
-			accessorKey: 'avgRoas',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'ROAS' });
-			},
-			cell: ({ row }) => {
-				const roas = row.getValue('avgRoas') as number;
-				return renderSnippet(roasBadge, { roas });
 			}
 		},
 		{
