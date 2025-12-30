@@ -46,6 +46,7 @@ src/
 │   ├── +layout.server.ts    # Auth guard (redirects to /auth/login if not authenticated)
 │   ├── auth/                # Login/signup pages
 │   ├── campaigns/           # Campaign analytics with TanStack Table
+│   ├── keywords/            # Keyword performance analytics with TanStack Table
 │   └── upload/              # Excel file upload
 └── hooks.server.ts          # Auth middleware (session handling)
 ```
@@ -66,6 +67,12 @@ Uses TanStack Table with shadcn-svelte Table components:
 import { createSvelteTable, FlexRender, renderSnippet } from '$lib/components/ui/data-table';
 import { type Column, type ColumnDef, getCoreRowModel, getSortedRowModel, getPaginationRowModel, getFilteredRowModel } from '@tanstack/table-core';
 ```
+
+Key patterns:
+- Use `renderSnippet()` for custom cell/header rendering with Svelte snippets
+- Sortable headers use `column.getIsSorted()` to show ascending/descending icons
+- Badge components for metrics like ROAS (green >= 100%, red < 100%) and CTR (green >= 2%, red < 2%)
+- Pagination with `getPaginationRowModel()` and filtering with `getFilteredRowModel()`
 
 ## Svelte MCP Tools
 

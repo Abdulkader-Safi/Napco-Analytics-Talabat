@@ -30,20 +30,17 @@
 
 	let { data } = $props();
 
-	type Campaign = {
-		campaignId: string | null;
-		campaignName: string | null;
+	type Keyword = {
+		keyword: string | null;
 		currency: string | null;
-		startDate: string | null;
-		endDate: string | null;
-		productsCount: number;
-		keywordsCount: number;
-		categoriesCount: number;
-		totalRevenue: number;
+		impressions: number;
 		totalClicks: number;
-		totalOrders: number;
+		ctr: number;
+		totalRevenue: number;
+		productsCount: number;
+		campaignsCount: number;
+		avgCpc: number;
 		avgRoas: number;
-		assetTypes: string[] | null;
 	};
 
 	let sorting = $state<SortingState>([]);
@@ -51,68 +48,43 @@
 	let columnFilters = $state<ColumnFiltersState>([]);
 	let searchValue = $state('');
 
-	const columns: ColumnDef<Campaign>[] = [
+	const columns: ColumnDef<Keyword>[] = [
 		{
-			accessorKey: 'campaignName',
+			accessorKey: 'keyword',
 			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Campaign Name' });
+				return renderSnippet(sortableHeader, { column, label: 'Keyword' });
 			},
-			cell: ({ row }) => row.getValue('campaignName') ?? 'N/A'
+			cell: ({ row }) => row.getValue('keyword') ?? 'N/A'
 		},
 		{
-			accessorKey: 'avgRoas',
+			accessorKey: 'impressions',
 			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Average ROAS' });
+				return renderSnippet(sortableHeader, { column, label: 'Impressions' });
 			},
 			cell: ({ row }) => {
-				const roas = row.getValue('avgRoas') as number;
-				return renderSnippet(roasBadge, { roas });
+				const value = row.getValue('impressions') as number;
+				return (value ?? 0).toLocaleString();
 			}
 		},
 		{
-			accessorKey: 'assetTypes',
+			accessorKey: 'totalClicks',
 			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Type' });
+				return renderSnippet(sortableHeader, { column, label: 'Total Clicks' });
 			},
 			cell: ({ row }) => {
-				const types = row.getValue('assetTypes') as string[] | null;
-				return renderSnippet(assetTypeBadges, { types });
+				const value = row.getValue('totalClicks') as number;
+				return (value ?? 0).toLocaleString();
 			}
 		},
 		{
-			accessorKey: 'productsCount',
+			accessorKey: 'ctr',
 			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Products' });
+				return renderSnippet(sortableHeader, { column, label: 'CTR %' });
 			},
-			cell: ({ row }) => row.getValue('productsCount') ?? 0
-		},
-		{
-			accessorKey: 'keywordsCount',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Keywords' });
-			},
-			cell: ({ row }) => row.getValue('keywordsCount') ?? 0
-		},
-		{
-			accessorKey: 'categoriesCount',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Categories' });
-			},
-			cell: ({ row }) => row.getValue('categoriesCount') ?? 0
-		},
-		{
-			accessorKey: 'startDate',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Start Date' });
-			},
-			cell: ({ row }) => row.getValue('startDate') ?? 'N/A'
-		},
-		{
-			accessorKey: 'endDate',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'End Date' });
-			},
-			cell: ({ row }) => row.getValue('endDate') ?? 'N/A'
+			cell: ({ row }) => {
+				const ctr = row.getValue('ctr') as number;
+				return renderSnippet(ctrBadge, { ctr });
+			}
 		},
 		{
 			accessorKey: 'totalRevenue',
@@ -126,24 +98,45 @@
 			}
 		},
 		{
-			accessorKey: 'totalClicks',
+			accessorKey: 'avgRoas',
 			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Total Clicks' });
+				return renderSnippet(sortableHeader, { column, label: 'ROAS' });
 			},
-			cell: ({ row }) => row.getValue('totalClicks') ?? 0
+			cell: ({ row }) => {
+				const roas = row.getValue('avgRoas') as number;
+				return renderSnippet(roasBadge, { roas });
+			}
 		},
 		{
-			accessorKey: 'totalOrders',
+			accessorKey: 'productsCount',
 			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Orders' });
+				return renderSnippet(sortableHeader, { column, label: 'Products' });
 			},
-			cell: ({ row }) => row.getValue('totalOrders') ?? 0
+			cell: ({ row }) => row.getValue('productsCount') ?? 0
+		},
+		{
+			accessorKey: 'campaignsCount',
+			header: ({ column }) => {
+				return renderSnippet(sortableHeader, { column, label: 'Campaigns' });
+			},
+			cell: ({ row }) => row.getValue('campaignsCount') ?? 0
+		},
+		{
+			accessorKey: 'avgCpc',
+			header: ({ column }) => {
+				return renderSnippet(sortableHeader, { column, label: 'Avg CPC' });
+			},
+			cell: ({ row }) => {
+				const cpc = row.getValue('avgCpc') as number;
+				const currency = row.original.currency ?? 'KWD';
+				return `${(cpc ?? 0).toFixed(2)} ${currency}`;
+			}
 		}
 	];
 
 	const table = createSvelteTable({
 		get data() {
-			return data.campaigns as Campaign[];
+			return data.keywords as Keyword[];
 		},
 		columns,
 		getCoreRowModel: getCoreRowModel(),
@@ -185,7 +178,7 @@
 	});
 </script>
 
-{#snippet sortableHeader({ column, label }: { column: Column<Campaign, unknown>; label: string })}
+{#snippet sortableHeader({ column, label }: { column: Column<Keyword, unknown>; label: string })}
 	<button
 		class="flex items-center gap-1 hover:text-foreground"
 		onclick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
@@ -201,28 +194,20 @@
 	</button>
 {/snippet}
 
+{#snippet ctrBadge({ ctr }: { ctr: number })}
+	{@const ctrValue = ctr ?? 0}
+	{@const variant = ctrValue >= 2 ? 'default' : 'destructive'}
+	<Badge {variant} class="tabular-nums">
+		{ctrValue.toFixed(2)}%
+	</Badge>
+{/snippet}
+
 {#snippet roasBadge({ roas }: { roas: number })}
 	{@const roasValue = roas ?? 0}
 	{@const variant = roasValue >= 100 ? 'default' : 'destructive'}
 	<Badge {variant} class="tabular-nums">
 		{roasValue.toFixed(2)}%
 	</Badge>
-{/snippet}
-
-{#snippet assetTypeBadges({ types }: { types: string[] | null })}
-	<div class="flex gap-1">
-		{#if types && types.length > 0}
-			{#each types as type (type)}
-				{#if type === 'AD_TYPE_SEARCH'}
-					<Badge variant="secondary">Search</Badge>
-				{:else if type === 'AD_TYPE_LISTING'}
-					<Badge variant="outline">Listing</Badge>
-				{/if}
-			{/each}
-		{:else}
-			<span class="text-muted-foreground">-</span>
-		{/if}
-	</div>
 {/snippet}
 
 <Sidebar.Provider>
@@ -235,7 +220,7 @@
 				<Breadcrumb.Root>
 					<Breadcrumb.List>
 						<Breadcrumb.Item>
-							<Breadcrumb.Page>Campaigns</Breadcrumb.Page>
+							<Breadcrumb.Page>Keywords</Breadcrumb.Page>
 						</Breadcrumb.Item>
 					</Breadcrumb.List>
 				</Breadcrumb.Root>
@@ -243,9 +228,9 @@
 		</header>
 		<div class="flex flex-1 flex-col gap-4 p-4 pt-0">
 			<div class="space-y-2">
-				<h2 class="text-2xl font-semibold tracking-tight">Campaign Performance Metrics</h2>
+				<h2 class="text-2xl font-semibold tracking-tight">Keyword Performance</h2>
 				<p class="text-sm text-muted-foreground">
-					Campaign-level analytics including ROAS, product count, and performance data. Click column
+					Keyword-level analytics including impressions, clicks, CTR, revenue, and CPC. Click column
 					headers to sort.
 				</p>
 			</div>
@@ -256,12 +241,12 @@
 					/>
 					<Input
 						type="text"
-						placeholder="Search campaigns..."
+						placeholder="Search keywords..."
 						class="pl-9"
 						value={searchValue}
 						oninput={(e) => {
 							searchValue = e.currentTarget.value;
-							table.getColumn('campaignName')?.setFilterValue(searchValue);
+							table.getColumn('keyword')?.setFilterValue(searchValue);
 						}}
 					/>
 				</div>
@@ -296,7 +281,7 @@
 						{:else}
 							<Table.Row>
 								<Table.Cell colspan={columns.length} class="h-24 text-center">
-									No campaigns found.
+									No keywords found.
 								</Table.Cell>
 							</Table.Row>
 						{/each}
@@ -310,7 +295,7 @@
 						(table.getState().pagination.pageIndex + 1) * table.getState().pagination.pageSize,
 						table.getFilteredRowModel().rows.length
 					)}
-					of {table.getFilteredRowModel().rows.length} campaigns
+					of {table.getFilteredRowModel().rows.length} keywords
 				</div>
 				<div class="flex items-center space-x-2">
 					<Button
