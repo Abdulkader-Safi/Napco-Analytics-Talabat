@@ -439,13 +439,25 @@
 				</Table.Root>
 			</div>
 			<div class="flex items-center justify-between px-2">
-				<div class="text-sm text-muted-foreground">
-					Showing {table.getState().pagination.pageIndex * table.getState().pagination.pageSize + 1}
-					to {Math.min(
-						(table.getState().pagination.pageIndex + 1) * table.getState().pagination.pageSize,
-						table.getFilteredRowModel().rows.length
-					)}
-					of {table.getFilteredRowModel().rows.length} campaigns
+				<div class="flex items-center gap-4 text-sm text-muted-foreground">
+					<span>
+						Showing {table.getState().pagination.pageIndex * table.getState().pagination.pageSize + 1}
+						to {Math.min(
+							(table.getState().pagination.pageIndex + 1) * table.getState().pagination.pageSize,
+							table.getFilteredRowModel().rows.length
+						)}
+						of {table.getFilteredRowModel().rows.length} campaigns
+					</span>
+					<select
+						class="h-8 rounded-md border border-input bg-background px-2 text-sm"
+						value={table.getState().pagination.pageSize}
+						onchange={(e) => table.setPageSize(Number(e.currentTarget.value))}
+					>
+						{#each [25, 50, 75, 100] as size}
+							<option value={size}>{size} per page</option>
+						{/each}
+						<option value={table.getFilteredRowModel().rows.length}>All</option>
+					</select>
 				</div>
 				<div class="flex items-center space-x-2">
 					<Button
