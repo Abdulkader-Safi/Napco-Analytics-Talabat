@@ -112,18 +112,15 @@
 			}
 		},
 		{
-			accessorKey: 'productsCount',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Products' });
-			},
-			cell: ({ row }) => ((row.getValue('productsCount') as number) ?? 0).toLocaleString()
-		},
-		{
 			accessorKey: 'campaignsCount',
 			header: ({ column }) => {
 				return renderSnippet(sortableHeader, { column, label: 'Campaigns' });
 			},
-			cell: ({ row }) => ((row.getValue('campaignsCount') as number) ?? 0).toLocaleString()
+			cell: ({ row }) => {
+				const productId = row.original.productId ?? '';
+				const count = row.getValue('campaignsCount') as number;
+				return renderSnippet(campaignsLink, { productId, count });
+			}
 		},
 		{
 			accessorKey: 'avgCpc',
@@ -212,6 +209,18 @@
 	<Badge {variant} class="tabular-nums">
 		{ctrValue.toFixed(2)}%
 	</Badge>
+{/snippet}
+
+{#snippet campaignsLink({ productId, count }: { productId: string; count: number })}
+	{#if Number(count) > 0}
+		<a href="/campaigns?product={encodeURIComponent(productId)}">
+			<Badge variant="secondary" class="tabular-nums hover:bg-primary hover:text-primary-foreground transition-colors">
+				{count}
+			</Badge>
+		</a>
+	{:else}
+		<Badge variant="outline" class="tabular-nums border-transparent text-muted-foreground">0</Badge>
+	{/if}
 {/snippet}
 
 <Sidebar.Provider>

@@ -256,19 +256,31 @@
 				<p class="text-sm text-muted-foreground">
 					{#if data.keywordFilter}
 						Showing campaigns for keyword "{data.keywordFilter}". Click column headers to sort.
+					{:else if data.productName}
+						Showing campaigns for product "{data.productName}". Click column headers to sort.
 					{:else}
 						Campaign-level analytics including ROAS, product count, and performance data. Click column
 						headers to sort.
 					{/if}
 				</p>
-				{#if data.keywordFilter}
+				{#if data.keywordFilter || data.productName}
 					<div class="flex items-center gap-2">
-						<Badge variant="secondary" class="gap-1">
-							Keyword: {data.keywordFilter}
-							<a href="/campaigns" class="ml-1 rounded-full hover:bg-muted-foreground/20">
-								<XIcon class="size-3" />
-							</a>
-						</Badge>
+						{#if data.keywordFilter}
+							<Badge variant="secondary" class="gap-1">
+								Keyword: {data.keywordFilter}
+								<a href="/campaigns" class="ml-1 rounded-full hover:bg-muted-foreground/20">
+									<XIcon class="size-3" />
+								</a>
+							</Badge>
+						{/if}
+						{#if data.productName}
+							<Badge variant="secondary" class="gap-1">
+								Product: {data.productName}
+								<a href="/campaigns" class="ml-1 rounded-full hover:bg-muted-foreground/20">
+									<XIcon class="size-3" />
+								</a>
+							</Badge>
+						{/if}
 					</div>
 				{/if}
 			</div>

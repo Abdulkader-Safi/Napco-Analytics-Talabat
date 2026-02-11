@@ -5,10 +5,23 @@ import { sql } from 'drizzle-orm';
 
 export const load: PageServerLoad = async ({ url }) => {
 	const keywordFilter = url.searchParams.get('keyword') || null;
+	const productFilter = url.searchParams.get('product') || null;
 
-	const keywordCondition = keywordFilter
-		? sql`${reports.keyword} = ${keywordFilter}`
-		: undefined;
+	// Look up product name when filtering by product ID
+	let productName: string | null = null;
+	if (productFilter) {
+		const result = await db
+			.select({ productName: reports.productName })
+			.from(reports)
+			.where(sql`${reports.productId} = ${productFilter} AND ${reports.productName} IS NOT NULL AND ${reports.productName} != ''`)
+			.limit(1);
+		productName = result[0]?.productName ?? productFilter;
+	}
+
+	const conditions: ReturnType<typeof sql>[] = [];
+	if (keywordFilter) conditions.push(sql`${reports.keyword} = ${keywordFilter}`);
+	if (productFilter) conditions.push(sql`${reports.productId} = ${productFilter}`);
+	const whereClause = conditions.length > 0 ? sql.join(conditions, sql` AND `) : undefined;
 
 	const campaigns = await db
 		.select({
@@ -28,10 +41,14 @@ export const load: PageServerLoad = async ({ url }) => {
 			assetTypes: sql<string[]>`ARRAY_AGG(DISTINCT ${reports.assetType}) FILTER (WHERE ${reports.assetType} IS NOT NULL)`
 		})
 		.from(reports)
-		.where(keywordCondition)
+		.where(whereClause)
 		.groupBy(reports.campaignId, reports.campaignName, reports.currency);
 
 	// Top keyword per search campaign (by ROAS)
+	const keywordConditions = [sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`];
+	if (keywordFilter) keywordConditions.push(sql`${reports.keyword} = ${keywordFilter}`);
+	if (productFilter) keywordConditions.push(sql`${reports.productId} = ${productFilter}`);
+
 	const keywordRows = await db
 		.select({
 			campaignId: reports.campaignId,
@@ -39,11 +56,7 @@ export const load: PageServerLoad = async ({ url }) => {
 			roas: sql<number>`CASE WHEN SUM(${reports.totalAdSpend}) > 0 THEN (SUM(${reports.salesRevenue}) / SUM(${reports.totalAdSpend})) * 100 ELSE 0 END`
 		})
 		.from(reports)
-		.where(
-			keywordFilter
-				? sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != '' AND ${reports.keyword} = ${keywordFilter}`
-				: sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`
-		)
+		.where(sql.join(keywordConditions, sql` AND `))
 		.groupBy(reports.campaignId, reports.keyword);
 
 	const topKeywordByCampaign = new Map<string, (typeof keywordRows)[number]>();
@@ -60,6 +73,10 @@ export const load: PageServerLoad = async ({ url }) => {
 	}
 
 	// Top category per listing campaign (by ROAS)
+	const categoryConditions = [sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != ''`];
+	if (keywordFilter) categoryConditions.push(sql`${reports.keyword} = ${keywordFilter}`);
+	if (productFilter) categoryConditions.push(sql`${reports.productId} = ${productFilter}`);
+
 	const categoryRows = await db
 		.select({
 			campaignId: reports.campaignId,
@@ -67,11 +84,7 @@ export const load: PageServerLoad = async ({ url }) => {
 			roas: sql<number>`CASE WHEN SUM(${reports.totalAdSpend}) > 0 THEN (SUM(${reports.salesRevenue}) / SUM(${reports.totalAdSpend})) * 100 ELSE 0 END`
 		})
 		.from(reports)
-		.where(
-			keywordFilter
-				? sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != '' AND ${reports.keyword} = ${keywordFilter}`
-				: sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != ''`
-		)
+		.where(sql.join(categoryConditions, sql` AND `))
 		.groupBy(reports.campaignId, reports.category);
 
 	const topCategoryByCampaign = new Map<string, (typeof categoryRows)[number]>();
@@ -93,5 +106,5 @@ export const load: PageServerLoad = async ({ url }) => {
 		topCategory: topCategoryMap.get(c.campaignId ?? '') ?? null
 	}));
 
-	return { campaigns: enrichedCampaigns, keywordFilter };
+	return { campaigns: enrichedCampaigns, keywordFilter, productFilter, productName };
 };
