@@ -70,6 +70,7 @@
 		} else {
 			selectedKeywords = [...selectedKeywords, name];
 		}
+		selectedProducts = [];
 	}
 
 	const filteredProducts = $derived(
@@ -340,18 +341,33 @@
 
 						<!-- Products Multi-select -->
 						<div class="space-y-2">
-							<label for="productSearch" class="text-sm font-medium">
-								Products ({selectedProducts.length} selected)
-								{#if campaignType === 'listing' && selectedCategory}
-									<span class="text-muted-foreground">— filtered by {selectedCategory}</span>
-								{:else if campaignType === 'search' && selectedKeywords.length > 0}
-									<span class="text-muted-foreground"
-										>— filtered by {selectedKeywords.length} keyword{selectedKeywords.length > 1
-											? 's'
-											: ''}</span
-									>
-								{/if}
-							</label>
+							<div class="flex items-center justify-between">
+								<label for="productSearch" class="text-sm font-medium">
+									Products ({selectedProducts.length} selected)
+									{#if campaignType === 'listing' && selectedCategory}
+										<span class="text-muted-foreground">— filtered by {selectedCategory}</span>
+									{:else if campaignType === 'search' && selectedKeywords.length > 0}
+										<span class="text-muted-foreground"
+											>— filtered by {selectedKeywords.length} keyword{selectedKeywords.length > 1
+												? 's'
+												: ''}</span
+										>
+									{/if}
+								</label>
+								<button
+									type="button"
+									class="text-xs text-muted-foreground hover:text-foreground"
+									onclick={() => {
+										if (selectedProducts.length === filteredProducts.length) {
+											selectedProducts = [];
+										} else {
+											selectedProducts = filteredProducts.map((p) => p.name);
+										}
+									}}
+								>
+									{selectedProducts.length === filteredProducts.length ? 'Deselect All' : 'Select All'}
+								</button>
+							</div>
 							<Input
 								id="productSearch"
 								type="text"

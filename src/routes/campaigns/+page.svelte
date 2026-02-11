@@ -79,9 +79,12 @@
 
 	const filteredByDate = $derived(
 		(data.campaigns as Campaign[]).filter((c) => {
-			if (dateRange.start && c.startDate && c.startDate < dateValueToString(dateRange.start))
+			// Exclude if campaign ends before selected start (no overlap)
+			if (dateRange.start && c.endDate && c.endDate < dateValueToString(dateRange.start))
 				return false;
-			if (dateRange.end && c.endDate && c.endDate > dateValueToString(dateRange.end)) return false;
+			// Exclude if campaign starts after selected end (no overlap)
+			if (dateRange.end && c.startDate && c.startDate > dateValueToString(dateRange.end))
+				return false;
 			return true;
 		})
 	);
