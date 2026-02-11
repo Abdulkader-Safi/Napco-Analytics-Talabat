@@ -29,7 +29,7 @@
 	import PackageIcon from '@lucide/svelte/icons/package';
 	import MousePointerClickIcon from '@lucide/svelte/icons/mouse-pointer-click';
 	import ChevronDownIcon from '@lucide/svelte/icons/chevron-down';
-	import type { ProductForecast, DailyBreakdown } from '$lib/forecast';
+	import type { ProductForecast } from '$lib/forecast';
 
 	let { data, form } = $props();
 
@@ -79,15 +79,18 @@
 			const matchesType = campaignType === 'listing' ? p.hasListing : p.hasSearch;
 			// Filter by category when in listing mode
 			const matchesCategory =
-				campaignType !== 'listing' ||
-				!selectedCategory ||
-				p.categories.includes(selectedCategory);
+				campaignType !== 'listing' || !selectedCategory || p.categories.includes(selectedCategory);
 			// Filter by keywords when in search mode
 			const matchesKeywords =
 				campaignType !== 'search' ||
 				selectedKeywords.length === 0 ||
 				selectedKeywords.some((kw) => p.keywords.includes(kw));
-			return matchesSearch && (matchesType || p.confidence === 'low') && matchesCategory && matchesKeywords;
+			return (
+				matchesSearch &&
+				(matchesType || p.confidence === 'low') &&
+				matchesCategory &&
+				matchesKeywords
+			);
 		})
 	);
 
@@ -234,7 +237,8 @@
 				<Card.Header>
 					<Card.Title>Ad Sales Forecast</Card.Title>
 					<Card.Description>
-						Predict revenue, orders, and units for your ad campaigns. Model built from {data.metadata.productCount} products and {data.metadata.keywordCount} keywords.
+						Predict revenue, orders, and units for your ad campaigns. Model built from {data
+							.metadata.productCount} products and {data.metadata.keywordCount} keywords.
 					</Card.Description>
 				</Card.Header>
 				<Card.Content>
@@ -245,15 +249,27 @@
 							<div class="flex gap-2">
 								<button
 									type="button"
-									class="rounded-md border px-4 py-2 text-sm font-medium transition-colors {campaignType === 'listing' ? 'bg-primary text-primary-foreground' : 'bg-background hover:bg-muted'}"
-									onclick={() => { campaignType = 'listing'; selectedProducts = []; }}
+									class="rounded-md border px-4 py-2 text-sm font-medium transition-colors {campaignType ===
+									'listing'
+										? 'bg-primary text-primary-foreground'
+										: 'bg-background hover:bg-muted'}"
+									onclick={() => {
+										campaignType = 'listing';
+										selectedProducts = [];
+									}}
 								>
 									Listing
 								</button>
 								<button
 									type="button"
-									class="rounded-md border px-4 py-2 text-sm font-medium transition-colors {campaignType === 'search' ? 'bg-primary text-primary-foreground' : 'bg-background hover:bg-muted'}"
-									onclick={() => { campaignType = 'search'; selectedProducts = []; }}
+									class="rounded-md border px-4 py-2 text-sm font-medium transition-colors {campaignType ===
+									'search'
+										? 'bg-primary text-primary-foreground'
+										: 'bg-background hover:bg-muted'}"
+									onclick={() => {
+										campaignType = 'search';
+										selectedProducts = [];
+									}}
 								>
 									Search
 								</button>
@@ -269,8 +285,10 @@
 									id="category"
 									name="category"
 									bind:value={selectedCategory}
-									onchange={() => { selectedProducts = []; }}
-									class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+									onchange={() => {
+										selectedProducts = [];
+									}}
+									class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none"
 								>
 									<option value="">All categories</option>
 									{#each data.categories as cat (cat.name)}
@@ -327,7 +345,11 @@
 								{#if campaignType === 'listing' && selectedCategory}
 									<span class="text-muted-foreground">— filtered by {selectedCategory}</span>
 								{:else if campaignType === 'search' && selectedKeywords.length > 0}
-									<span class="text-muted-foreground">— filtered by {selectedKeywords.length} keyword{selectedKeywords.length > 1 ? 's' : ''}</span>
+									<span class="text-muted-foreground"
+										>— filtered by {selectedKeywords.length} keyword{selectedKeywords.length > 1
+											? 's'
+											: ''}</span
+									>
 								{/if}
 							</label>
 							<Input
@@ -363,6 +385,11 @@
 									<p class="py-2 text-center text-sm text-muted-foreground">No products found</p>
 								{/if}
 							</div>
+							<p class="text-xs text-muted-foreground">
+								<strong>High:</strong> 50+ days &amp; 30+ KWD historical data.
+								<strong>Med:</strong> 20+ days &amp; 10+ KWD.
+								<strong>Low:</strong> limited data, uses global averages.
+							</p>
 						</div>
 
 						<!-- Budget & Dates -->
@@ -381,21 +408,11 @@
 							</div>
 							<div class="space-y-2">
 								<label for="startDate" class="text-sm font-medium">Start Date</label>
-								<Input
-									id="startDate"
-									name="startDate"
-									type="date"
-									bind:value={startDate}
-								/>
+								<Input id="startDate" name="startDate" type="date" bind:value={startDate} />
 							</div>
 							<div class="space-y-2">
 								<label for="endDate" class="text-sm font-medium">End Date</label>
-								<Input
-									id="endDate"
-									name="endDate"
-									type="date"
-									bind:value={endDate}
-								/>
+								<Input id="endDate" name="endDate" type="date" bind:value={endDate} />
 							</div>
 						</div>
 
@@ -537,6 +554,12 @@
 							</div>
 						</div>
 					{/if}
+					<p class="text-xs text-muted-foreground">
+						Confidence reflects how much historical data is available for each product.
+						<strong>High:</strong> 50+ active days &amp; 30+ KWD spend.
+						<strong>Medium:</strong> 20+ days &amp; 10+ KWD.
+						<strong>Low:</strong> limited data, relies on global averages.
+					</p>
 				</div>
 
 				<!-- Daily Breakdown -->
@@ -544,7 +567,7 @@
 					<div class="space-y-2">
 						<button
 							class="flex items-center gap-2 text-xl font-semibold tracking-tight hover:text-foreground"
-							onclick={() => showDailyBreakdown = !showDailyBreakdown}
+							onclick={() => (showDailyBreakdown = !showDailyBreakdown)}
 						>
 							Daily Breakdown
 							<ChevronDownIcon
@@ -571,7 +594,10 @@
 												<Table.Cell>{day.revenue.toFixed(2)}</Table.Cell>
 												<Table.Cell>{day.orders.toFixed(1)}</Table.Cell>
 												<Table.Cell>
-													<Badge variant={day.seasonalityFactor >= 1 ? 'default' : 'outline'} class="tabular-nums">
+													<Badge
+														variant={day.seasonalityFactor >= 1 ? 'default' : 'outline'}
+														class="tabular-nums"
+													>
 														{day.seasonalityFactor.toFixed(3)}
 													</Badge>
 												</Table.Cell>
@@ -581,9 +607,10 @@
 								</Table.Root>
 							</div>
 							<p class="text-xs text-muted-foreground">
-								Seasonality is a combined multiplier of monthly performance and day-of-week performance relative to the overall average.
-								A value above 1.0 means that day is expected to perform better than average, below 1.0 means worse.
-								For example, 1.08 = 8% above average, 0.92 = 8% below average.
+								Seasonality is a combined multiplier of monthly performance and day-of-week
+								performance relative to the overall average. A value above 1.0 means that day is
+								expected to perform better than average, below 1.0 means worse. For example, 1.08 =
+								8% above average, 0.92 = 8% below average.
 							</p>
 						{/if}
 					</div>

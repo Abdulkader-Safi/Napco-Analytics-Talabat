@@ -50,6 +50,11 @@
 	let pagination = $state<PaginationState>({ pageIndex: 0, pageSize: 25 });
 	let columnFilters = $state<ColumnFiltersState>([]);
 	let searchValue = $state('');
+	let categoryFilter = $state('');
+
+	const categories = $derived(
+		[...new Set(data.products.map((p) => p.category).filter(Boolean))].sort() as string[]
+	);
 
 	const columns: ColumnDef<Product>[] = [
 		{
@@ -64,7 +69,10 @@
 			header: ({ column }) => {
 				return renderSnippet(sortableHeader, { column, label: 'Category' });
 			},
-			cell: ({ row }) => row.getValue('category') ?? '-'
+			cell: ({ row }) => {
+				const category = row.getValue('category') as string | null;
+				return renderSnippet(categoryBadge, { category });
+			}
 		},
 		{
 			accessorKey: 'avgRoas',
@@ -195,6 +203,23 @@
 	</button>
 {/snippet}
 
+{#snippet categoryBadge({ category }: { category: string | null })}
+	{@const color = category === 'Baby Care'
+		? '#A8E6CF'
+		: category === 'Household Care'
+			? '#B0BEC5'
+			: category === 'Family Care'
+				? '#FFD54F'
+				: '#CE93D8'}
+	{#if category}
+		<Badge variant="outline" style="background-color: {color}; border-color: {color};" class="text-gray-800">
+			{category}
+		</Badge>
+	{:else}
+		-
+	{/if}
+{/snippet}
+
 {#snippet roasBadge({ roas }: { roas: number })}
 	{@const roasValue = roas ?? 0}
 	{@const variant = roasValue >= 100 ? 'default' : 'destructive'}
@@ -289,6 +314,19 @@
 						}}
 					/>
 				</div>
+				<select
+					class="h-9 rounded-md border border-input bg-background px-3 text-sm"
+					value={categoryFilter}
+					onchange={(e) => {
+						categoryFilter = e.currentTarget.value;
+						table.getColumn('category')?.setFilterValue(categoryFilter || undefined);
+					}}
+				>
+					<option value="">All Categories</option>
+					{#each categories as cat}
+						<option value={cat}>{cat}</option>
+					{/each}
+				</select>
 			</div>
 			<div class="rounded-md border">
 				<Table.Root>

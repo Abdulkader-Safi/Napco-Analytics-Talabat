@@ -5,7 +5,8 @@ import { admin } from 'better-auth/plugins';
 
 export const auth = betterAuth({
 	emailAndPassword: {
-		enabled: true
+		enabled: true,
+		minPasswordLength: 5
 	},
 	database: drizzleAdapter(db, {
 		provider: 'pg'

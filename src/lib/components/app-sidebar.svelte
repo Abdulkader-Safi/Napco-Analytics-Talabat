@@ -2,14 +2,13 @@
 	import NavMain from './nav-main.svelte';
 	import NavUser from './nav-user.svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
-	import CommandIcon from '@lucide/svelte/icons/command';
+	import { resolve as resolvePath } from '$app/paths';
 	import type { ComponentProps } from 'svelte';
 
 	import UploadIcon from '@lucide/svelte/icons/upload';
 	import LayoutDashboardIcon from '@lucide/svelte/icons/layout-dashboard';
 	import TrendingUpIcon from '@lucide/svelte/icons/trending-up';
 	import UsersIcon from '@lucide/svelte/icons/users';
-	import { resolve } from '$app/paths';
 
 	interface Props extends ComponentProps<typeof Sidebar.Root> {
 		user: {
@@ -71,16 +70,8 @@
 			<Sidebar.MenuItem>
 				<Sidebar.MenuButton size="lg">
 					{#snippet child({ props })}
-						<a href={resolve('/')} {...props}>
-							<div
-								class="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground"
-							>
-								<CommandIcon class="size-4" />
-							</div>
-							<div class="grid flex-1 text-start text-sm leading-tight">
-								<span class="truncate font-medium">Napco</span>
-								<span class="truncate text-xs">Talabat Ads</span>
-							</div>
+						<a href={resolvePath('/')} {...props}>
+							<img src="/logo.png" alt="Napco National" class="w-full object-contain" />
 						</a>
 					{/snippet}
 				</Sidebar.MenuButton>

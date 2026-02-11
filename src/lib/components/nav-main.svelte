@@ -21,7 +21,7 @@
 	} = $props();
 </script>
 
-<Sidebar.Group>
+<Sidebar.Group data-sveltekit-preload-data="hover">
 	<Sidebar.GroupLabel>Platform</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each items as mainItem (mainItem.title)}

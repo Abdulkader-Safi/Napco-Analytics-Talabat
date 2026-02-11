@@ -1,6 +1,10 @@
 import { redirect } from '@sveltejs/kit';
-import type { Actions } from './$types';
+import type { PageServerLoad, Actions } from './$types';
 import { auth } from '$lib/auth';
+
+export const load: PageServerLoad = async () => {
+	redirect(302, '/campaigns');
+};
 
 export const actions: Actions = {
 	logout: async ({ request, cookies }) => {

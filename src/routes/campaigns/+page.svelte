@@ -19,7 +19,11 @@
 		getPaginationRowModel,
 		getFilteredRowModel
 	} from '@tanstack/table-core';
+	import { RangeCalendar } from '$lib/components/ui/range-calendar/index.js';
+	import * as Popover from '$lib/components/ui/popover/index.js';
+	import { CalendarDate, type DateValue, getLocalTimeZone } from '@internationalized/date';
 	import SearchIcon from '@lucide/svelte/icons/search';
+	import CalendarIcon from '@lucide/svelte/icons/calendar';
 	import ArrowUpDownIcon from '@lucide/svelte/icons/arrow-up-down';
 	import ArrowUpIcon from '@lucide/svelte/icons/arrow-up';
 	import ArrowDownIcon from '@lucide/svelte/icons/arrow-down';
@@ -54,6 +58,42 @@
 	let pagination = $state<PaginationState>({ pageIndex: 0, pageSize: 25 });
 	let columnFilters = $state<ColumnFiltersState>([]);
 	let searchValue = $state('');
+	let categoryFilter = $state('');
+	let dateRange = $state<{ start: DateValue | undefined; end: DateValue | undefined }>({
+		start: undefined,
+		end: undefined
+	});
+
+	const categories = $derived(
+		[...new Set((data.campaigns as Campaign[]).map((c) => c.topCategory).filter(Boolean))].sort() as string[]
+	);
+
+	function dateValueToString(d: DateValue): string {
+		const y = d.year;
+		const m = String(d.month).padStart(2, '0');
+		const day = String(d.day).padStart(2, '0');
+		return `${y}-${m}-${day}`;
+	}
+
+	const filteredByDate = $derived(
+		(data.campaigns as Campaign[]).filter((c) => {
+			if (dateRange.start && c.startDate && c.startDate < dateValueToString(dateRange.start))
+				return false;
+			if (dateRange.end && c.endDate && c.endDate > dateValueToString(dateRange.end))
+				return false;
+			return true;
+		})
+	);
+
+	const dateRangeLabel = $derived(() => {
+		if (dateRange.start && dateRange.end) {
+			return `${dateValueToString(dateRange.start)} — ${dateValueToString(dateRange.end)}`;
+		}
+		if (dateRange.start) {
+			return `From ${dateValueToString(dateRange.start)}`;
+		}
+		return 'Pick date range';
+	});
 
 	const columns: ColumnDef<Campaign>[] = [
 		{
@@ -85,7 +125,10 @@
 		{
 			accessorKey: 'topCategory',
 			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Top Category' }),
-			cell: ({ row }) => row.getValue('topCategory') ?? '-'
+			cell: ({ row }) => {
+				const category = row.getValue('topCategory') as string | null;
+				return renderSnippet(categoryBadge, { category });
+			}
 		},
 		{
 			accessorKey: 'productsCount',
@@ -138,7 +181,7 @@
 
 	const table = createSvelteTable({
 		get data() {
-			return data.campaigns as Campaign[];
+			return filteredByDate;
 		},
 		columns,
 		getCoreRowModel: getCoreRowModel(),
@@ -183,6 +226,23 @@
 			<ArrowUpDownIcon class="size-4 text-muted-foreground" />
 		{/if}
 	</button>
+{/snippet}
+
+{#snippet categoryBadge({ category }: { category: string | null })}
+	{@const color = category === 'Baby Care'
+		? '#A8E6CF'
+		: category === 'Household Care'
+			? '#B0BEC5'
+			: category === 'Family Care'
+				? '#FFD54F'
+				: '#CE93D8'}
+	{#if category}
+		<Badge variant="outline" style="background-color: {color}; border-color: {color};" class="text-gray-800">
+			{category}
+		</Badge>
+	{:else}
+		-
+	{/if}
 {/snippet}
 
 {#snippet roasBadge({ roas }: { roas: number })}
@@ -300,6 +360,46 @@
 						}}
 					/>
 				</div>
+				<select
+					class="h-9 rounded-md border border-input bg-background px-3 text-sm"
+					value={categoryFilter}
+					onchange={(e) => {
+						categoryFilter = e.currentTarget.value;
+						table.getColumn('topCategory')?.setFilterValue(categoryFilter || undefined);
+					}}
+				>
+					<option value="">All Categories</option>
+					{#each categories as cat}
+						<option value={cat}>{cat}</option>
+					{/each}
+				</select>
+				<Popover.Root>
+					<Popover.Trigger>
+						{#snippet child({ props })}
+							<Button variant="outline" class="h-9 gap-2 text-sm font-normal" {...props}>
+								<CalendarIcon class="size-4" />
+								{dateRangeLabel()}
+							</Button>
+						{/snippet}
+					</Popover.Trigger>
+					<Popover.Content class="w-auto p-0" align="start">
+						<RangeCalendar bind:value={dateRange} numberOfMonths={2} />
+						{#if dateRange.start || dateRange.end}
+							<div class="border-t p-2">
+								<Button
+									variant="ghost"
+									size="sm"
+									class="w-full"
+									onclick={() => {
+										dateRange = { start: undefined, end: undefined };
+									}}
+								>
+									Clear dates
+								</Button>
+							</div>
+						{/if}
+					</Popover.Content>
+				</Popover.Root>
 			</div>
 			<div class="rounded-md border">
 				<Table.Root>
