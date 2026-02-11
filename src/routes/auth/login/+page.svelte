@@ -46,14 +46,14 @@
 							id="email"
 							name="email"
 							type="email"
-							placeholder="m@example.com"
+							placeholder="example@dsrpt.com.au"
 							value={form?.email ?? ''}
 							required
 						/>
 					</Field>
 					<Field>
 						<FieldLabel for="password">Password</FieldLabel>
-						<Input id="password" name="password" type="password" required />
+						<Input id="password" placeholder="*******" name="password" type="password" required />
 					</Field>
 					{#if form?.error}
 						<p class="text-sm text-destructive">{form.error}</p>

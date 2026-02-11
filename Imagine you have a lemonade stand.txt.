@@ -1,0 +1,16 @@
+Imagine you have a lemonade stand.
+
+  You want to know: "If I spend 10 KWD on ads, how much lemonade will I sell?"
+
+  So here's what the forecast does:
+
+  1. It looks at the past. Last time you advertised lemonade, you spent 5 KWD and made 20 KWD back. So for every 1 KWD you spend, you get ~4 KWD back. That's your ROAS.
+  2. It knows some days are better. Fridays people buy more, Mondays less. Summer is hot = more lemonade. Winter = less. So it adjusts up or down depending on when you want to run your ad.
+  3. It knows spending more doesn't always mean more sales. If you normally spend 5 KWD/day and suddenly spend 50 KWD/day, you won't get 10x more sales. There are only so many people to show ads to. So it reduces
+  the return the more you overspend compared to what you usually spend.
+  4. If it doesn't know your product well (new product, not much history), it looks at similar products in the same category or with the same keywords and uses their numbers instead.
+  5. It also adds organic sales — stuff you'd sell anyway even without ads, based on your sellout data.
+
+  Then it does this calculation for every single day in your date range, adds it all up, and tells you: "You'll probably make X revenue, Y orders, and Z units."
+
+  That's it. Past performance + seasonality + don't-overspend adjustment = prediction.

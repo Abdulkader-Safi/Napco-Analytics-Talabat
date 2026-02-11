@@ -44,7 +44,7 @@
 		avgRoas: number;
 	};
 
-	let sorting = $state<SortingState>([]);
+	let sorting = $state<SortingState>([{ id: 'avgRoas', desc: true }]);
 	let pagination = $state<PaginationState>({ pageIndex: 0, pageSize: 25 });
 	let columnFilters = $state<ColumnFiltersState>([]);
 	let searchValue = $state('');

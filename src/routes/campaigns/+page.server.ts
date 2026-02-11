@@ -13,7 +13,9 @@ export const load: PageServerLoad = async ({ url }) => {
 		const result = await db
 			.select({ productName: reports.productName })
 			.from(reports)
-			.where(sql`${reports.productId} = ${productFilter} AND ${reports.productName} IS NOT NULL AND ${reports.productName} != ''`)
+			.where(
+				sql`${reports.productId} = ${productFilter} AND ${reports.productName} IS NOT NULL AND ${reports.productName} != ''`
+			)
 			.limit(1);
 		productName = result[0]?.productName ?? productFilter;
 	}
@@ -38,14 +40,18 @@ export const load: PageServerLoad = async ({ url }) => {
 			totalClicks: sql<number>`SUM(${reports.clicks})`,
 			totalOrders: sql<number>`SUM(${reports.orders})`,
 			avgRoas: sql<number>`CASE WHEN SUM(${reports.totalAdSpend}) > 0 THEN (SUM(${reports.salesRevenue}) / SUM(${reports.totalAdSpend})) * 100 ELSE 0 END`,
-			assetTypes: sql<string[]>`ARRAY_AGG(DISTINCT ${reports.assetType}) FILTER (WHERE ${reports.assetType} IS NOT NULL)`
+			assetTypes: sql<
+				string[]
+			>`ARRAY_AGG(DISTINCT ${reports.assetType}) FILTER (WHERE ${reports.assetType} IS NOT NULL)`
 		})
 		.from(reports)
 		.where(whereClause)
 		.groupBy(reports.campaignId, reports.campaignName, reports.currency);
 
 	// Top keyword per search campaign (by ROAS)
-	const keywordConditions = [sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`];
+	const keywordConditions = [
+		sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`
+	];
 	if (keywordFilter) keywordConditions.push(sql`${reports.keyword} = ${keywordFilter}`);
 	if (productFilter) keywordConditions.push(sql`${reports.productId} = ${productFilter}`);
 
@@ -73,7 +79,9 @@ export const load: PageServerLoad = async ({ url }) => {
 	}
 
 	// Top category per listing campaign (by ROAS)
-	const categoryConditions = [sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != ''`];
+	const categoryConditions = [
+		sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != ''`
+	];
 	if (keywordFilter) categoryConditions.push(sql`${reports.keyword} = ${keywordFilter}`);
 	if (productFilter) categoryConditions.push(sql`${reports.productId} = ${productFilter}`);
 
@@ -106,5 +114,11 @@ export const load: PageServerLoad = async ({ url }) => {
 		topCategory: topCategoryMap.get(c.campaignId ?? '') ?? null
 	}));
 
-	return { campaigns: enrichedCampaigns, keywordFilter, productFilter, productName };
+	// Hide 0% ROAS campaigns unless navigating from keywords/products page
+	const hasFilter = !!keywordFilter || !!productFilter;
+	const filteredCampaigns = hasFilter
+		? enrichedCampaigns
+		: enrichedCampaigns.filter((c) => c.avgRoas > 0);
+
+	return { campaigns: filteredCampaigns, keywordFilter, productFilter, productName };
 };

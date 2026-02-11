@@ -21,7 +21,7 @@
 	} from '@tanstack/table-core';
 	import { RangeCalendar } from '$lib/components/ui/range-calendar/index.js';
 	import * as Popover from '$lib/components/ui/popover/index.js';
-	import { CalendarDate, type DateValue, getLocalTimeZone } from '@internationalized/date';
+	import { type DateValue } from '@internationalized/date';
 	import SearchIcon from '@lucide/svelte/icons/search';
 	import CalendarIcon from '@lucide/svelte/icons/calendar';
 	import ArrowUpDownIcon from '@lucide/svelte/icons/arrow-up-down';
@@ -54,7 +54,7 @@
 	};
 
 	// --- Campaigns table state ---
-	let sorting = $state<SortingState>([]);
+	let sorting = $state<SortingState>([{ id: 'totalRevenue', desc: true }]);
 	let pagination = $state<PaginationState>({ pageIndex: 0, pageSize: 25 });
 	let columnFilters = $state<ColumnFiltersState>([]);
 	let searchValue = $state('');
@@ -65,7 +65,9 @@
 	});
 
 	const categories = $derived(
-		[...new Set((data.campaigns as Campaign[]).map((c) => c.topCategory).filter(Boolean))].sort() as string[]
+		[
+			...new Set((data.campaigns as Campaign[]).map((c) => c.topCategory).filter(Boolean))
+		].sort() as string[]
 	);
 
 	function dateValueToString(d: DateValue): string {
@@ -79,8 +81,7 @@
 		(data.campaigns as Campaign[]).filter((c) => {
 			if (dateRange.start && c.startDate && c.startDate < dateValueToString(dateRange.start))
 				return false;
-			if (dateRange.end && c.endDate && c.endDate > dateValueToString(dateRange.end))
-				return false;
+			if (dateRange.end && c.endDate && c.endDate > dateValueToString(dateRange.end)) return false;
 			return true;
 		})
 	);
@@ -209,7 +210,6 @@
 			}
 		}
 	});
-
 </script>
 
 {#snippet sortableHeader({ column, label }: { column: Column<Campaign, unknown>; label: string })}
@@ -229,15 +229,20 @@
 {/snippet}
 
 {#snippet categoryBadge({ category }: { category: string | null })}
-	{@const color = category === 'Baby Care'
-		? '#A8E6CF'
-		: category === 'Household Care'
-			? '#B0BEC5'
-			: category === 'Family Care'
-				? '#FFD54F'
-				: '#CE93D8'}
+	{@const color =
+		category === 'Baby Care'
+			? '#A8E6CF'
+			: category === 'Household Care'
+				? '#B0BEC5'
+				: category === 'Family Care'
+					? '#FFD54F'
+					: '#CE93D8'}
 	{#if category}
-		<Badge variant="outline" style="background-color: {color}; border-color: {color};" class="text-gray-800">
+		<Badge
+			variant="outline"
+			style="background-color: {color}; border-color: {color};"
+			class="text-gray-800"
+		>
 			{category}
 		</Badge>
 	{:else}
@@ -272,24 +277,30 @@
 {#snippet productsLink({ campaignId, count }: { campaignId: string; count: number })}
 	{#if Number(count) > 0}
 		<a href="/products?campaign={encodeURIComponent(campaignId)}">
-			<Badge variant="secondary" class="tabular-nums hover:bg-primary hover:text-primary-foreground transition-colors">
+			<Badge
+				variant="secondary"
+				class="tabular-nums transition-colors hover:bg-primary hover:text-primary-foreground"
+			>
 				{count}
 			</Badge>
 		</a>
 	{:else}
-		<Badge variant="outline" class="tabular-nums border-transparent text-muted-foreground">0</Badge>
+		<Badge variant="outline" class="border-transparent text-muted-foreground tabular-nums">0</Badge>
 	{/if}
 {/snippet}
 
 {#snippet keywordsLink({ campaignId, count }: { campaignId: string; count: number })}
 	{#if Number(count) > 0}
 		<a href="/keywords?campaign={encodeURIComponent(campaignId)}">
-			<Badge variant="secondary" class="tabular-nums hover:bg-primary hover:text-primary-foreground transition-colors">
+			<Badge
+				variant="secondary"
+				class="tabular-nums transition-colors hover:bg-primary hover:text-primary-foreground"
+			>
 				{count}
 			</Badge>
 		</a>
 	{:else}
-		<Badge variant="outline" class="tabular-nums border-transparent text-muted-foreground">0</Badge>
+		<span class="text-muted-foreground">-</span>
 	{/if}
 {/snippet}
 
@@ -319,8 +330,8 @@
 					{:else if data.productName}
 						Showing campaigns for product "{data.productName}". Click column headers to sort.
 					{:else}
-						Campaign-level analytics including ROAS, product count, and performance data. Click column
-						headers to sort.
+						Campaign-level analytics including ROAS, product count, and performance data. Click
+						column headers to sort.
 					{/if}
 				</p>
 				{#if data.keywordFilter || data.productName}
@@ -441,7 +452,8 @@
 			<div class="flex items-center justify-between px-2">
 				<div class="flex items-center gap-4 text-sm text-muted-foreground">
 					<span>
-						Showing {table.getState().pagination.pageIndex * table.getState().pagination.pageSize + 1}
+						Showing {table.getState().pagination.pageIndex * table.getState().pagination.pageSize +
+							1}
 						to {Math.min(
 							(table.getState().pagination.pageIndex + 1) * table.getState().pagination.pageSize,
 							table.getFilteredRowModel().rows.length

@@ -1,9 +1,15 @@
 <script lang="ts">
+	import AppSidebar from '$lib/components/app-sidebar.svelte';
+	import * as Breadcrumb from '$lib/components/ui/breadcrumb/index.js';
+	import { Separator } from '$lib/components/ui/separator/index.js';
+	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import * as AlertDialog from '$lib/components/ui/alert-dialog';
 	import FileDropzone from '$lib/components/FileDropzone.svelte';
 	import UploadProgress from '$lib/components/UploadProgress.svelte';
+
+	let { data } = $props();
 
 	interface UploadResult {
 		success: boolean;
@@ -199,15 +205,44 @@
 	</div>
 {/if}
 
-<main class="min-h-svh bg-background p-6">
-	<div class="mx-auto max-w-6xl space-y-6">
-		<!-- Header -->
-		<div class="flex items-center justify-between">
-			<div>
-				<h1 class="text-3xl font-bold">Upload Data</h1>
-				<p class="text-muted-foreground">Upload Excel files to import data into separate tables</p>
+<Sidebar.Provider>
+	<AppSidebar user={data.user} />
+	<Sidebar.Inset>
+		<header class="flex h-16 shrink-0 items-center gap-2">
+			<div class="flex items-center gap-2 px-4">
+				<Sidebar.Trigger class="-ms-1" />
+				<Separator orientation="vertical" class="me-2 data-[orientation=vertical]:h-4" />
+				<Breadcrumb.Root>
+					<Breadcrumb.List>
+						<Breadcrumb.Item>
+							<Breadcrumb.Page>Upload</Breadcrumb.Page>
+						</Breadcrumb.Item>
+					</Breadcrumb.List>
+				</Breadcrumb.Root>
 			</div>
-			<Button variant="outline" href="/">Back to Home</Button>
+		</header>
+		<div class="flex flex-1 flex-col gap-4 p-4 pt-0">
+	<div class="space-y-6">
+		<!-- Header -->
+		<div>
+			<h2 class="text-2xl font-semibold tracking-tight">Upload Data</h2>
+			<p class="text-sm text-muted-foreground">Upload Excel files to import data into separate tables</p>
+		</div>
+
+		<!-- Row Counts -->
+		<div class="grid gap-4 md:grid-cols-2">
+			<Card.Root>
+				<Card.Header class="pb-2">
+					<Card.Description>Reports Rows</Card.Description>
+					<Card.Title class="text-2xl tabular-nums">{data.reportsCount.toLocaleString()}</Card.Title>
+				</Card.Header>
+			</Card.Root>
+			<Card.Root>
+				<Card.Header class="pb-2">
+					<Card.Description>Sellout Rows</Card.Description>
+					<Card.Title class="text-2xl tabular-nums">{data.selloutCount.toLocaleString()}</Card.Title>
+				</Card.Header>
+			</Card.Root>
 		</div>
 
 		<!-- Clear Result Message -->
@@ -397,4 +432,6 @@
 			</AlertDialog.Content>
 		</AlertDialog.Root>
 	</div>
-</main>
+		</div>
+	</Sidebar.Inset>
+</Sidebar.Provider>
