@@ -13,7 +13,8 @@ export const load = async ({ locals, url }) => {
 			? {
 					name: locals.user.name,
 					email: locals.user.email,
-					image: locals.user.image ?? null
+					image: locals.user.image ?? null,
+					role: locals.user.role ?? 'user'
 				}
 			: null
 	};

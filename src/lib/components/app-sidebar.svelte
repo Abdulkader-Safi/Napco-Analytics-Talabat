@@ -7,6 +7,7 @@
 
 	import UploadIcon from '@lucide/svelte/icons/upload';
 	import LayoutDashboardIcon from '@lucide/svelte/icons/layout-dashboard';
+	import UsersIcon from '@lucide/svelte/icons/users';
 	import { resolve } from '$app/paths';
 
 	interface Props extends ComponentProps<typeof Sidebar.Root> {
@@ -14,12 +15,13 @@
 			name: string;
 			email: string;
 			image: string | null;
+			role: string;
 		} | null;
 	}
 
 	let { ref = $bindable(null), user, ...restProps }: Props = $props();
 
-	const navMain = [
+	const navMain = $derived([
 		{
 			title: 'Dashboard',
 			url: '/',
@@ -44,8 +46,17 @@
 			title: 'Upload Data',
 			url: '/upload',
 			icon: UploadIcon
-		}
-	];
+		},
+		...(user?.role === 'admin'
+			? [
+					{
+						title: 'Users',
+						url: '/users',
+						icon: UsersIcon
+					}
+				]
+			: [])
+	]);
 </script>
 
 <Sidebar.Root bind:ref variant="floating" collapsible="icon" {...restProps}>

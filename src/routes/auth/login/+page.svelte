@@ -1,10 +1,13 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { resolve } from '$app/paths';
-	import Button from '$lib/components/ui/button/button.svelte';
+	import { Button } from '$lib/components/ui/button/index.js';
 	import * as Card from '$lib/components/ui/card/index.js';
-
-	import Input from '$lib/components/ui/input/input.svelte';
+	import { Input } from '$lib/components/ui/input/index.js';
+	import {
+		FieldGroup,
+		Field,
+		FieldLabel
+	} from '$lib/components/ui/field/index.js';
 
 	let { form } = $props();
 	let loading = $state(false);
@@ -14,23 +17,22 @@
 	<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
 		<div class="flex flex-col items-center gap-4">
 			<div
-				class="h-12 w-12 animate-spin rounded-full border-4 border-amber-200 border-t-transparent"
+				class="h-12 w-12 animate-spin rounded-full border-4 border-primary border-t-transparent"
 			></div>
 			<p class="text-white">Logging in...</p>
 		</div>
 	</div>
 {/if}
 
-<main class="flex min-h-svh w-full flex-col items-center justify-center">
-	<Card.Root class="mx-auto w-full max-w-3xl">
+<div class="flex h-screen w-full items-center justify-center px-4">
+	<Card.Root class="mx-auto w-full max-w-sm">
 		<Card.Header>
 			<Card.Title class="text-2xl">Login</Card.Title>
-			<!-- <Card.Description>Enter your email below to login to your account</Card.Description> -->
+			<Card.Description>Enter your email below to login to your account</Card.Description>
 		</Card.Header>
 		<Card.Content>
 			<form
 				method="POST"
-				class="flex w-full flex-col gap-4"
 				use:enhance={() => {
 					loading = true;
 					return async ({ update }) => {
@@ -39,47 +41,32 @@
 					};
 				}}
 			>
-				<div class="flex flex-row gap-4">
-					<label for="email" class="grid w-full grid-cols-3 items-center gap-1.5">
-						Email:
+				<FieldGroup>
+					<Field>
+						<FieldLabel for="email">Email</FieldLabel>
 						<Input
-							type="email"
 							id="email"
 							name="email"
+							type="email"
+							placeholder="m@example.com"
 							value={form?.email ?? ''}
-							class="col-span-2 bg-white p-1 text-black"
 							required
 						/>
-					</label>
-				</div>
-
-				<div class="flex flex-row gap-4">
-					<label for="password" class="grid w-full grid-cols-3 items-center gap-1.5">
-						Password:
-						<Input
-							type="password"
-							id="password"
-							name="password"
-							class="col-span-2 bg-white p-1 text-black"
-							required
-						/>
-					</label>
-				</div>
-
-				{#if form?.error}
-					<p class="text-red-500">{form.error}</p>
-				{/if}
-
-				<Button type="submit" variant="theme" disabled={loading}>
-					{loading ? 'Logging in...' : 'Login'}
-				</Button>
+					</Field>
+					<Field>
+						<FieldLabel for="password">Password</FieldLabel>
+						<Input id="password" name="password" type="password" required />
+					</Field>
+					{#if form?.error}
+						<p class="text-sm text-destructive">{form.error}</p>
+					{/if}
+					<Field>
+						<Button type="submit" class="w-full" disabled={loading}>
+							{loading ? 'Logging in...' : 'Login'}
+						</Button>
+					</Field>
+				</FieldGroup>
 			</form>
 		</Card.Content>
-		<Card.Footer>
-			<p class="text-sm">
-				Don't have an account?
-				<Button variant="link" href={resolve('/auth/signup')} class="underline">Sign up</Button>
-			</p>
-		</Card.Footer>
 	</Card.Root>
-</main>
+</div>
