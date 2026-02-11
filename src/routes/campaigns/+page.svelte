@@ -44,8 +44,11 @@
 		totalOrders: number;
 		avgRoas: number;
 		assetTypes: string[] | null;
+		topKeyword: string | null;
+		topCategory: string | null;
 	};
 
+	// --- Campaigns table state ---
 	let sorting = $state<SortingState>([]);
 	let pagination = $state<PaginationState>({ pageIndex: 0, pageSize: 25 });
 	let columnFilters = $state<ColumnFiltersState>([]);
@@ -54,16 +57,12 @@
 	const columns: ColumnDef<Campaign>[] = [
 		{
 			accessorKey: 'campaignName',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Campaign Name' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Campaign Name' }),
 			cell: ({ row }) => row.getValue('campaignName') ?? 'N/A'
 		},
 		{
 			accessorKey: 'avgRoas',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Average ROAS' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Average ROAS' }),
 			cell: ({ row }) => {
 				const roas = row.getValue('avgRoas') as number;
 				return renderSnippet(roasBadge, { roas });
@@ -71,54 +70,50 @@
 		},
 		{
 			accessorKey: 'assetTypes',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Type' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Type' }),
 			cell: ({ row }) => {
 				const types = row.getValue('assetTypes') as string[] | null;
 				return renderSnippet(assetTypeBadges, { types });
 			}
 		},
 		{
+			accessorKey: 'topKeyword',
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Top Keyword' }),
+			cell: ({ row }) => row.getValue('topKeyword') ?? '-'
+		},
+		{
+			accessorKey: 'topCategory',
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Top Category' }),
+			cell: ({ row }) => row.getValue('topCategory') ?? '-'
+		},
+		{
 			accessorKey: 'productsCount',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Products' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Products' }),
 			cell: ({ row }) => row.getValue('productsCount') ?? 0
 		},
 		{
 			accessorKey: 'keywordsCount',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Keywords' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Keywords' }),
 			cell: ({ row }) => row.getValue('keywordsCount') ?? 0
 		},
 		{
 			accessorKey: 'categoriesCount',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Categories' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Categories' }),
 			cell: ({ row }) => row.getValue('categoriesCount') ?? 0
 		},
 		{
 			accessorKey: 'startDate',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Start Date' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Start Date' }),
 			cell: ({ row }) => row.getValue('startDate') ?? 'N/A'
 		},
 		{
 			accessorKey: 'endDate',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'End Date' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'End Date' }),
 			cell: ({ row }) => row.getValue('endDate') ?? 'N/A'
 		},
 		{
 			accessorKey: 'totalRevenue',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Total Revenue' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Total Revenue' }),
 			cell: ({ row }) => {
 				const revenue = row.getValue('totalRevenue') as number;
 				const currency = row.original.currency ?? 'KWD';
@@ -127,16 +122,12 @@
 		},
 		{
 			accessorKey: 'totalClicks',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Total Clicks' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Total Clicks' }),
 			cell: ({ row }) => row.getValue('totalClicks') ?? 0
 		},
 		{
 			accessorKey: 'totalOrders',
-			header: ({ column }) => {
-				return renderSnippet(sortableHeader, { column, label: 'Orders' });
-			},
+			header: ({ column }) => renderSnippet(sortableHeader, { column, label: 'Orders' }),
 			cell: ({ row }) => row.getValue('totalOrders') ?? 0
 		}
 	];
@@ -151,25 +142,13 @@
 		getPaginationRowModel: getPaginationRowModel(),
 		getFilteredRowModel: getFilteredRowModel(),
 		onSortingChange: (updater) => {
-			if (typeof updater === 'function') {
-				sorting = updater(sorting);
-			} else {
-				sorting = updater;
-			}
+			sorting = typeof updater === 'function' ? updater(sorting) : updater;
 		},
 		onPaginationChange: (updater) => {
-			if (typeof updater === 'function') {
-				pagination = updater(pagination);
-			} else {
-				pagination = updater;
-			}
+			pagination = typeof updater === 'function' ? updater(pagination) : updater;
 		},
 		onColumnFiltersChange: (updater) => {
-			if (typeof updater === 'function') {
-				columnFilters = updater(columnFilters);
-			} else {
-				columnFilters = updater;
-			}
+			columnFilters = typeof updater === 'function' ? updater(columnFilters) : updater;
 		},
 		state: {
 			get sorting() {
@@ -183,6 +162,7 @@
 			}
 		}
 	});
+
 </script>
 
 {#snippet sortableHeader({ column, label }: { column: Column<Campaign, unknown>; label: string })}
@@ -242,6 +222,7 @@
 			</div>
 		</header>
 		<div class="flex flex-1 flex-col gap-4 p-4 pt-0">
+			<!-- Campaigns Table -->
 			<div class="space-y-2">
 				<h2 class="text-2xl font-semibold tracking-tight">Campaign Performance Metrics</h2>
 				<p class="text-sm text-muted-foreground">
