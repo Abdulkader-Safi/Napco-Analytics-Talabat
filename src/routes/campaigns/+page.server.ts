@@ -3,7 +3,13 @@ import { db } from '$lib/server/db';
 import { reports } from '$lib/server/db/schema';
 import { sql } from 'drizzle-orm';
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ url }) => {
+	const keywordFilter = url.searchParams.get('keyword') || null;
+
+	const keywordCondition = keywordFilter
+		? sql`${reports.keyword} = ${keywordFilter}`
+		: undefined;
+
 	const campaigns = await db
 		.select({
 			campaignId: reports.campaignId,
@@ -22,6 +28,7 @@ export const load: PageServerLoad = async () => {
 			assetTypes: sql<string[]>`ARRAY_AGG(DISTINCT ${reports.assetType}) FILTER (WHERE ${reports.assetType} IS NOT NULL)`
 		})
 		.from(reports)
+		.where(keywordCondition)
 		.groupBy(reports.campaignId, reports.campaignName, reports.currency);
 
 	// Top keyword per search campaign (by ROAS)
@@ -33,7 +40,9 @@ export const load: PageServerLoad = async () => {
 		})
 		.from(reports)
 		.where(
-			sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`
+			keywordFilter
+				? sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != '' AND ${reports.keyword} = ${keywordFilter}`
+				: sql`${reports.assetType} = 'AD_TYPE_SEARCH' AND ${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`
 		)
 		.groupBy(reports.campaignId, reports.keyword);
 
@@ -59,7 +68,9 @@ export const load: PageServerLoad = async () => {
 		})
 		.from(reports)
 		.where(
-			sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != ''`
+			keywordFilter
+				? sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != '' AND ${reports.keyword} = ${keywordFilter}`
+				: sql`${reports.assetType} = 'AD_TYPE_LISTING' AND ${reports.category} IS NOT NULL AND ${reports.category} != ''`
 		)
 		.groupBy(reports.campaignId, reports.category);
 
@@ -82,5 +93,5 @@ export const load: PageServerLoad = async () => {
 		topCategory: topCategoryMap.get(c.campaignId ?? '') ?? null
 	}));
 
-	return { campaigns: enrichedCampaigns };
+	return { campaigns: enrichedCampaigns, keywordFilter };
 };

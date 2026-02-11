@@ -3,7 +3,12 @@ import { db } from '$lib/server/db';
 import { reports } from '$lib/server/db/schema';
 import { sql } from 'drizzle-orm';
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ url }) => {
+	const campaignFilter = url.searchParams.get('campaign') || null;
+
+	const conditions = [sql`${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`];
+	if (campaignFilter) conditions.push(sql`${reports.campaignId} = ${campaignFilter}`);
+
 	const keywords = await db
 		.select({
 			keyword: reports.keyword,
@@ -21,8 +26,8 @@ export const load: PageServerLoad = async () => {
 			avgRoas: sql<number>`CASE WHEN SUM(${reports.totalAdSpend}) > 0 THEN (SUM(${reports.salesRevenue}) / SUM(${reports.totalAdSpend})) * 100 ELSE 0 END`
 		})
 		.from(reports)
-		.where(sql`${reports.keyword} IS NOT NULL AND ${reports.keyword} != ''`)
+		.where(sql.join(conditions, sql` AND `))
 		.groupBy(reports.keyword, reports.currency);
 
-	return { keywords };
+	return { keywords, campaignFilter };
 };

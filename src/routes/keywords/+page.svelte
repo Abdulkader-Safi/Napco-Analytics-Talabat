@@ -27,6 +27,7 @@
 	import ChevronRightIcon from '@lucide/svelte/icons/chevron-right';
 	import ChevronsLeftIcon from '@lucide/svelte/icons/chevrons-left';
 	import ChevronsRightIcon from '@lucide/svelte/icons/chevrons-right';
+	import XIcon from '@lucide/svelte/icons/x';
 
 	let { data } = $props();
 
@@ -112,14 +113,22 @@
 			header: ({ column }) => {
 				return renderSnippet(sortableHeader, { column, label: 'Products' });
 			},
-			cell: ({ row }) => row.getValue('productsCount') ?? 0
+			cell: ({ row }) => {
+				const keyword = row.original.keyword ?? '';
+				const count = row.getValue('productsCount') as number;
+				return renderSnippet(productsLink, { keyword, count });
+			}
 		},
 		{
 			accessorKey: 'campaignsCount',
 			header: ({ column }) => {
 				return renderSnippet(sortableHeader, { column, label: 'Campaigns' });
 			},
-			cell: ({ row }) => row.getValue('campaignsCount') ?? 0
+			cell: ({ row }) => {
+				const keyword = row.original.keyword ?? '';
+				const count = row.getValue('campaignsCount') as number;
+				return renderSnippet(campaignsLink, { keyword, count });
+			}
 		},
 		{
 			accessorKey: 'avgCpc',
@@ -210,6 +219,30 @@
 	</Badge>
 {/snippet}
 
+{#snippet productsLink({ keyword, count }: { keyword: string; count: number })}
+	{#if Number(count) > 0}
+		<a href="/products?keyword={encodeURIComponent(keyword)}">
+			<Badge variant="secondary" class="tabular-nums hover:bg-primary hover:text-primary-foreground transition-colors">
+				{count}
+			</Badge>
+		</a>
+	{:else}
+		<Badge variant="outline" class="tabular-nums border-transparent text-muted-foreground">0</Badge>
+	{/if}
+{/snippet}
+
+{#snippet campaignsLink({ keyword, count }: { keyword: string; count: number })}
+	{#if Number(count) > 0}
+		<a href="/campaigns?keyword={encodeURIComponent(keyword)}">
+			<Badge variant="secondary" class="tabular-nums hover:bg-primary hover:text-primary-foreground transition-colors">
+				{count}
+			</Badge>
+		</a>
+	{:else}
+		<Badge variant="outline" class="tabular-nums border-transparent text-muted-foreground">0</Badge>
+	{/if}
+{/snippet}
+
 <Sidebar.Provider>
 	<AppSidebar user={data.user} />
 	<Sidebar.Inset>
@@ -230,9 +263,23 @@
 			<div class="space-y-2">
 				<h2 class="text-2xl font-semibold tracking-tight">Keyword Performance</h2>
 				<p class="text-sm text-muted-foreground">
-					Keyword-level analytics including impressions, clicks, CTR, revenue, and CPC. Click column
-					headers to sort.
+					{#if data.campaignFilter}
+						Showing keywords for campaign "{data.campaignFilter}". Click column headers to sort.
+					{:else}
+						Keyword-level analytics including impressions, clicks, CTR, revenue, and CPC. Click column
+						headers to sort.
+					{/if}
 				</p>
+				{#if data.campaignFilter}
+					<div class="flex items-center gap-2">
+						<Badge variant="secondary" class="gap-1">
+							Campaign: {data.campaignFilter}
+							<a href="/keywords" class="ml-1 rounded-full hover:bg-muted-foreground/20">
+								<XIcon class="size-3" />
+							</a>
+						</Badge>
+					</div>
+				{/if}
 			</div>
 			<div class="flex items-center gap-2">
 				<div class="relative max-w-sm flex-1">

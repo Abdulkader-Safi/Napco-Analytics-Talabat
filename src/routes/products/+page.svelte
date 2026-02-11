@@ -27,6 +27,7 @@
 	import ChevronRightIcon from '@lucide/svelte/icons/chevron-right';
 	import ChevronsLeftIcon from '@lucide/svelte/icons/chevrons-left';
 	import ChevronsRightIcon from '@lucide/svelte/icons/chevrons-right';
+	import XIcon from '@lucide/svelte/icons/x';
 
 	let { data } = $props();
 
@@ -233,9 +234,35 @@
 			<div class="space-y-2">
 				<h2 class="text-2xl font-semibold tracking-tight">Product Performance Metrics</h2>
 				<p class="text-sm text-muted-foreground">
-					Product-level analytics including ROAS, campaign count, and performance data. Click
-					column headers to sort.
+					{#if data.keywordFilter}
+						Showing products for keyword "{data.keywordFilter}". Click column headers to sort.
+					{:else if data.campaignFilter}
+						Showing products for campaign "{data.campaignFilter}". Click column headers to sort.
+					{:else}
+						Product-level analytics including ROAS, campaign count, and performance data. Click
+						column headers to sort.
+					{/if}
 				</p>
+				{#if data.keywordFilter || data.campaignFilter}
+					<div class="flex items-center gap-2">
+						{#if data.keywordFilter}
+							<Badge variant="secondary" class="gap-1">
+								Keyword: {data.keywordFilter}
+								<a href="/products" class="ml-1 rounded-full hover:bg-muted-foreground/20">
+									<XIcon class="size-3" />
+								</a>
+							</Badge>
+						{/if}
+						{#if data.campaignFilter}
+							<Badge variant="secondary" class="gap-1">
+								Campaign: {data.campaignFilter}
+								<a href="/products" class="ml-1 rounded-full hover:bg-muted-foreground/20">
+									<XIcon class="size-3" />
+								</a>
+							</Badge>
+						{/if}
+					</div>
+				{/if}
 			</div>
 			<div class="flex items-center gap-2">
 				<div class="relative max-w-sm flex-1">
