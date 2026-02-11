@@ -1,0 +1,3209 @@
+{
+  "spendUtilizationRate": 0.5941,
+  "cpc": 0.2,
+  "seasonality": {
+    "1": 1.081,
+    "5": 1.0022,
+    "6": 0.9708,
+    "7": 0.9198,
+    "10": 0.9853,
+    "11": 1.0409,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "12": 1.0
+  },
+  "dayOfWeekIndex": {
+    "0": 0.9862,
+    "1": 1.0289,
+    "2": 0.9474,
+    "3": 0.9818,
+    "4": 0.9568,
+    "5": 1.0878,
+    "6": 1.0112
+  },
+  "globalAvg": {
+    "roas": 5.0486,
+    "ordersPerKwd": 2.1677,
+    "unitsPerKwd": 2.5721,
+    "listing": {
+      "roas": 4.8702,
+      "ordersPerKwd": 2.1233,
+      "unitsPerKwd": 2.5199
+    },
+    "search": {
+      "roas": 5.7594,
+      "ordersPerKwd": 2.3446,
+      "unitsPerKwd": 2.7802
+    }
+  },
+  "categories": {
+    "1 - 2 Years": {
+      "roas": 7.694,
+      "ordersPerKwd": 1.1972,
+      "unitsPerKwd": 1.2559,
+      "ctr": 0.0352,
+      "cvr": 0.2576,
+      "totalSpend": 85.2,
+      "productCount": 4
+    },
+    "2 - 3 Years": {
+      "roas": 5.5811,
+      "ordersPerKwd": 0.8346,
+      "unitsPerKwd": 0.8569,
+      "ctr": 0.0545,
+      "cvr": 0.2667,
+      "totalSpend": 134.2,
+      "productCount": 7
+    },
+    "3+ Years": {
+      "roas": 7.2598,
+      "ordersPerKwd": 1.1339,
+      "unitsPerKwd": 1.2198,
+      "ctr": 0.0487,
+      "cvr": 0.3195,
+      "totalSpend": 244.3,
+      "productCount": 8
+    },
+    "6 - 12 Months": {
+      "roas": 7.0243,
+      "ordersPerKwd": 1.1386,
+      "unitsPerKwd": 1.1386,
+      "ctr": 0.0246,
+      "cvr": 0.2277,
+      "totalSpend": 20.2,
+      "productCount": 2
+    },
+    "Aluminum Foil": {
+      "roas": 4.3331,
+      "ordersPerKwd": 2.5584,
+      "unitsPerKwd": 2.6858,
+      "ctr": 0.039,
+      "cvr": 0.5117,
+      "totalSpend": 94.2,
+      "productCount": 5
+    },
+    "Baby Wipes": {
+      "roas": 6.063,
+      "ordersPerKwd": 2.5926,
+      "unitsPerKwd": 2.963,
+      "ctr": 0.172,
+      "cvr": 0.5185,
+      "totalSpend": 5.4,
+      "productCount": 1
+    },
+    "Baking Paper": {
+      "roas": 2.3962,
+      "ordersPerKwd": 1.8085,
+      "unitsPerKwd": 1.9385,
+      "ctr": 0.0256,
+      "cvr": 0.3617,
+      "totalSpend": 84.6,
+      "productCount": 7
+    },
+    "Cling Film": {
+      "roas": 3.4883,
+      "ordersPerKwd": 2.3452,
+      "unitsPerKwd": 2.7024,
+      "ctr": 0.0322,
+      "cvr": 0.469,
+      "totalSpend": 84.0,
+      "productCount": 3
+    },
+    "Cotton Buds & Pads": {
+      "roas": 2.1296,
+      "ordersPerKwd": 1.5308,
+      "unitsPerKwd": 1.6451,
+      "ctr": 0.0436,
+      "cvr": 0.3564,
+      "totalSpend": 131.3,
+      "productCount": 5
+    },
+    "Cups & Straws": {
+      "roas": 1.303,
+      "ordersPerKwd": 1.1268,
+      "unitsPerKwd": 1.3451,
+      "ctr": 0.0334,
+      "cvr": 0.2254,
+      "totalSpend": 142.0,
+      "productCount": 6
+    },
+    "Facial Tissues": {
+      "roas": 5.1819,
+      "ordersPerKwd": 2.7765,
+      "unitsPerKwd": 3.7294,
+      "ctr": 0.1254,
+      "cvr": 0.5553,
+      "totalSpend": 170.0,
+      "productCount": 7
+    },
+    "Feminine Pads": {
+      "roas": 4.9856,
+      "ordersPerKwd": 2.4637,
+      "unitsPerKwd": 3.3691,
+      "ctr": 0.0936,
+      "cvr": 0.5094,
+      "totalSpend": 419.7,
+      "productCount": 23
+    },
+    "Food Storage Bags": {
+      "roas": 2.8977,
+      "ordersPerKwd": 1.7785,
+      "unitsPerKwd": 1.9239,
+      "ctr": 0.0453,
+      "cvr": 0.3557,
+      "totalSpend": 89.4,
+      "productCount": 4
+    },
+    "Kitchen Rolls": {
+      "roas": 4.1717,
+      "ordersPerKwd": 2.9883,
+      "unitsPerKwd": 3.6198,
+      "ctr": 0.0706,
+      "cvr": 0.5977,
+      "totalSpend": 153.6,
+      "productCount": 9
+    },
+    "Large Bags": {
+      "roas": 5.0518,
+      "ordersPerKwd": 2.2287,
+      "unitsPerKwd": 2.5036,
+      "ctr": 0.0747,
+      "cvr": 0.4457,
+      "totalSpend": 138.2,
+      "productCount": 5
+    },
+    "Medium Bags": {
+      "roas": 4.4592,
+      "ordersPerKwd": 2.4269,
+      "unitsPerKwd": 2.7047,
+      "ctr": 0.0666,
+      "cvr": 0.4854,
+      "totalSpend": 68.4,
+      "productCount": 4
+    },
+    "Panty Liners": {
+      "roas": 5.615,
+      "ordersPerKwd": 2.5362,
+      "unitsPerKwd": 2.9727,
+      "ctr": 0.0403,
+      "cvr": 0.5072,
+      "totalSpend": 373.4,
+      "productCount": 7
+    },
+    "Size 6+": {
+      "roas": 14.8891,
+      "ordersPerKwd": 1.875,
+      "unitsPerKwd": 2.2656,
+      "ctr": 0.1336,
+      "cvr": 0.375,
+      "totalSpend": 12.8,
+      "productCount": 4
+    },
+    "Small Bags": {
+      "roas": 5.0818,
+      "ordersPerKwd": 2.5373,
+      "unitsPerKwd": 3.0597,
+      "ctr": 0.0754,
+      "cvr": 0.5075,
+      "totalSpend": 80.4,
+      "productCount": 4
+    },
+    "Table Covers": {
+      "roas": 4.9738,
+      "ordersPerKwd": 1.943,
+      "unitsPerKwd": 2.0499,
+      "ctr": 0.0385,
+      "cvr": 0.3886,
+      "totalSpend": 112.2,
+      "productCount": 4
+    },
+    "Toilet Paper": {
+      "roas": 4.9955,
+      "ordersPerKwd": 2.8993,
+      "unitsPerKwd": 3.2276,
+      "ctr": 0.0511,
+      "cvr": 0.5799,
+      "totalSpend": 182.8,
+      "productCount": 8
+    }
+  },
+  "keywords": {
+    "baby diaper": {
+      "roas": 5.8462,
+      "ordersPerKwd": 0.7692,
+      "unitsPerKwd": 0.7692,
+      "cvr": 0.1667,
+      "totalSpend": 1.3
+    },
+    "baby wipes": {
+      "roas": 3.96,
+      "ordersPerKwd": 2.0,
+      "unitsPerKwd": 2.0,
+      "cvr": 0.4,
+      "totalSpend": 1.0
+    },
+    "cotton": {
+      "roas": 3.7945,
+      "ordersPerKwd": 2.5126,
+      "unitsPerKwd": 3.2915,
+      "cvr": 0.5025,
+      "totalSpend": 39.8
+    },
+    "cotton balls": {
+      "roas": 1.5857,
+      "ordersPerKwd": 2.1429,
+      "unitsPerKwd": 2.1429,
+      "cvr": 0.4286,
+      "totalSpend": 2.8
+    },
+    "cotton buds": {
+      "roas": 2.4868,
+      "ordersPerKwd": 1.6981,
+      "unitsPerKwd": 2.1698,
+      "cvr": 0.3396,
+      "totalSpend": 10.6
+    },
+    "cotton pads": {
+      "roas": 2.9662,
+      "ordersPerKwd": 2.2308,
+      "unitsPerKwd": 2.3077,
+      "cvr": 0.4462,
+      "totalSpend": 13.0
+    },
+    "cup": {
+      "roas": 1.4761,
+      "ordersPerKwd": 1.3043,
+      "unitsPerKwd": 1.3043,
+      "cvr": 0.2609,
+      "totalSpend": 4.6
+    },
+    "cups": {
+      "roas": 2.7125,
+      "ordersPerKwd": 1.6667,
+      "unitsPerKwd": 2.3611,
+      "cvr": 0.3333,
+      "totalSpend": 7.2
+    },
+    "diaper": {
+      "roas": 12.4945,
+      "ordersPerKwd": 1.7808,
+      "unitsPerKwd": 2.1918,
+      "cvr": 0.4194,
+      "totalSpend": 7.3
+    },
+    "diapers": {
+      "roas": 10.5072,
+      "ordersPerKwd": 1.9277,
+      "unitsPerKwd": 2.1687,
+      "cvr": 0.4,
+      "totalSpend": 8.3
+    },
+    "feminine pads": {
+      "roas": 3.8367,
+      "ordersPerKwd": 2.6667,
+      "unitsPerKwd": 2.6667,
+      "cvr": 0.5714,
+      "totalSpend": 3.0
+    },
+    "garbage": {
+      "roas": 7.1382,
+      "ordersPerKwd": 3.0882,
+      "unitsPerKwd": 3.3824,
+      "cvr": 0.6176,
+      "totalSpend": 6.8
+    },
+    "garbage bag": {
+      "roas": 6.1865,
+      "ordersPerKwd": 2.7083,
+      "unitsPerKwd": 3.0729,
+      "cvr": 0.5417,
+      "totalSpend": 38.4
+    },
+    "garbage bags": {
+      "roas": 5.5103,
+      "ordersPerKwd": 2.5431,
+      "unitsPerKwd": 2.931,
+      "cvr": 0.5086,
+      "totalSpend": 23.2
+    },
+    "kitchen towel": {
+      "roas": 1.2,
+      "ordersPerKwd": 0.625,
+      "unitsPerKwd": 0.625,
+      "cvr": 0.125,
+      "totalSpend": 1.6
+    },
+    "liners": {
+      "roas": 3.4318,
+      "ordersPerKwd": 1.8182,
+      "unitsPerKwd": 1.8182,
+      "cvr": 0.3636,
+      "totalSpend": 2.2
+    },
+    "maternity pads": {
+      "roas": 4.66,
+      "ordersPerKwd": 2.0,
+      "unitsPerKwd": 5.0,
+      "cvr": 0.4,
+      "totalSpend": 1.0
+    },
+    "pad": {
+      "roas": 3.5899,
+      "ordersPerKwd": 2.2363,
+      "unitsPerKwd": 2.8692,
+      "cvr": 0.5248,
+      "totalSpend": 23.7
+    },
+    "pads": {
+      "roas": 3.8454,
+      "ordersPerKwd": 2.2083,
+      "unitsPerKwd": 2.7033,
+      "cvr": 0.5223,
+      "totalSpend": 127.25
+    },
+    "pads with wings": {
+      "roas": 10.8,
+      "ordersPerKwd": 4.0,
+      "unitsPerKwd": 4.0,
+      "cvr": 0.8,
+      "totalSpend": 1.0
+    },
+    "pants": {
+      "roas": 10.8056,
+      "ordersPerKwd": 1.6667,
+      "unitsPerKwd": 1.6667,
+      "cvr": 0.3333,
+      "totalSpend": 1.8
+    },
+    "pantyliners": {
+      "roas": 1.96,
+      "ordersPerKwd": 1.0,
+      "unitsPerKwd": 1.0,
+      "cvr": 0.2,
+      "totalSpend": 1.0
+    },
+    "paper cups": {
+      "roas": 3.625,
+      "ordersPerKwd": 1.6667,
+      "unitsPerKwd": 2.9167,
+      "cvr": 0.3333,
+      "totalSpend": 7.2
+    },
+    "paper towel": {
+      "roas": 8.2833,
+      "ordersPerKwd": 3.0556,
+      "unitsPerKwd": 4.1667,
+      "cvr": 0.6111,
+      "totalSpend": 3.6
+    },
+    "paper towels": {
+      "roas": 9.7583,
+      "ordersPerKwd": 3.3333,
+      "unitsPerKwd": 5.0,
+      "cvr": 0.6667,
+      "totalSpend": 1.2
+    },
+    "period pads": {
+      "roas": 1.0562,
+      "ordersPerKwd": 0.625,
+      "unitsPerKwd": 0.625,
+      "cvr": 0.125,
+      "totalSpend": 1.6
+    },
+    "sanitary pad": {
+      "roas": 4.8923,
+      "ordersPerKwd": 3.0769,
+      "unitsPerKwd": 3.8462,
+      "cvr": 0.6667,
+      "totalSpend": 1.3
+    },
+    "sanitary pads": {
+      "roas": 1.1147,
+      "ordersPerKwd": 0.8122,
+      "unitsPerKwd": 0.8122,
+      "cvr": 0.1905,
+      "totalSpend": 9.85
+    },
+    "tissue": {
+      "roas": 7.1735,
+      "ordersPerKwd": 3.6176,
+      "unitsPerKwd": 4.9118,
+      "cvr": 0.7235,
+      "totalSpend": 34.0
+    },
+    "tissues": {
+      "roas": 6.2,
+      "ordersPerKwd": 3.6667,
+      "unitsPerKwd": 4.6667,
+      "cvr": 0.7333,
+      "totalSpend": 3.0
+    },
+    "toilet": {
+      "roas": 5.8708,
+      "ordersPerKwd": 4.1667,
+      "unitsPerKwd": 4.1667,
+      "cvr": 0.8333,
+      "totalSpend": 2.4
+    },
+    "toilet paper": {
+      "roas": 6.997,
+      "ordersPerKwd": 3.664,
+      "unitsPerKwd": 4.3117,
+      "cvr": 0.7328,
+      "totalSpend": 49.4
+    },
+    "toilet roll": {
+      "roas": 5.0053,
+      "ordersPerKwd": 3.1579,
+      "unitsPerKwd": 3.1579,
+      "cvr": 0.6316,
+      "totalSpend": 3.8
+    },
+    "toilet tissue": {
+      "roas": 6.0731,
+      "ordersPerKwd": 3.8462,
+      "unitsPerKwd": 3.8462,
+      "cvr": 0.7692,
+      "totalSpend": 2.6
+    },
+    "trash": {
+      "roas": 4.4069,
+      "ordersPerKwd": 2.4138,
+      "unitsPerKwd": 2.7586,
+      "cvr": 0.4828,
+      "totalSpend": 5.8
+    },
+    "trash bag": {
+      "roas": 5.3759,
+      "ordersPerKwd": 2.8395,
+      "unitsPerKwd": 3.2099,
+      "cvr": 0.5679,
+      "totalSpend": 16.2
+    },
+    "trash bags": {
+      "roas": 3.58,
+      "ordersPerKwd": 2.0,
+      "unitsPerKwd": 2.0,
+      "cvr": 0.4,
+      "totalSpend": 4.0
+    },
+    "wipes": {
+      "roas": 8.4857,
+      "ordersPerKwd": 3.5714,
+      "unitsPerKwd": 4.2857,
+      "cvr": 0.7143,
+      "totalSpend": 1.4
+    },
+    "أكواب": {
+      "roas": 1.4385,
+      "ordersPerKwd": 1.1538,
+      "unitsPerKwd": 1.1538,
+      "cvr": 0.2308,
+      "totalSpend": 2.6
+    },
+    "أكواب ورقية": {
+      "roas": 0.5375,
+      "ordersPerKwd": 0.4167,
+      "unitsPerKwd": 0.4167,
+      "cvr": 0.0833,
+      "totalSpend": 2.4
+    },
+    "اكواب": {
+      "roas": 0.9214,
+      "ordersPerKwd": 0.7143,
+      "unitsPerKwd": 0.7143,
+      "cvr": 0.1429,
+      "totalSpend": 4.2
+    },
+    "حفاضات": {
+      "roas": 10.0927,
+      "ordersPerKwd": 1.5738,
+      "unitsPerKwd": 1.6707,
+      "cvr": 0.3779,
+      "totalSpend": 41.3
+    },
+    "حفاضات أطفال": {
+      "roas": 0.0,
+      "ordersPerKwd": 0.0,
+      "unitsPerKwd": 0.0,
+      "cvr": 0.0,
+      "totalSpend": 1.3
+    },
+    "حفاضات بامبي": {
+      "roas": 16.5441,
+      "ordersPerKwd": 2.1569,
+      "unitsPerKwd": 2.3529,
+      "cvr": 0.4314,
+      "totalSpend": 10.2
+    },
+    "حفاضة": {
+      "roas": 8.6667,
+      "ordersPerKwd": 1.3333,
+      "unitsPerKwd": 1.3333,
+      "cvr": 0.3333,
+      "totalSpend": 1.5
+    },
+    "حفاظات": {
+      "roas": 10.383,
+      "ordersPerKwd": 1.619,
+      "unitsPerKwd": 1.7143,
+      "cvr": 0.4126,
+      "totalSpend": 52.5
+    },
+    "فوط نسائية": {
+      "roas": 5.4344,
+      "ordersPerKwd": 3.0108,
+      "unitsPerKwd": 3.9785,
+      "cvr": 0.6667,
+      "totalSpend": 9.3
+    },
+    "فوط يومية": {
+      "roas": 5.6756,
+      "ordersPerKwd": 2.3333,
+      "unitsPerKwd": 3.3333,
+      "cvr": 0.5,
+      "totalSpend": 9.0
+    },
+    "فوطة صحية": {
+      "roas": 3.6308,
+      "ordersPerKwd": 2.1154,
+      "unitsPerKwd": 2.5,
+      "cvr": 0.5238,
+      "totalSpend": 5.2
+    },
+    "قمامة": {
+      "roas": 6.4574,
+      "ordersPerKwd": 3.1481,
+      "unitsPerKwd": 3.7037,
+      "cvr": 0.6296,
+      "totalSpend": 5.4
+    },
+    "كوب": {
+      "roas": 0.6823,
+      "ordersPerKwd": 0.4839,
+      "unitsPerKwd": 0.6452,
+      "cvr": 0.0968,
+      "totalSpend": 6.2
+    },
+    "كوب ورقي": {
+      "roas": 0.875,
+      "ordersPerKwd": 0.625,
+      "unitsPerKwd": 0.9375,
+      "cvr": 0.125,
+      "totalSpend": 3.2
+    },
+    "كيس زبالة": {
+      "roas": 4.6921,
+      "ordersPerKwd": 2.193,
+      "unitsPerKwd": 2.3684,
+      "cvr": 0.4386,
+      "totalSpend": 11.4
+    },
+    "كيس قمامة": {
+      "roas": 4.9745,
+      "ordersPerKwd": 2.4043,
+      "unitsPerKwd": 2.5957,
+      "cvr": 0.4809,
+      "totalSpend": 47.0
+    },
+    "كيس قمامة كبير": {
+      "roas": 5.2083,
+      "ordersPerKwd": 2.5,
+      "unitsPerKwd": 2.5,
+      "cvr": 0.5,
+      "totalSpend": 1.2
+    },
+    "مناديل": {
+      "roas": 4.2381,
+      "ordersPerKwd": 2.619,
+      "unitsPerKwd": 2.619,
+      "cvr": 0.5238,
+      "totalSpend": 4.2
+    },
+    "منديل": {
+      "roas": 4.0205,
+      "ordersPerKwd": 2.5,
+      "unitsPerKwd": 3.1818,
+      "cvr": 0.5,
+      "totalSpend": 4.4
+    },
+    "ورق تواليت": {
+      "roas": 5.7083,
+      "ordersPerKwd": 3.3333,
+      "unitsPerKwd": 3.3333,
+      "cvr": 0.6667,
+      "totalSpend": 1.2
+    }
+  },
+  "products": {
+    "Freshdays Natural Cotton Feel Long Scented Daily Pantyliners, 72 Pantyliners Mega Pack": {
+      "roas": 5.2318,
+      "ordersPerKwd": 2.3996,
+      "unitsPerKwd": 2.8107,
+      "aov": 2.1803,
+      "activeDays": 79,
+      "totalSpend": 104.6,
+      "totalRevenue": 547.25,
+      "totalOrders": 251,
+      "totalUnits": 294,
+      "organicDailyUnits": 3.71,
+      "organicDailyRevenue": 6.54,
+      "listing": {
+        "roas": 5.2451,
+        "ordersPerKwd": 2.4104,
+        "unitsPerKwd": 2.8088,
+        "totalSpend": 100.4
+      },
+      "search": {
+        "roas": 4.9143,
+        "ordersPerKwd": 2.1429,
+        "unitsPerKwd": 2.8571,
+        "totalSpend": 4.2
+      }
+    },
+    "Freshdays Natural Cotton Feel Normal Daily Pantyliners, 72 Pantyliners Mega Pack": {
+      "roas": 4.1573,
+      "ordersPerKwd": 1.9745,
+      "unitsPerKwd": 2.1656,
+      "aov": 2.1055,
+      "activeDays": 49,
+      "totalSpend": 31.4,
+      "totalRevenue": 130.54,
+      "totalOrders": 62,
+      "totalUnits": 68,
+      "organicDailyUnits": 1.59,
+      "organicDailyRevenue": 2.82,
+      "listing": {
+        "roas": 4.2283,
+        "ordersPerKwd": 2.0,
+        "unitsPerKwd": 2.2069,
+        "totalSpend": 29.0
+      },
+      "search": {
+        "roas": 3.3,
+        "ordersPerKwd": 1.6667,
+        "unitsPerKwd": 1.6667,
+        "totalSpend": 2.4
+      }
+    },
+    "Freshdays Natural Cotton Feel Long Daily Pantyliners, 72 Pantyliners Mega Pack": {
+      "roas": 6.2404,
+      "ordersPerKwd": 2.7601,
+      "unitsPerKwd": 3.3078,
+      "aov": 2.2609,
+      "activeDays": 69,
+      "totalSpend": 182.6,
+      "totalRevenue": 1139.49,
+      "totalOrders": 504,
+      "totalUnits": 604,
+      "organicDailyUnits": 11.35,
+      "organicDailyRevenue": 19.84,
+      "listing": {
+        "roas": 6.2975,
+        "ordersPerKwd": 2.783,
+        "unitsPerKwd": 3.3314,
+        "totalSpend": 171.4
+      },
+      "search": {
+        "roas": 5.3661,
+        "ordersPerKwd": 2.4107,
+        "unitsPerKwd": 2.9464,
+        "totalSpend": 11.2
+      }
+    },
+    "Sanita Bambi Pants Jumbo Pack, Size 5, X Large, 12-18kg, 88 Count": {
+      "roas": 12.9034,
+      "ordersPerKwd": 1.6585,
+      "unitsPerKwd": 1.7561,
+      "aov": 7.78,
+      "activeDays": 33,
+      "totalSpend": 20.5,
+      "totalRevenue": 264.52,
+      "totalOrders": 34,
+      "totalUnits": 36,
+      "organicDailyUnits": 2.09,
+      "organicDailyRevenue": 14.37,
+      "listing": {
+        "roas": 12.2014,
+        "ordersPerKwd": 1.6084,
+        "unitsPerKwd": 1.6783,
+        "totalSpend": 14.3
+      },
+      "search": {
+        "roas": 14.5226,
+        "ordersPerKwd": 1.7742,
+        "unitsPerKwd": 1.9355,
+        "totalSpend": 6.2
+      }
+    },
+    "Sanita Cling Film Eco Pack, 450mm x 200m, 1 Roll": {
+      "roas": 5.5759,
+      "ordersPerKwd": 2.3116,
+      "unitsPerKwd": 2.6131,
+      "aov": 2.4122,
+      "activeDays": 55,
+      "totalSpend": 39.8,
+      "totalRevenue": 221.92,
+      "totalOrders": 92,
+      "totalUnits": 104,
+      "organicDailyUnits": 1.34,
+      "organicDailyRevenue": 2.91,
+      "listing": {
+        "roas": 5.5759,
+        "ordersPerKwd": 2.3116,
+        "unitsPerKwd": 2.6131,
+        "totalSpend": 39.8
+      }
+    },
+    "Sanita Food Storage Bags, No.10, 4 Pieces": {
+      "roas": 2.7861,
+      "ordersPerKwd": 1.7593,
+      "unitsPerKwd": 1.821,
+      "aov": 1.5837,
+      "activeDays": 43,
+      "totalSpend": 32.4,
+      "totalRevenue": 90.27,
+      "totalOrders": 57,
+      "totalUnits": 59,
+      "organicDailyUnits": 1.11,
+      "organicDailyRevenue": 1.5,
+      "listing": {
+        "roas": 2.7861,
+        "ordersPerKwd": 1.7593,
+        "unitsPerKwd": 1.821,
+        "totalSpend": 32.4
+      }
+    },
+    "Sanita Paper Cups, 4oz, 50 Pieces": {
+      "roas": 1.3167,
+      "ordersPerKwd": 1.3043,
+      "unitsPerKwd": 1.7391,
+      "aov": 1.0095,
+      "activeDays": 39,
+      "totalSpend": 59.8,
+      "totalRevenue": 78.74,
+      "totalOrders": 78,
+      "totalUnits": 104,
+      "organicDailyUnits": 2.15,
+      "organicDailyRevenue": 1.5,
+      "listing": {
+        "roas": 1.3167,
+        "ordersPerKwd": 1.3043,
+        "unitsPerKwd": 1.7391,
+        "totalSpend": 59.8
+      }
+    },
+    "Fam Super Sanitary Pads with Wings, 60 Pads": {
+      "roas": 4.4417,
+      "ordersPerKwd": 2.4147,
+      "unitsPerKwd": 2.8346,
+      "aov": 1.8395,
+      "activeDays": 67,
+      "totalSpend": 76.2,
+      "totalRevenue": 338.46,
+      "totalOrders": 184,
+      "totalUnits": 216,
+      "organicDailyUnits": 22.24,
+      "organicDailyRevenue": 33.58,
+      "listing": {
+        "roas": 4.5774,
+        "ordersPerKwd": 2.5554,
+        "unitsPerKwd": 2.9145,
+        "totalSpend": 47.35
+      },
+      "search": {
+        "roas": 4.2191,
+        "ordersPerKwd": 2.1837,
+        "unitsPerKwd": 2.7036,
+        "totalSpend": 28.85
+      }
+    },
+    "Sanita Hassir Sufra Matwiya Table Cover, 28 Sheets": {
+      "roas": 4.5991,
+      "ordersPerKwd": 1.3744,
+      "unitsPerKwd": 1.564,
+      "aov": 3.3462,
+      "activeDays": 56,
+      "totalSpend": 42.2,
+      "totalRevenue": 194.08,
+      "totalOrders": 58,
+      "totalUnits": 66,
+      "organicDailyUnits": 1.38,
+      "organicDailyRevenue": 3.84,
+      "listing": {
+        "roas": 4.5991,
+        "ordersPerKwd": 1.3744,
+        "unitsPerKwd": 1.564,
+        "totalSpend": 42.2
+      }
+    },
+    "Sanita Club Fashion Table Cover - Small, 5x4 Rolls": {
+      "roas": 5.3051,
+      "ordersPerKwd": 2.1143,
+      "unitsPerKwd": 2.1714,
+      "aov": 2.5092,
+      "activeDays": 46,
+      "totalSpend": 35.0,
+      "totalRevenue": 185.68,
+      "totalOrders": 74,
+      "totalUnits": 76,
+      "organicDailyUnits": 1.12,
+      "organicDailyRevenue": 2.76,
+      "listing": {
+        "roas": 5.3051,
+        "ordersPerKwd": 2.1143,
+        "unitsPerKwd": 2.1714,
+        "totalSpend": 35.0
+      }
+    },
+    "Sanita Club Biodegradable Trash Bags, 10 Gallons, 90 Bags": {
+      "roas": 4.8403,
+      "ordersPerKwd": 2.673,
+      "unitsPerKwd": 2.956,
+      "aov": 1.8108,
+      "activeDays": 64,
+      "totalSpend": 63.6,
+      "totalRevenue": 307.84,
+      "totalOrders": 170,
+      "totalUnits": 188,
+      "organicDailyUnits": 2.43,
+      "organicDailyRevenue": 3.82,
+      "listing": {
+        "roas": 4.7329,
+        "ordersPerKwd": 2.5806,
+        "unitsPerKwd": 2.8831,
+        "totalSpend": 49.6
+      },
+      "search": {
+        "roas": 5.2207,
+        "ordersPerKwd": 3.0,
+        "unitsPerKwd": 3.2143,
+        "totalSpend": 14.0
+      }
+    },
+    "Sanita Trash Bags, 10 Gallons, 2 Pieces": {
+      "roas": 4.8493,
+      "ordersPerKwd": 2.4348,
+      "unitsPerKwd": 2.8804,
+      "aov": 1.9917,
+      "activeDays": 61,
+      "totalSpend": 92.0,
+      "totalRevenue": 446.14,
+      "totalOrders": 224,
+      "totalUnits": 265,
+      "organicDailyUnits": 4.05,
+      "organicDailyRevenue": 6.66,
+      "listing": {
+        "roas": 4.8979,
+        "ordersPerKwd": 2.44,
+        "unitsPerKwd": 2.9467,
+        "totalSpend": 75.0
+      },
+      "search": {
+        "roas": 4.6353,
+        "ordersPerKwd": 2.4118,
+        "unitsPerKwd": 2.5882,
+        "totalSpend": 17.0
+      }
+    },
+    "Sanita Club Biodegradable Garbage Bags, 55 Gallons, 2x15 Bags": {
+      "roas": 5.4851,
+      "ordersPerKwd": 2.4689,
+      "unitsPerKwd": 2.913,
+      "aov": 2.2217,
+      "activeDays": 70,
+      "totalSpend": 112.6,
+      "totalRevenue": 617.62,
+      "totalOrders": 278,
+      "totalUnits": 328,
+      "organicDailyUnits": 8.39,
+      "organicDailyRevenue": 15.2,
+      "listing": {
+        "roas": 5.5865,
+        "ordersPerKwd": 2.5137,
+        "unitsPerKwd": 2.967,
+        "totalSpend": 72.8
+      },
+      "search": {
+        "roas": 5.2995,
+        "ordersPerKwd": 2.3869,
+        "unitsPerKwd": 2.8141,
+        "totalSpend": 39.8
+      }
+    },
+    "Sanita Club  Toilet Paper (16+4) Roll, 2 Ply, 200 Sheets": {
+      "roas": 7.3126,
+      "ordersPerKwd": 3.2963,
+      "unitsPerKwd": 3.5926,
+      "aov": 2.2184,
+      "activeDays": 40,
+      "totalSpend": 27.0,
+      "totalRevenue": 197.44,
+      "totalOrders": 89,
+      "totalUnits": 97,
+      "organicDailyUnits": 2.61,
+      "organicDailyRevenue": 4.69,
+      "listing": {
+        "roas": 6.8283,
+        "ordersPerKwd": 3.2778,
+        "unitsPerKwd": 3.5,
+        "totalSpend": 18.0
+      },
+      "search": {
+        "roas": 8.2811,
+        "ordersPerKwd": 3.3333,
+        "unitsPerKwd": 3.7778,
+        "totalSpend": 9.0
+      }
+    },
+    "Sanita Club Embossed 2 Ply Toilet Paper Rolls, 10x200 Sheets": {
+      "roas": 3.7954,
+      "ordersPerKwd": 2.9177,
+      "unitsPerKwd": 3.1114,
+      "aov": 1.3008,
+      "activeDays": 58,
+      "totalSpend": 82.6,
+      "totalRevenue": 313.5,
+      "totalOrders": 241,
+      "totalUnits": 257,
+      "organicDailyUnits": 6.82,
+      "organicDailyRevenue": 7.74,
+      "listing": {
+        "roas": 3.7749,
+        "ordersPerKwd": 2.8801,
+        "unitsPerKwd": 3.0994,
+        "totalSpend": 68.4
+      },
+      "search": {
+        "roas": 3.8944,
+        "ordersPerKwd": 3.0986,
+        "unitsPerKwd": 3.169,
+        "totalSpend": 14.2
+      }
+    },
+    "Sanita Cooking and Baking Paper, 10M": {
+      "roas": 2.0558,
+      "ordersPerKwd": 2.0526,
+      "unitsPerKwd": 2.2105,
+      "aov": 1.0015,
+      "activeDays": 48,
+      "totalSpend": 38.0,
+      "totalRevenue": 78.12,
+      "totalOrders": 78,
+      "totalUnits": 84,
+      "organicDailyUnits": 3.54,
+      "organicDailyRevenue": 3.25,
+      "listing": {
+        "roas": 2.0558,
+        "ordersPerKwd": 2.0526,
+        "unitsPerKwd": 2.2105,
+        "totalSpend": 38.0
+      }
+    },
+    "Classic Table Cover, 100x110cm, 2kg": {
+      "roas": 4.9509,
+      "ordersPerKwd": 2.5,
+      "unitsPerKwd": 2.5909,
+      "aov": 1.9804,
+      "activeDays": 33,
+      "totalSpend": 22.0,
+      "totalRevenue": 108.92,
+      "totalOrders": 55,
+      "totalUnits": 57,
+      "organicDailyUnits": 1.01,
+      "organicDailyRevenue": 1.86,
+      "listing": {
+        "roas": 4.9509,
+        "ordersPerKwd": 2.5,
+        "unitsPerKwd": 2.5909,
+        "totalSpend": 22.0
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack Size 4, Large, 8-16 KG, 80 Count": {
+      "roas": 8.7622,
+      "ordersPerKwd": 1.4157,
+      "unitsPerKwd": 1.491,
+      "aov": 6.1895,
+      "activeDays": 56,
+      "totalSpend": 66.4,
+      "totalRevenue": 581.81,
+      "totalOrders": 94,
+      "totalUnits": 99,
+      "organicDailyUnits": 0.75,
+      "organicDailyRevenue": 4.34,
+      "listing": {
+        "roas": 8.2859,
+        "ordersPerKwd": 1.3708,
+        "unitsPerKwd": 1.406,
+        "totalSpend": 56.9
+      },
+      "search": {
+        "roas": 11.6147,
+        "ordersPerKwd": 1.6842,
+        "unitsPerKwd": 2.0,
+        "totalSpend": 9.5
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 6, XX-Large, 16+kg, 52 Pieces": {
+      "roas": 5.4113,
+      "ordersPerKwd": 0.8621,
+      "unitsPerKwd": 0.9004,
+      "aov": 6.2771,
+      "activeDays": 17,
+      "totalSpend": 52.2,
+      "totalRevenue": 282.47,
+      "totalOrders": 45,
+      "totalUnits": 47,
+      "organicDailyUnits": 0.88,
+      "organicDailyRevenue": 5.09,
+      "listing": {
+        "roas": 4.4884,
+        "ordersPerKwd": 0.7045,
+        "unitsPerKwd": 0.75,
+        "totalSpend": 44.0
+      },
+      "search": {
+        "roas": 10.3634,
+        "ordersPerKwd": 1.7073,
+        "unitsPerKwd": 1.7073,
+        "totalSpend": 8.2
+      }
+    },
+    "Freshdays Normal Scented Pantyliners, 72 Pads": {
+      "roas": 2.7315,
+      "ordersPerKwd": 1.3423,
+      "unitsPerKwd": 1.4765,
+      "aov": 2.035,
+      "activeDays": 36,
+      "totalSpend": 29.8,
+      "totalRevenue": 81.4,
+      "totalOrders": 40,
+      "totalUnits": 44,
+      "organicDailyUnits": 1.06,
+      "organicDailyRevenue": 1.81,
+      "listing": {
+        "roas": 2.8332,
+        "ordersPerKwd": 1.3929,
+        "unitsPerKwd": 1.5357,
+        "totalSpend": 28.0
+      },
+      "search": {
+        "roas": 1.15,
+        "ordersPerKwd": 0.5556,
+        "unitsPerKwd": 0.5556,
+        "totalSpend": 1.8
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 5, X-Large, 12-22kg, 74 Count": {
+      "roas": 8.1992,
+      "ordersPerKwd": 1.3392,
+      "unitsPerKwd": 1.416,
+      "aov": 6.1225,
+      "activeDays": 78,
+      "totalSpend": 91.1,
+      "totalRevenue": 746.95,
+      "totalOrders": 122,
+      "totalUnits": 129,
+      "organicDailyUnits": 1.25,
+      "organicDailyRevenue": 7.08,
+      "listing": {
+        "roas": 7.6621,
+        "ordersPerKwd": 1.2517,
+        "unitsPerKwd": 1.3316,
+        "totalSpend": 75.1
+      },
+      "search": {
+        "roas": 10.7206,
+        "ordersPerKwd": 1.75,
+        "unitsPerKwd": 1.8125,
+        "totalSpend": 16.0
+      }
+    },
+    "Sanita Bambi Pants Jumbo Box, Size 6, XX Large, 16+kg, 80 Count": {
+      "roas": 6.246,
+      "ordersPerKwd": 0.7612,
+      "unitsPerKwd": 0.8005,
+      "aov": 8.2059,
+      "activeDays": 64,
+      "totalSpend": 152.4,
+      "totalRevenue": 951.89,
+      "totalOrders": 116,
+      "totalUnits": 122,
+      "organicDailyUnits": 3.31,
+      "organicDailyRevenue": 23.0,
+      "listing": {
+        "roas": 5.7225,
+        "ordersPerKwd": 0.6831,
+        "unitsPerKwd": 0.7267,
+        "totalSpend": 137.6
+      },
+      "search": {
+        "roas": 11.1135,
+        "ordersPerKwd": 1.4865,
+        "unitsPerKwd": 1.4865,
+        "totalSpend": 14.8
+      }
+    },
+    "Sanita Club Garbage Bag, 76x95cm, 50 Gallons, 2x20 Pieces": {
+      "roas": 4.5397,
+      "ordersPerKwd": 2.3243,
+      "unitsPerKwd": 2.5405,
+      "aov": 1.9531,
+      "activeDays": 67,
+      "totalSpend": 74.0,
+      "totalRevenue": 335.94,
+      "totalOrders": 172,
+      "totalUnits": 188,
+      "organicDailyUnits": 1.73,
+      "organicDailyRevenue": 2.92,
+      "listing": {
+        "roas": 3.573,
+        "ordersPerKwd": 1.8717,
+        "unitsPerKwd": 1.9786,
+        "totalSpend": 37.4
+      },
+      "search": {
+        "roas": 5.5276,
+        "ordersPerKwd": 2.7869,
+        "unitsPerKwd": 3.1148,
+        "totalSpend": 36.6
+      }
+    },
+    "Sanita Trash Bags, 8 Gallons, 3 Pieces": {
+      "roas": 4.961,
+      "ordersPerKwd": 2.6129,
+      "unitsPerKwd": 3.0323,
+      "aov": 1.8986,
+      "activeDays": 18,
+      "totalSpend": 31.0,
+      "totalRevenue": 153.79,
+      "totalOrders": 81,
+      "totalUnits": 94,
+      "organicDailyUnits": 3.38,
+      "organicDailyRevenue": 4.84,
+      "listing": {
+        "roas": 5.413,
+        "ordersPerKwd": 2.8261,
+        "unitsPerKwd": 3.2609,
+        "totalSpend": 13.8
+      },
+      "search": {
+        "roas": 4.5983,
+        "ordersPerKwd": 2.4419,
+        "unitsPerKwd": 2.8488,
+        "totalSpend": 17.2
+      }
+    },
+    "Sanita Club 2 Ply Toilet Tissues, 360 Sheets, 10 Rolls": {
+      "roas": 5.7177,
+      "ordersPerKwd": 2.9615,
+      "unitsPerKwd": 3.1923,
+      "aov": 1.9306,
+      "activeDays": 36,
+      "totalSpend": 26.0,
+      "totalRevenue": 148.66,
+      "totalOrders": 77,
+      "totalUnits": 83,
+      "organicDailyUnits": 1.96,
+      "organicDailyRevenue": 3.05,
+      "listing": {
+        "roas": 5.4278,
+        "ordersPerKwd": 2.7778,
+        "unitsPerKwd": 3.0556,
+        "totalSpend": 18.0
+      },
+      "search": {
+        "roas": 6.37,
+        "ordersPerKwd": 3.375,
+        "unitsPerKwd": 3.5,
+        "totalSpend": 8.0
+      }
+    },
+    "Hala White 2Ply Facial Tissues Box, 5x170 Sheets": {
+      "roas": 4.8805,
+      "ordersPerKwd": 3.1974,
+      "unitsPerKwd": 4.5708,
+      "aov": 1.5264,
+      "activeDays": 54,
+      "totalSpend": 46.6,
+      "totalRevenue": 227.43,
+      "totalOrders": 149,
+      "totalUnits": 213,
+      "organicDailyUnits": 42.37,
+      "organicDailyRevenue": 45.32,
+      "listing": {
+        "roas": 4.8805,
+        "ordersPerKwd": 3.1974,
+        "unitsPerKwd": 4.5708,
+        "totalSpend": 46.6
+      }
+    },
+    "Sanita Aluminum Foil, 200 sqft, 1 Roll": {
+      "roas": 6.8184,
+      "ordersPerKwd": 2.6582,
+      "unitsPerKwd": 3.1013,
+      "aov": 2.565,
+      "activeDays": 42,
+      "totalSpend": 15.8,
+      "totalRevenue": 107.73,
+      "totalOrders": 42,
+      "totalUnits": 49,
+      "organicDailyUnits": 0.96,
+      "organicDailyRevenue": 2.19,
+      "listing": {
+        "roas": 6.8184,
+        "ordersPerKwd": 2.6582,
+        "unitsPerKwd": 3.1013,
+        "totalSpend": 15.8
+      }
+    },
+    "Sanita Cling Film, 45cm, 1 Roll": {
+      "roas": 1.5824,
+      "ordersPerKwd": 2.4074,
+      "unitsPerKwd": 2.8241,
+      "aov": 0.6573,
+      "activeDays": 49,
+      "totalSpend": 43.2,
+      "totalRevenue": 68.36,
+      "totalOrders": 104,
+      "totalUnits": 122,
+      "organicDailyUnits": 3.05,
+      "organicDailyRevenue": 1.73,
+      "listing": {
+        "roas": 1.5824,
+        "ordersPerKwd": 2.4074,
+        "unitsPerKwd": 2.8241,
+        "totalSpend": 43.2
+      }
+    },
+    "Sanita Club Everyday 2Ply Facial Tissue Box, 5x130 Sheets": {
+      "roas": 4.6756,
+      "ordersPerKwd": 3.1579,
+      "unitsPerKwd": 4.193,
+      "aov": 1.4806,
+      "activeDays": 72,
+      "totalSpend": 57.0,
+      "totalRevenue": 266.51,
+      "totalOrders": 180,
+      "totalUnits": 239,
+      "organicDailyUnits": 45.97,
+      "organicDailyRevenue": 52.23,
+      "listing": {
+        "roas": 4.5769,
+        "ordersPerKwd": 3.0612,
+        "unitsPerKwd": 4.1429,
+        "totalSpend": 49.0
+      },
+      "search": {
+        "roas": 5.28,
+        "ordersPerKwd": 3.75,
+        "unitsPerKwd": 4.5,
+        "totalSpend": 8.0
+      }
+    },
+    "Fam Maxi Folded Night Sanitary Pads with Wings, 48 Pads": {
+      "roas": 4.2545,
+      "ordersPerKwd": 2.1822,
+      "unitsPerKwd": 2.6945,
+      "aov": 1.9497,
+      "activeDays": 50,
+      "totalSpend": 52.7,
+      "totalRevenue": 224.21,
+      "totalOrders": 115,
+      "totalUnits": 142,
+      "organicDailyUnits": 31.19,
+      "organicDailyRevenue": 47.61,
+      "listing": {
+        "roas": 4.7708,
+        "ordersPerKwd": 2.2819,
+        "unitsPerKwd": 2.9866,
+        "totalSpend": 29.8
+      },
+      "search": {
+        "roas": 3.5825,
+        "ordersPerKwd": 2.0524,
+        "unitsPerKwd": 2.3144,
+        "totalSpend": 22.9
+      }
+    },
+    "Sanita Bouquet 2 Ply Toilet Paper, 200 Sheets, 12 Rolls": {
+      "roas": 5.9566,
+      "ordersPerKwd": 3.1061,
+      "unitsPerKwd": 3.6616,
+      "aov": 1.9177,
+      "activeDays": 51,
+      "totalSpend": 39.6,
+      "totalRevenue": 235.88,
+      "totalOrders": 123,
+      "totalUnits": 145,
+      "organicDailyUnits": 4.41,
+      "organicDailyRevenue": 7.51,
+      "listing": {
+        "roas": 5.9566,
+        "ordersPerKwd": 3.1061,
+        "unitsPerKwd": 3.6616,
+        "totalSpend": 39.6
+      }
+    },
+    "Sanita Premium Aluminum Foil, 37.5sqft, 3 Pieces": {
+      "roas": 3.4125,
+      "ordersPerKwd": 2.6958,
+      "unitsPerKwd": 2.7711,
+      "aov": 1.2659,
+      "activeDays": 59,
+      "totalSpend": 66.4,
+      "totalRevenue": 226.59,
+      "totalOrders": 179,
+      "totalUnits": 184,
+      "organicDailyUnits": 3.09,
+      "organicDailyRevenue": 3.81,
+      "listing": {
+        "roas": 3.4125,
+        "ordersPerKwd": 2.6958,
+        "unitsPerKwd": 2.7711,
+        "totalSpend": 66.4
+      }
+    },
+    "Sanita Gipsy Maxi Roll, 1000 Sheets, 1 Roll": {
+      "roas": 3.2775,
+      "ordersPerKwd": 2.7485,
+      "unitsPerKwd": 3.7719,
+      "aov": 1.1924,
+      "activeDays": 49,
+      "totalSpend": 34.2,
+      "totalRevenue": 112.09,
+      "totalOrders": 94,
+      "totalUnits": 129,
+      "organicDailyUnits": 7.35,
+      "organicDailyRevenue": 6.4,
+      "listing": {
+        "roas": 3.2775,
+        "ordersPerKwd": 2.7485,
+        "unitsPerKwd": 3.7719,
+        "totalSpend": 34.2
+      }
+    },
+    "Sanita Food Storage Bags, No.12, 4 Pieces": {
+      "roas": 2.8146,
+      "ordersPerKwd": 1.8075,
+      "unitsPerKwd": 1.9718,
+      "aov": 1.5571,
+      "activeDays": 58,
+      "totalSpend": 42.6,
+      "totalRevenue": 119.9,
+      "totalOrders": 77,
+      "totalUnits": 84,
+      "organicDailyUnits": 1.35,
+      "organicDailyRevenue": 2.01,
+      "listing": {
+        "roas": 2.8083,
+        "ordersPerKwd": 1.8009,
+        "unitsPerKwd": 1.9668,
+        "totalSpend": 42.2
+      },
+      "search": {
+        "roas": 3.475,
+        "ordersPerKwd": 2.5,
+        "unitsPerKwd": 2.5,
+        "totalSpend": 0.4
+      }
+    },
+    "Sanita Bambi Pants Style Diaper Jumbo Pack, Size 6, XX Large, 16+kg, 40 Count": {
+      "roas": 7.2696,
+      "ordersPerKwd": 1.5811,
+      "unitsPerKwd": 1.7659,
+      "aov": 4.5978,
+      "activeDays": 64,
+      "totalSpend": 97.4,
+      "totalRevenue": 708.06,
+      "totalOrders": 154,
+      "totalUnits": 172,
+      "organicDailyUnits": 2.03,
+      "organicDailyRevenue": 8.85,
+      "listing": {
+        "roas": 6.7301,
+        "ordersPerKwd": 1.4623,
+        "unitsPerKwd": 1.6544,
+        "totalSpend": 67.7
+      },
+      "search": {
+        "roas": 8.4993,
+        "ordersPerKwd": 1.8519,
+        "unitsPerKwd": 2.0202,
+        "totalSpend": 29.7
+      }
+    },
+    "Private Maxi Pocket Night Sanitary Pads, 48 Pads": {
+      "roas": 6.0919,
+      "ordersPerKwd": 2.7273,
+      "unitsPerKwd": 3.445,
+      "aov": 2.2337,
+      "activeDays": 39,
+      "totalSpend": 20.9,
+      "totalRevenue": 127.32,
+      "totalOrders": 57,
+      "totalUnits": 72,
+      "organicDailyUnits": 4.27,
+      "organicDailyRevenue": 7.61,
+      "listing": {
+        "roas": 6.9487,
+        "ordersPerKwd": 3.038,
+        "unitsPerKwd": 3.9241,
+        "totalSpend": 15.8
+      },
+      "search": {
+        "roas": 3.4373,
+        "ordersPerKwd": 1.7647,
+        "unitsPerKwd": 1.9608,
+        "totalSpend": 5.1
+      }
+    },
+    "Sanita Bouquet Kitchen Towel (3+1 Free) Rolls, 3 Ply, 54 sheets": {
+      "roas": 4.0114,
+      "ordersPerKwd": 3.4286,
+      "unitsPerKwd": 3.8571,
+      "aov": 1.17,
+      "activeDays": 9,
+      "totalSpend": 7.0,
+      "totalRevenue": 28.08,
+      "totalOrders": 24,
+      "totalUnits": 27,
+      "organicDailyUnits": 8.49,
+      "organicDailyRevenue": 9.09,
+      "listing": {
+        "roas": 4.0114,
+        "ordersPerKwd": 3.4286,
+        "unitsPerKwd": 3.8571,
+        "totalSpend": 7.0
+      }
+    },
+    "Private Monthly Extra Thin Night Pads, 14 Pads Economical Pack": {
+      "roas": 3.9748,
+      "ordersPerKwd": 2.4921,
+      "unitsPerKwd": 3.9748,
+      "aov": 1.5949,
+      "activeDays": 41,
+      "totalSpend": 31.7,
+      "totalRevenue": 126.0,
+      "totalOrders": 79,
+      "totalUnits": 126,
+      "organicDailyUnits": 6.77,
+      "organicDailyRevenue": 6.64,
+      "listing": {
+        "roas": 4.5133,
+        "ordersPerKwd": 2.7434,
+        "unitsPerKwd": 4.5133,
+        "totalSpend": 22.6
+      },
+      "search": {
+        "roas": 2.6374,
+        "ordersPerKwd": 1.8681,
+        "unitsPerKwd": 2.6374,
+        "totalSpend": 9.1
+      }
+    },
+    "Sanita Bambi Pants Jumbo Box, Size 4, Large, 8-14kg, 100 Count": {
+      "roas": 3.8297,
+      "ordersPerKwd": 0.5161,
+      "unitsPerKwd": 0.5161,
+      "aov": 7.42,
+      "activeDays": 27,
+      "totalSpend": 15.5,
+      "totalRevenue": 59.36,
+      "totalOrders": 8,
+      "totalUnits": 8,
+      "organicDailyUnits": 0.54,
+      "organicDailyRevenue": 3.73,
+      "listing": {
+        "roas": 2.0634,
+        "ordersPerKwd": 0.2679,
+        "unitsPerKwd": 0.2679,
+        "totalSpend": 11.2
+      },
+      "search": {
+        "roas": 8.4302,
+        "ordersPerKwd": 1.1628,
+        "unitsPerKwd": 1.1628,
+        "totalSpend": 4.3
+      }
+    },
+    "Fam Relax Feminine Maternity Pads, 20 Pads": {
+      "roas": 6.4742,
+      "ordersPerKwd": 3.0467,
+      "unitsPerKwd": 6.3636,
+      "aov": 2.125,
+      "activeDays": 46,
+      "totalSpend": 40.7,
+      "totalRevenue": 263.5,
+      "totalOrders": 124,
+      "totalUnits": 259,
+      "organicDailyUnits": 56.48,
+      "organicDailyRevenue": 58.18,
+      "listing": {
+        "roas": 7.5928,
+        "ordersPerKwd": 3.3987,
+        "unitsPerKwd": 7.4837,
+        "totalSpend": 30.6
+      },
+      "search": {
+        "roas": 3.0851,
+        "ordersPerKwd": 1.9802,
+        "unitsPerKwd": 2.9703,
+        "totalSpend": 10.1
+      }
+    },
+    "Private Monthly Extra Thin Super Pads, 16 Pads Economical Pack": {
+      "roas": 2.2802,
+      "ordersPerKwd": 2.0134,
+      "unitsPerKwd": 2.5503,
+      "aov": 1.1325,
+      "activeDays": 32,
+      "totalSpend": 29.8,
+      "totalRevenue": 67.95,
+      "totalOrders": 60,
+      "totalUnits": 76,
+      "organicDailyUnits": 4.89,
+      "organicDailyRevenue": 4.44,
+      "listing": {
+        "roas": 2.181,
+        "ordersPerKwd": 1.8571,
+        "unitsPerKwd": 2.381,
+        "totalSpend": 21.0
+      },
+      "search": {
+        "roas": 2.517,
+        "ordersPerKwd": 2.3864,
+        "unitsPerKwd": 2.9545,
+        "totalSpend": 8.8
+      }
+    },
+    "Private Sanitary Pad Night 24 Pads": {
+      "roas": 3.0927,
+      "ordersPerKwd": 2.1818,
+      "unitsPerKwd": 2.5455,
+      "aov": 1.4175,
+      "activeDays": 20,
+      "totalSpend": 11.0,
+      "totalRevenue": 34.02,
+      "totalOrders": 24,
+      "totalUnits": 28,
+      "organicDailyUnits": 3.53,
+      "organicDailyRevenue": 4.18,
+      "listing": {
+        "roas": 3.2989,
+        "ordersPerKwd": 2.2727,
+        "unitsPerKwd": 2.6136,
+        "totalSpend": 8.8
+      },
+      "search": {
+        "roas": 2.2682,
+        "ordersPerKwd": 1.8182,
+        "unitsPerKwd": 2.2727,
+        "totalSpend": 2.2
+      }
+    },
+    "Sanita Club Kitchen Towels Rolls Value Pack, 5+1 Rolls": {
+      "roas": 3.155,
+      "ordersPerKwd": 3.1679,
+      "unitsPerKwd": 3.4351,
+      "aov": 0.9959,
+      "activeDays": 47,
+      "totalSpend": 26.2,
+      "totalRevenue": 82.66,
+      "totalOrders": 83,
+      "totalUnits": 90,
+      "organicDailyUnits": 4.65,
+      "organicDailyRevenue": 4.05,
+      "listing": {
+        "roas": 3.155,
+        "ordersPerKwd": 3.1679,
+        "unitsPerKwd": 3.4351,
+        "totalSpend": 26.2
+      }
+    },
+    "Sanita Bambi Baby Diapers Super Pack, Size 6, XX Large, 16+kg, 72 Pieces": {
+      "roas": 11.8617,
+      "ordersPerKwd": 1.6121,
+      "unitsPerKwd": 1.7056,
+      "aov": 7.3577,
+      "activeDays": 50,
+      "totalSpend": 42.8,
+      "totalRevenue": 507.68,
+      "totalOrders": 69,
+      "totalUnits": 73,
+      "organicDailyUnits": 2.66,
+      "organicDailyRevenue": 17.45,
+      "listing": {
+        "roas": 11.1867,
+        "ordersPerKwd": 1.5789,
+        "unitsPerKwd": 1.614,
+        "totalSpend": 28.5
+      },
+      "search": {
+        "roas": 13.207,
+        "ordersPerKwd": 1.6783,
+        "unitsPerKwd": 1.8881,
+        "totalSpend": 14.3
+      }
+    },
+    "Sanita Manachef Paper Towels, 6x80 Sheets": {
+      "roas": 6.7557,
+      "ordersPerKwd": 2.5714,
+      "unitsPerKwd": 3.4286,
+      "aov": 2.6272,
+      "activeDays": 15,
+      "totalSpend": 7.0,
+      "totalRevenue": 47.29,
+      "totalOrders": 18,
+      "totalUnits": 24,
+      "organicDailyUnits": 13.91,
+      "organicDailyRevenue": 25.1,
+      "search": {
+        "roas": 6.7557,
+        "ordersPerKwd": 2.5714,
+        "unitsPerKwd": 3.4286,
+        "totalSpend": 7.0
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 3, Medium, 6-11kg, 92 Count": {
+      "roas": 6.6405,
+      "ordersPerKwd": 1.0811,
+      "unitsPerKwd": 1.0811,
+      "aov": 6.1425,
+      "activeDays": 11,
+      "totalSpend": 7.4,
+      "totalRevenue": 49.14,
+      "totalOrders": 8,
+      "totalUnits": 8,
+      "organicDailyUnits": 0.53,
+      "organicDailyRevenue": 3.0,
+      "listing": {
+        "roas": 7.519,
+        "ordersPerKwd": 1.2069,
+        "unitsPerKwd": 1.2069,
+        "totalSpend": 5.8
+      },
+      "search": {
+        "roas": 3.4562,
+        "ordersPerKwd": 0.625,
+        "unitsPerKwd": 0.625,
+        "totalSpend": 1.6
+      }
+    },
+    "Sanita Easy Lock Biodegradable Food Storage Bags, Large, 40 Bags": {
+      "roas": 4.0038,
+      "ordersPerKwd": 1.9231,
+      "unitsPerKwd": 2.5,
+      "aov": 2.082,
+      "activeDays": 16,
+      "totalSpend": 5.2,
+      "totalRevenue": 20.82,
+      "totalOrders": 10,
+      "totalUnits": 13,
+      "organicDailyUnits": 1.28,
+      "organicDailyRevenue": 2.03,
+      "listing": {
+        "roas": 4.0038,
+        "ordersPerKwd": 1.9231,
+        "unitsPerKwd": 2.5,
+        "totalSpend": 5.2
+      }
+    },
+    "Sanita Bambi Baby Diapers Super Pack, Size 4, Large, 8-16kg, 124 Pieces": {
+      "roas": 9.7364,
+      "ordersPerKwd": 1.2903,
+      "unitsPerKwd": 1.3364,
+      "aov": 7.5457,
+      "activeDays": 40,
+      "totalSpend": 21.7,
+      "totalRevenue": 211.28,
+      "totalOrders": 28,
+      "totalUnits": 29,
+      "organicDailyUnits": 1.21,
+      "organicDailyRevenue": 8.0,
+      "listing": {
+        "roas": 10.2681,
+        "ordersPerKwd": 1.4184,
+        "unitsPerKwd": 1.4184,
+        "totalSpend": 14.1
+      },
+      "search": {
+        "roas": 8.75,
+        "ordersPerKwd": 1.0526,
+        "unitsPerKwd": 1.1842,
+        "totalSpend": 7.6
+      }
+    },
+    "Sanita Bambi Baby Diapers Super Pack, Size 5, X-Large, 12-22kg, 108 Pieces": {
+      "roas": 9.5075,
+      "ordersPerKwd": 1.2897,
+      "unitsPerKwd": 1.369,
+      "aov": 7.372,
+      "activeDays": 53,
+      "totalSpend": 50.4,
+      "totalRevenue": 479.18,
+      "totalOrders": 65,
+      "totalUnits": 69,
+      "organicDailyUnits": 2.67,
+      "organicDailyRevenue": 17.61,
+      "listing": {
+        "roas": 8.5008,
+        "ordersPerKwd": 1.1717,
+        "unitsPerKwd": 1.2534,
+        "totalSpend": 36.7
+      },
+      "search": {
+        "roas": 12.2044,
+        "ordersPerKwd": 1.6058,
+        "unitsPerKwd": 1.6788,
+        "totalSpend": 13.7
+      }
+    },
+    "Fam Maxi Super Classic Sanitary Pad with Wings, 40 Pads": {
+      "roas": 3.2767,
+      "ordersPerKwd": 2.1802,
+      "unitsPerKwd": 2.6744,
+      "aov": 1.5029,
+      "activeDays": 41,
+      "totalSpend": 34.4,
+      "totalRevenue": 112.72,
+      "totalOrders": 75,
+      "totalUnits": 92,
+      "organicDailyUnits": 15.01,
+      "organicDailyRevenue": 18.12,
+      "listing": {
+        "roas": 3.628,
+        "ordersPerKwd": 2.5275,
+        "unitsPerKwd": 2.967,
+        "totalSpend": 18.2
+      },
+      "search": {
+        "roas": 2.8821,
+        "ordersPerKwd": 1.7901,
+        "unitsPerKwd": 2.3457,
+        "totalSpend": 16.2
+      }
+    },
+    "Sanita Club Maxi Roll, 500m, 2 Rolls": {
+      "roas": 8.0667,
+      "ordersPerKwd": 3.3333,
+      "unitsPerKwd": 3.7879,
+      "aov": 2.42,
+      "activeDays": 23,
+      "totalSpend": 6.6,
+      "totalRevenue": 53.24,
+      "totalOrders": 22,
+      "totalUnits": 25,
+      "organicDailyUnits": 1.8,
+      "organicDailyRevenue": 3.51,
+      "listing": {
+        "roas": 8.0667,
+        "ordersPerKwd": 3.3333,
+        "unitsPerKwd": 3.7879,
+        "totalSpend": 6.6
+      }
+    },
+    "Sanita Cling Film Eco Pack, 45cm, 1 Roll": {
+      "roas": 2.74,
+      "ordersPerKwd": 1.0,
+      "unitsPerKwd": 1.0,
+      "aov": 2.74,
+      "activeDays": 2,
+      "totalSpend": 1.0,
+      "totalRevenue": 2.74,
+      "totalOrders": 1,
+      "totalUnits": 1,
+      "organicDailyUnits": 2.14,
+      "organicDailyRevenue": 4.6,
+      "listing": {
+        "roas": 2.74,
+        "ordersPerKwd": 1.0,
+        "unitsPerKwd": 1.0,
+        "totalSpend": 1.0
+      }
+    },
+    "Sanita Charm 100% Cotton Round Pads, 3x80 Pads": {
+      "roas": 2.8566,
+      "ordersPerKwd": 1.8878,
+      "unitsPerKwd": 2.07,
+      "aov": 1.5132,
+      "activeDays": 78,
+      "totalSpend": 137.2,
+      "totalRevenue": 391.92,
+      "totalOrders": 259,
+      "totalUnits": 284,
+      "organicDailyUnits": 1.49,
+      "organicDailyRevenue": 2.05,
+      "listing": {
+        "roas": 2.4143,
+        "ordersPerKwd": 1.6302,
+        "unitsPerKwd": 1.7495,
+        "totalSpend": 100.6
+      },
+      "search": {
+        "roas": 4.0721,
+        "ordersPerKwd": 2.5956,
+        "unitsPerKwd": 2.9508,
+        "totalSpend": 36.6
+      }
+    },
+    "Private Maxi Pocket Super Sanitary Pads, 50 Pads": {
+      "roas": 4.5894,
+      "ordersPerKwd": 2.4403,
+      "unitsPerKwd": 2.9443,
+      "aov": 1.8807,
+      "activeDays": 39,
+      "totalSpend": 37.7,
+      "totalRevenue": 173.02,
+      "totalOrders": 92,
+      "totalUnits": 111,
+      "organicDailyUnits": 5.06,
+      "organicDailyRevenue": 8.24,
+      "listing": {
+        "roas": 4.71,
+        "ordersPerKwd": 2.5185,
+        "unitsPerKwd": 3.0,
+        "totalSpend": 27.0
+      },
+      "search": {
+        "roas": 4.285,
+        "ordersPerKwd": 2.243,
+        "unitsPerKwd": 2.8037,
+        "totalSpend": 10.7
+      }
+    },
+    "Sanita Club 2ply Facial Tissues, 5x170 Sheets": {
+      "roas": 5.9333,
+      "ordersPerKwd": 2.619,
+      "unitsPerKwd": 3.6905,
+      "aov": 2.2655,
+      "activeDays": 27,
+      "totalSpend": 8.4,
+      "totalRevenue": 49.84,
+      "totalOrders": 22,
+      "totalUnits": 31,
+      "organicDailyUnits": 15.33,
+      "organicDailyRevenue": 24.95,
+      "listing": {
+        "roas": 5.9333,
+        "ordersPerKwd": 2.619,
+        "unitsPerKwd": 3.6905,
+        "totalSpend": 8.4
+      }
+    },
+    "Sanita Bouquet Kitchen Towel, 180 Sheets, 3 Rolls": {
+      "roas": 4.7438,
+      "ordersPerKwd": 2.625,
+      "unitsPerKwd": 3.0,
+      "aov": 1.8071,
+      "activeDays": 28,
+      "totalSpend": 8.0,
+      "totalRevenue": 37.95,
+      "totalOrders": 21,
+      "totalUnits": 24,
+      "organicDailyUnits": 1.99,
+      "organicDailyRevenue": 3.03,
+      "listing": {
+        "roas": 4.7438,
+        "ordersPerKwd": 2.625,
+        "unitsPerKwd": 3.0,
+        "totalSpend": 8.0
+      }
+    },
+    "Sanita Bouquet Premium 3Ply Kitchen Towel, 54 Sheets, 3+1 Rolls": {
+      "roas": 4.0817,
+      "ordersPerKwd": 3.0244,
+      "unitsPerKwd": 3.6341,
+      "aov": 1.3496,
+      "activeDays": 60,
+      "totalSpend": 41.0,
+      "totalRevenue": 167.35,
+      "totalOrders": 124,
+      "totalUnits": 149,
+      "organicDailyUnits": 4.29,
+      "organicDailyRevenue": 5.13,
+      "listing": {
+        "roas": 4.0817,
+        "ordersPerKwd": 3.0244,
+        "unitsPerKwd": 3.6341,
+        "totalSpend": 41.0
+      }
+    },
+    "Fam Maxi Folded Night Sanitary Pads with Wings, 24 Pads": {
+      "roas": 2.575,
+      "ordersPerKwd": 2.5,
+      "unitsPerKwd": 2.5,
+      "aov": 1.03,
+      "activeDays": 2,
+      "totalSpend": 0.4,
+      "totalRevenue": 1.03,
+      "totalOrders": 1,
+      "totalUnits": 1,
+      "organicDailyUnits": 6.49,
+      "organicDailyRevenue": 7.89,
+      "listing": {
+        "roas": 2.575,
+        "ordersPerKwd": 2.5,
+        "unitsPerKwd": 2.5,
+        "totalSpend": 0.4
+      }
+    },
+    "Sanita Charm 100% Cotton Earbuds, 3x200 Count": {
+      "roas": 1.4381,
+      "ordersPerKwd": 1.1511,
+      "unitsPerKwd": 1.3669,
+      "aov": 1.2494,
+      "activeDays": 26,
+      "totalSpend": 13.9,
+      "totalRevenue": 19.99,
+      "totalOrders": 16,
+      "totalUnits": 19,
+      "organicDailyUnits": 0.92,
+      "organicDailyRevenue": 1.03,
+      "listing": {
+        "roas": 1.2086,
+        "ordersPerKwd": 0.9877,
+        "unitsPerKwd": 1.1111,
+        "totalSpend": 8.1
+      },
+      "search": {
+        "roas": 1.7586,
+        "ordersPerKwd": 1.3793,
+        "unitsPerKwd": 1.7241,
+        "totalSpend": 5.8
+      }
+    },
+    "Sanita Club Garbage Bags, Xx-Large, 125x105cm, 2x10 Bags": {
+      "roas": 4.0536,
+      "ordersPerKwd": 1.7857,
+      "unitsPerKwd": 1.7857,
+      "aov": 2.27,
+      "activeDays": 7,
+      "totalSpend": 2.8,
+      "totalRevenue": 11.35,
+      "totalOrders": 5,
+      "totalUnits": 5,
+      "organicDailyUnits": 0.6,
+      "organicDailyRevenue": 1.29,
+      "listing": {
+        "roas": 1.4187,
+        "ordersPerKwd": 0.625,
+        "unitsPerKwd": 0.625,
+        "totalSpend": 1.6
+      },
+      "search": {
+        "roas": 7.5667,
+        "ordersPerKwd": 3.3333,
+        "unitsPerKwd": 3.3333,
+        "totalSpend": 1.2
+      }
+    },
+    "Sanita Paper Cups, 4oz, 50 Pieces x 2": {
+      "roas": 0.9882,
+      "ordersPerKwd": 0.6473,
+      "unitsPerKwd": 0.7143,
+      "aov": 1.5266,
+      "activeDays": 29,
+      "totalSpend": 44.8,
+      "totalRevenue": 44.27,
+      "totalOrders": 29,
+      "totalUnits": 32,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 0.9225,
+        "ordersPerKwd": 0.604,
+        "unitsPerKwd": 0.6376,
+        "totalSpend": 29.8
+      },
+      "search": {
+        "roas": 1.1187,
+        "ordersPerKwd": 0.7333,
+        "unitsPerKwd": 0.8667,
+        "totalSpend": 15.0
+      }
+    },
+    "Sanita Charm White Cotton Balls, 100 Pieces": {
+      "roas": 1.4308,
+      "ordersPerKwd": 1.9231,
+      "unitsPerKwd": 2.3077,
+      "aov": 0.744,
+      "activeDays": 21,
+      "totalSpend": 10.4,
+      "totalRevenue": 14.88,
+      "totalOrders": 20,
+      "totalUnits": 24,
+      "organicDailyUnits": 2.27,
+      "organicDailyRevenue": 1.45,
+      "listing": {
+        "roas": 1.1273,
+        "ordersPerKwd": 1.3636,
+        "unitsPerKwd": 1.8182,
+        "totalSpend": 4.4
+      },
+      "search": {
+        "roas": 1.6533,
+        "ordersPerKwd": 2.3333,
+        "unitsPerKwd": 2.6667,
+        "totalSpend": 6.0
+      }
+    },
+    "Sanita Cooking and Baking Paper, 10M x 2": {
+      "roas": 3.0183,
+      "ordersPerKwd": 1.8293,
+      "unitsPerKwd": 1.8902,
+      "aov": 1.65,
+      "activeDays": 25,
+      "totalSpend": 16.4,
+      "totalRevenue": 49.5,
+      "totalOrders": 30,
+      "totalUnits": 31,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 3.0183,
+        "ordersPerKwd": 1.8293,
+        "unitsPerKwd": 1.8902,
+        "totalSpend": 16.4
+      }
+    },
+    "Fam Maxi Folded Night Sanitary Pads with Wings, 48 Pads x 2": {
+      "roas": 7.2262,
+      "ordersPerKwd": 2.1584,
+      "unitsPerKwd": 2.3421,
+      "aov": 3.3479,
+      "activeDays": 24,
+      "totalSpend": 43.55,
+      "totalRevenue": 314.7,
+      "totalOrders": 94,
+      "totalUnits": 102,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 7.102,
+        "ordersPerKwd": 2.0888,
+        "unitsPerKwd": 2.2809,
+        "totalSpend": 41.65
+      },
+      "search": {
+        "roas": 9.9474,
+        "ordersPerKwd": 3.6842,
+        "unitsPerKwd": 3.6842,
+        "totalSpend": 1.9
+      }
+    },
+    "Sanita Facial Tissue Bundle": {
+      "roas": 5.8178,
+      "ordersPerKwd": 1.9068,
+      "unitsPerKwd": 2.161,
+      "aov": 3.0511,
+      "activeDays": 31,
+      "totalSpend": 47.2,
+      "totalRevenue": 274.6,
+      "totalOrders": 90,
+      "totalUnits": 102,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 5.8178,
+        "ordersPerKwd": 1.9068,
+        "unitsPerKwd": 2.161,
+        "totalSpend": 47.2
+      }
+    },
+    "Sanita Tissue Bundle": {
+      "roas": 5.7888,
+      "ordersPerKwd": 1.5461,
+      "unitsPerKwd": 1.5789,
+      "aov": 3.7443,
+      "activeDays": 27,
+      "totalSpend": 30.4,
+      "totalRevenue": 175.98,
+      "totalOrders": 47,
+      "totalUnits": 48,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 5.414,
+        "ordersPerKwd": 1.4019,
+        "unitsPerKwd": 1.4019,
+        "totalSpend": 21.4
+      },
+      "search": {
+        "roas": 6.68,
+        "ordersPerKwd": 1.8889,
+        "unitsPerKwd": 2.0,
+        "totalSpend": 9.0
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack Size 4, Large, 8-16 KG, 80 Count x 2": {
+      "roas": 0.0,
+      "ordersPerKwd": 0.0,
+      "unitsPerKwd": 0.0,
+      "aov": 0,
+      "activeDays": 8,
+      "totalSpend": 3.4,
+      "totalRevenue": 0.0,
+      "totalOrders": 0,
+      "totalUnits": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 0.0,
+        "ordersPerKwd": 0.0,
+        "unitsPerKwd": 0.0,
+        "totalSpend": 3.2
+      },
+      "search": {
+        "roas": 0.0,
+        "ordersPerKwd": 0.0,
+        "unitsPerKwd": 0.0,
+        "totalSpend": 0.2
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 6, XX-Large, 16+kg, 52 Pieces x 2": {
+      "roas": 0.0,
+      "ordersPerKwd": 0.0,
+      "unitsPerKwd": 0.0,
+      "aov": 0,
+      "activeDays": 5,
+      "totalSpend": 1.2,
+      "totalRevenue": 0.0,
+      "totalOrders": 0,
+      "totalUnits": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 0.0,
+        "ordersPerKwd": 0.0,
+        "unitsPerKwd": 0.0,
+        "totalSpend": 1.2
+      }
+    },
+    "Freshdays Natural Cotton Feel Long Scented Daily Pantyliners, 72 Pantyliners Mega Pack x 2": {
+      "roas": 4.3351,
+      "ordersPerKwd": 1.1702,
+      "unitsPerKwd": 1.1702,
+      "aov": 3.7045,
+      "activeDays": 16,
+      "totalSpend": 9.4,
+      "totalRevenue": 40.75,
+      "totalOrders": 11,
+      "totalUnits": 11,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 4.4293,
+        "ordersPerKwd": 1.1957,
+        "unitsPerKwd": 1.1957,
+        "totalSpend": 9.2
+      },
+      "search": {
+        "roas": 0.0,
+        "ordersPerKwd": 0.0,
+        "unitsPerKwd": 0.0,
+        "totalSpend": 0.2
+      }
+    },
+    "Private Maxi Pocket Night Feminine Pads, 24 Pieces": {
+      "roas": 3.5053,
+      "ordersPerKwd": 2.34,
+      "unitsPerKwd": 2.6691,
+      "aov": 1.498,
+      "activeDays": 36,
+      "totalSpend": 27.35,
+      "totalRevenue": 95.87,
+      "totalOrders": 64,
+      "totalUnits": 73,
+      "organicDailyUnits": 2.59,
+      "organicDailyRevenue": 3.55,
+      "listing": {
+        "roas": 3.4081,
+        "ordersPerKwd": 2.3223,
+        "unitsPerKwd": 2.5592,
+        "totalSpend": 21.1
+      },
+      "search": {
+        "roas": 3.8336,
+        "ordersPerKwd": 2.4,
+        "unitsPerKwd": 3.04,
+        "totalSpend": 6.25
+      }
+    },
+    "Sanita Tie Bag Economy Bio 30 Gallon 20*2 Medium Bags Per Roll": {
+      "roas": 2.4111,
+      "ordersPerKwd": 1.1111,
+      "unitsPerKwd": 1.2222,
+      "aov": 2.17,
+      "activeDays": 23,
+      "totalSpend": 9.0,
+      "totalRevenue": 21.7,
+      "totalOrders": 10,
+      "totalUnits": 11,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 1.2031,
+        "ordersPerKwd": 0.625,
+        "unitsPerKwd": 0.625,
+        "totalSpend": 6.4
+      },
+      "search": {
+        "roas": 5.3846,
+        "ordersPerKwd": 2.3077,
+        "unitsPerKwd": 2.6923,
+        "totalSpend": 2.6
+      }
+    },
+    "Sanita Club Biodegradable Garbage Bags, 70 Gallons, 2 Rolls": {
+      "roas": 6.0505,
+      "ordersPerKwd": 2.7027,
+      "unitsPerKwd": 2.8829,
+      "aov": 2.2387,
+      "activeDays": 27,
+      "totalSpend": 22.2,
+      "totalRevenue": 134.32,
+      "totalOrders": 60,
+      "totalUnits": 64,
+      "organicDailyUnits": 0.9,
+      "organicDailyRevenue": 2.02,
+      "listing": {
+        "roas": 5.0693,
+        "ordersPerKwd": 2.3684,
+        "unitsPerKwd": 2.4561,
+        "totalSpend": 11.4
+      },
+      "search": {
+        "roas": 7.0861,
+        "ordersPerKwd": 3.0556,
+        "unitsPerKwd": 3.3333,
+        "totalSpend": 10.8
+      }
+    },
+    "Sanita Food Wrap Bundle": {
+      "roas": 5.0012,
+      "ordersPerKwd": 1.2805,
+      "unitsPerKwd": 1.2805,
+      "aov": 3.9057,
+      "activeDays": 20,
+      "totalSpend": 16.4,
+      "totalRevenue": 82.02,
+      "totalOrders": 21,
+      "totalUnits": 21,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 5.0012,
+        "ordersPerKwd": 1.2805,
+        "unitsPerKwd": 1.2805,
+        "totalSpend": 16.4
+      }
+    },
+    "Private Maxi Pocket Super Sanitary Pads, 30 Pads x 2": {
+      "roas": 3.5714,
+      "ordersPerKwd": 1.4286,
+      "unitsPerKwd": 1.4286,
+      "aov": 2.5,
+      "activeDays": 3,
+      "totalSpend": 1.4,
+      "totalRevenue": 5.0,
+      "totalOrders": 2,
+      "totalUnits": 2,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 3.5714,
+        "ordersPerKwd": 1.4286,
+        "unitsPerKwd": 1.4286,
+        "totalSpend": 1.4
+      }
+    },
+    "Private Sanitary Pad Night 24 Pads x 2": {
+      "roas": 5.5681,
+      "ordersPerKwd": 2.1945,
+      "unitsPerKwd": 2.2943,
+      "aov": 2.5373,
+      "activeDays": 23,
+      "totalSpend": 20.05,
+      "totalRevenue": 111.64,
+      "totalOrders": 44,
+      "totalUnits": 46,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 5.5681,
+        "ordersPerKwd": 2.1945,
+        "unitsPerKwd": 2.2943,
+        "totalSpend": 20.05
+      }
+    },
+    "Sanita Charm 100% Cotton Balls, 200 Balls": {
+      "roas": 2.1194,
+      "ordersPerKwd": 1.7097,
+      "unitsPerKwd": 2.3548,
+      "aov": 1.2396,
+      "activeDays": 21,
+      "totalSpend": 31.0,
+      "totalRevenue": 65.7,
+      "totalOrders": 53,
+      "totalUnits": 73,
+      "organicDailyUnits": 1.41,
+      "organicDailyRevenue": 1.28,
+      "listing": {
+        "roas": 1.0613,
+        "ordersPerKwd": 1.1875,
+        "unitsPerKwd": 1.1875,
+        "totalSpend": 16.0
+      },
+      "search": {
+        "roas": 3.248,
+        "ordersPerKwd": 2.2667,
+        "unitsPerKwd": 3.6,
+        "totalSpend": 15.0
+      }
+    },
+    "Sanita Club 2Ply Toilet Tissue Rolls, 200 Sheets, 8+2 Rolls": {
+      "roas": 4.6142,
+      "ordersPerKwd": 3.4848,
+      "unitsPerKwd": 4.0,
+      "aov": 1.3241,
+      "activeDays": 24,
+      "totalSpend": 33.0,
+      "totalRevenue": 152.27,
+      "totalOrders": 115,
+      "totalUnits": 132,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 3.9763,
+        "ordersPerKwd": 3.0,
+        "unitsPerKwd": 3.4375,
+        "totalSpend": 16.0
+      },
+      "search": {
+        "roas": 5.2147,
+        "ordersPerKwd": 3.9412,
+        "unitsPerKwd": 4.5294,
+        "totalSpend": 17.0
+      }
+    },
+    "Sanita Paper Cups 4oz, 2x50 Cups": {
+      "roas": 1.9223,
+      "ordersPerKwd": 1.0769,
+      "unitsPerKwd": 1.3077,
+      "aov": 1.785,
+      "activeDays": 15,
+      "totalSpend": 13.0,
+      "totalRevenue": 24.99,
+      "totalOrders": 14,
+      "totalUnits": 17,
+      "organicDailyUnits": 0.77,
+      "organicDailyRevenue": 1.18,
+      "listing": {
+        "roas": 1.3237,
+        "ordersPerKwd": 0.7895,
+        "unitsPerKwd": 0.9211,
+        "totalSpend": 7.6
+      },
+      "search": {
+        "roas": 2.7648,
+        "ordersPerKwd": 1.4815,
+        "unitsPerKwd": 1.8519,
+        "totalSpend": 5.4
+      }
+    },
+    "Sanita Cooking & Baking Paper (10mx30cm), 1 Piece": {
+      "roas": 2.18,
+      "ordersPerKwd": 2.2222,
+      "unitsPerKwd": 2.4444,
+      "aov": 0.981,
+      "activeDays": 12,
+      "totalSpend": 9.0,
+      "totalRevenue": 19.62,
+      "totalOrders": 20,
+      "totalUnits": 22,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 2.18,
+        "ordersPerKwd": 2.2222,
+        "unitsPerKwd": 2.4444,
+        "totalSpend": 9.0
+      }
+    },
+    "Hala White Facial Tissues 2ply, 5x170 tissues": {
+      "roas": 5.8763,
+      "ordersPerKwd": 3.8158,
+      "unitsPerKwd": 5.2961,
+      "aov": 1.54,
+      "activeDays": 22,
+      "totalSpend": 30.4,
+      "totalRevenue": 178.64,
+      "totalOrders": 116,
+      "totalUnits": 161,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 5.2463,
+        "ordersPerKwd": 3.4328,
+        "unitsPerKwd": 4.7761,
+        "totalSpend": 13.4
+      },
+      "search": {
+        "roas": 6.3729,
+        "ordersPerKwd": 4.1176,
+        "unitsPerKwd": 5.7059,
+        "totalSpend": 17.0
+      }
+    },
+    "Freshdays Daily Comfort Long Pantyliners, 72 Pieces": {
+      "roas": 6.4009,
+      "ordersPerKwd": 2.9418,
+      "unitsPerKwd": 3.337,
+      "aov": 2.1758,
+      "activeDays": 30,
+      "totalSpend": 45.55,
+      "totalRevenue": 291.56,
+      "totalOrders": 134,
+      "totalUnits": 152,
+      "organicDailyUnits": 10.19,
+      "organicDailyRevenue": 19.97,
+      "listing": {
+        "roas": 6.5781,
+        "ordersPerKwd": 3.0,
+        "unitsPerKwd": 3.4286,
+        "totalSpend": 42.0
+      },
+      "search": {
+        "roas": 4.3042,
+        "ordersPerKwd": 2.2535,
+        "unitsPerKwd": 2.2535,
+        "totalSpend": 3.55
+      }
+    },
+    "Sanita Club Biodegradable Garbage Bags, 70 Gallons, 2 Rolls, x 2": {
+      "roas": 6.2046,
+      "ordersPerKwd": 1.6993,
+      "unitsPerKwd": 1.6993,
+      "aov": 3.6512,
+      "activeDays": 17,
+      "totalSpend": 30.6,
+      "totalRevenue": 189.86,
+      "totalOrders": 52,
+      "totalUnits": 52,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 6.518,
+        "ordersPerKwd": 1.8,
+        "unitsPerKwd": 1.8,
+        "totalSpend": 15.0
+      },
+      "search": {
+        "roas": 5.9032,
+        "ordersPerKwd": 1.6026,
+        "unitsPerKwd": 1.6026,
+        "totalSpend": 15.6
+      }
+    },
+    "Sanita Gipsy Maxi Kitchen Towel Roll, 1000 tissues": {
+      "roas": 4.5529,
+      "ordersPerKwd": 3.4314,
+      "unitsPerKwd": 5.0,
+      "aov": 1.3269,
+      "activeDays": 13,
+      "totalSpend": 10.2,
+      "totalRevenue": 46.44,
+      "totalOrders": 35,
+      "totalUnits": 51,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 4.5529,
+        "ordersPerKwd": 3.4314,
+        "unitsPerKwd": 5.0,
+        "totalSpend": 10.2
+      }
+    },
+    "Private Natural Cotton Feel Super Pads with Wings, 50 Pieces": {
+      "roas": 4.4951,
+      "ordersPerKwd": 2.2478,
+      "unitsPerKwd": 2.7089,
+      "aov": 1.9997,
+      "activeDays": 24,
+      "totalSpend": 34.7,
+      "totalRevenue": 155.98,
+      "totalOrders": 78,
+      "totalUnits": 94,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 4.5858,
+        "ordersPerKwd": 2.2479,
+        "unitsPerKwd": 2.7769,
+        "totalSpend": 30.25
+      },
+      "search": {
+        "roas": 3.8787,
+        "ordersPerKwd": 2.2472,
+        "unitsPerKwd": 2.2472,
+        "totalSpend": 4.45
+      }
+    },
+    "Sanita Easy Lock Oxo-Biodegradable Large Storage Bags (26.8x27.3cm), 40 Pieces": {
+      "roas": 3.1592,
+      "ordersPerKwd": 1.7347,
+      "unitsPerKwd": 1.8367,
+      "aov": 1.8212,
+      "activeDays": 19,
+      "totalSpend": 9.8,
+      "totalRevenue": 30.96,
+      "totalOrders": 17,
+      "totalUnits": 18,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 3.0677,
+        "ordersPerKwd": 1.6667,
+        "unitsPerKwd": 1.7708,
+        "totalSpend": 9.6
+      },
+      "search": {
+        "roas": 7.55,
+        "ordersPerKwd": 5.0,
+        "unitsPerKwd": 5.0,
+        "totalSpend": 0.2
+      }
+    },
+    "Fam Folded Night Pads with Wings, 24 Pieces": {
+      "roas": 2.2182,
+      "ordersPerKwd": 1.8182,
+      "unitsPerKwd": 1.8182,
+      "aov": 1.22,
+      "activeDays": 5,
+      "totalSpend": 1.65,
+      "totalRevenue": 3.66,
+      "totalOrders": 3,
+      "totalUnits": 3,
+      "organicDailyUnits": 8.26,
+      "organicDailyRevenue": 9.23,
+      "listing": {
+        "roas": 0.0,
+        "ordersPerKwd": 0.0,
+        "unitsPerKwd": 0.0,
+        "totalSpend": 0.4
+      },
+      "search": {
+        "roas": 2.928,
+        "ordersPerKwd": 2.4,
+        "unitsPerKwd": 2.4,
+        "totalSpend": 1.25
+      }
+    },
+    "Sanita Paper Cups 7oz, 2x50 Cups": {
+      "roas": 1.3204,
+      "ordersPerKwd": 1.4198,
+      "unitsPerKwd": 1.6667,
+      "aov": 0.93,
+      "activeDays": 11,
+      "totalSpend": 16.2,
+      "totalRevenue": 21.39,
+      "totalOrders": 23,
+      "totalUnits": 27,
+      "organicDailyUnits": 1.54,
+      "organicDailyRevenue": 1.28,
+      "listing": {
+        "roas": 1.1807,
+        "ordersPerKwd": 1.3636,
+        "unitsPerKwd": 1.4773,
+        "totalSpend": 8.8
+      },
+      "search": {
+        "roas": 1.4865,
+        "ordersPerKwd": 1.4865,
+        "unitsPerKwd": 1.8919,
+        "totalSpend": 7.4
+      }
+    },
+    "Sanita Club Facial Tissues 2ply, 5x170 tissues": {
+      "roas": 7.7728,
+      "ordersPerKwd": 3.3333,
+      "unitsPerKwd": 4.8246,
+      "aov": 2.3318,
+      "activeDays": 16,
+      "totalSpend": 11.4,
+      "totalRevenue": 88.61,
+      "totalOrders": 38,
+      "totalUnits": 55,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 6.298,
+        "ordersPerKwd": 2.6,
+        "unitsPerKwd": 3.8,
+        "totalSpend": 5.0
+      },
+      "search": {
+        "roas": 8.925,
+        "ordersPerKwd": 3.9062,
+        "unitsPerKwd": 5.625,
+        "totalSpend": 6.4
+      }
+    },
+    "Private Natural Cotton Feel Night Pads with Wings, 48 Pieces": {
+      "roas": 4.7113,
+      "ordersPerKwd": 2.1675,
+      "unitsPerKwd": 2.4631,
+      "aov": 2.1736,
+      "activeDays": 14,
+      "totalSpend": 10.15,
+      "totalRevenue": 47.82,
+      "totalOrders": 22,
+      "totalUnits": 25,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 3.9436,
+        "ordersPerKwd": 1.9632,
+        "unitsPerKwd": 2.0859,
+        "totalSpend": 8.15
+      },
+      "search": {
+        "roas": 7.84,
+        "ordersPerKwd": 3.0,
+        "unitsPerKwd": 4.0,
+        "totalSpend": 2.0
+      }
+    },
+    "Fam Folded Night Pads with Wings, 48 Pieces": {
+      "roas": 4.8489,
+      "ordersPerKwd": 2.5806,
+      "unitsPerKwd": 2.9811,
+      "aov": 1.879,
+      "activeDays": 33,
+      "totalSpend": 44.95,
+      "totalRevenue": 217.96,
+      "totalOrders": 116,
+      "totalUnits": 134,
+      "organicDailyUnits": 32.09,
+      "organicDailyRevenue": 54.05,
+      "listing": {
+        "roas": 5.3259,
+        "ordersPerKwd": 2.6981,
+        "unitsPerKwd": 3.2548,
+        "totalSpend": 23.35
+      },
+      "search": {
+        "roas": 4.3333,
+        "ordersPerKwd": 2.4537,
+        "unitsPerKwd": 2.6852,
+        "totalSpend": 21.6
+      }
+    },
+    "Sanita Bouquet Soft & Quilted Toilet Rolls, 12x200 tissues": {
+      "roas": 8.1612,
+      "ordersPerKwd": 3.7234,
+      "unitsPerKwd": 4.3085,
+      "aov": 2.1919,
+      "activeDays": 24,
+      "totalSpend": 18.8,
+      "totalRevenue": 153.43,
+      "totalOrders": 70,
+      "totalUnits": 81,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 7.5131,
+        "ordersPerKwd": 3.5714,
+        "unitsPerKwd": 3.9286,
+        "totalSpend": 8.4
+      },
+      "search": {
+        "roas": 8.6846,
+        "ordersPerKwd": 3.8462,
+        "unitsPerKwd": 4.6154,
+        "totalSpend": 10.4
+      }
+    },
+    "Sanita Aluminum Foil Strong & Economical Pack 2 x 450 mm": {
+      "roas": 7.4,
+      "ordersPerKwd": 1.6667,
+      "unitsPerKwd": 1.6667,
+      "aov": 4.44,
+      "activeDays": 6,
+      "totalSpend": 1.8,
+      "totalRevenue": 13.32,
+      "totalOrders": 3,
+      "totalUnits": 3,
+      "organicDailyUnits": 0.37,
+      "organicDailyRevenue": 1.5,
+      "listing": {
+        "roas": 7.4,
+        "ordersPerKwd": 1.6667,
+        "unitsPerKwd": 1.6667,
+        "totalSpend": 1.8
+      }
+    },
+    "Sanita High Thickness Paper Cups, 9oz, 50 Cups x 2": {
+      "roas": 1.6121,
+      "ordersPerKwd": 1.2621,
+      "unitsPerKwd": 1.3107,
+      "aov": 1.2773,
+      "activeDays": 13,
+      "totalSpend": 20.6,
+      "totalRevenue": 33.21,
+      "totalOrders": 26,
+      "totalUnits": 27,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 1.6121,
+        "ordersPerKwd": 1.2621,
+        "unitsPerKwd": 1.3107,
+        "totalSpend": 20.6
+      }
+    },
+    "Sanita Baking Paper 2Pcs,  x 2": {
+      "roas": 1.6833,
+      "ordersPerKwd": 0.8333,
+      "unitsPerKwd": 0.8333,
+      "aov": 2.02,
+      "activeDays": 9,
+      "totalSpend": 4.8,
+      "totalRevenue": 8.08,
+      "totalOrders": 4,
+      "totalUnits": 4,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 1.6833,
+        "ordersPerKwd": 0.8333,
+        "unitsPerKwd": 0.8333,
+        "totalSpend": 4.8
+      }
+    },
+    "Fam Relax Maternity Incontinence Pads, 20 Pieces": {
+      "roas": 5.0034,
+      "ordersPerKwd": 2.9684,
+      "unitsPerKwd": 5.1095,
+      "aov": 1.6856,
+      "activeDays": 22,
+      "totalSpend": 20.55,
+      "totalRevenue": 102.82,
+      "totalOrders": 61,
+      "totalUnits": 105,
+      "organicDailyUnits": 66.74,
+      "organicDailyRevenue": 64.5,
+      "listing": {
+        "roas": 5.2707,
+        "ordersPerKwd": 3.0284,
+        "unitsPerKwd": 5.3628,
+        "totalSpend": 15.85
+      },
+      "search": {
+        "roas": 4.1021,
+        "ordersPerKwd": 2.766,
+        "unitsPerKwd": 4.2553,
+        "totalSpend": 4.7
+      }
+    },
+    "Fam Classic Super Pads with Wings, 40 Pieces": {
+      "roas": 3.6777,
+      "ordersPerKwd": 2.5118,
+      "unitsPerKwd": 3.0806,
+      "aov": 1.4642,
+      "activeDays": 24,
+      "totalSpend": 21.1,
+      "totalRevenue": 77.6,
+      "totalOrders": 53,
+      "totalUnits": 65,
+      "organicDailyUnits": 19.91,
+      "organicDailyRevenue": 22.98,
+      "listing": {
+        "roas": 3.8921,
+        "ordersPerKwd": 2.6667,
+        "unitsPerKwd": 3.2727,
+        "totalSpend": 8.25
+      },
+      "search": {
+        "roas": 3.5401,
+        "ordersPerKwd": 2.4125,
+        "unitsPerKwd": 2.9572,
+        "totalSpend": 12.85
+      }
+    },
+    "Private Extra Thin Night Pads with Wings, 14 Pieces": {
+      "roas": 5.7757,
+      "ordersPerKwd": 2.7103,
+      "unitsPerKwd": 6.0748,
+      "aov": 2.131,
+      "activeDays": 19,
+      "totalSpend": 10.7,
+      "totalRevenue": 61.8,
+      "totalOrders": 29,
+      "totalUnits": 65,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 5.6983,
+        "ordersPerKwd": 2.6816,
+        "unitsPerKwd": 5.9218,
+        "totalSpend": 8.95
+      },
+      "search": {
+        "roas": 6.1714,
+        "ordersPerKwd": 2.8571,
+        "unitsPerKwd": 6.8571,
+        "totalSpend": 1.75
+      }
+    },
+    "Private Extra Thin Normal Pads with Wings, 16 Pieces": {
+      "roas": 3.5117,
+      "ordersPerKwd": 2.4413,
+      "unitsPerKwd": 3.662,
+      "aov": 1.4385,
+      "activeDays": 19,
+      "totalSpend": 10.65,
+      "totalRevenue": 37.4,
+      "totalOrders": 26,
+      "totalUnits": 39,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 3.4974,
+        "ordersPerKwd": 2.4084,
+        "unitsPerKwd": 3.6649,
+        "totalSpend": 9.55
+      },
+      "search": {
+        "roas": 3.6364,
+        "ordersPerKwd": 2.7273,
+        "unitsPerKwd": 3.6364,
+        "totalSpend": 1.1
+      }
+    },
+    "Sanita Club 2Ply Toilet Tissues, 200 Sheets, 16+4 Pieces": {
+      "roas": 9.2305,
+      "ordersPerKwd": 3.5593,
+      "unitsPerKwd": 4.5763,
+      "aov": 2.5933,
+      "activeDays": 19,
+      "totalSpend": 11.8,
+      "totalRevenue": 108.92,
+      "totalOrders": 42,
+      "totalUnits": 54,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 7.5804,
+        "ordersPerKwd": 2.8261,
+        "unitsPerKwd": 3.6957,
+        "totalSpend": 4.6
+      },
+      "search": {
+        "roas": 10.2847,
+        "ordersPerKwd": 4.0278,
+        "unitsPerKwd": 5.1389,
+        "totalSpend": 7.2
+      }
+    },
+    "Sanita Trash Bags, 5 Gallons, 3 Pieces": {
+      "roas": 6.1061,
+      "ordersPerKwd": 3.5088,
+      "unitsPerKwd": 3.7719,
+      "aov": 1.7403,
+      "activeDays": 18,
+      "totalSpend": 11.4,
+      "totalRevenue": 69.61,
+      "totalOrders": 40,
+      "totalUnits": 43,
+      "organicDailyUnits": 7.62,
+      "organicDailyRevenue": 10.85,
+      "listing": {
+        "roas": 7.275,
+        "ordersPerKwd": 4.0,
+        "unitsPerKwd": 4.5,
+        "totalSpend": 4.0
+      },
+      "search": {
+        "roas": 5.4743,
+        "ordersPerKwd": 3.2432,
+        "unitsPerKwd": 3.3784,
+        "totalSpend": 7.4
+      }
+    },
+    "Freshdays Natural Cotton Feel Hypoallergenic Scented Pantyliners, 72 Pieces": {
+      "roas": 3.3796,
+      "ordersPerKwd": 1.2245,
+      "unitsPerKwd": 1.6327,
+      "aov": 2.76,
+      "activeDays": 6,
+      "totalSpend": 2.45,
+      "totalRevenue": 8.28,
+      "totalOrders": 3,
+      "totalUnits": 4,
+      "organicDailyUnits": 0.43,
+      "organicDailyRevenue": 0.9,
+      "listing": {
+        "roas": 3.8812,
+        "ordersPerKwd": 1.25,
+        "unitsPerKwd": 1.875,
+        "totalSpend": 1.6
+      },
+      "search": {
+        "roas": 2.4353,
+        "ordersPerKwd": 1.1765,
+        "unitsPerKwd": 1.1765,
+        "totalSpend": 0.85
+      }
+    },
+    "Classic Table Cover 1 Kg x 2 pcs": {
+      "roas": 5.3369,
+      "ordersPerKwd": 2.3846,
+      "unitsPerKwd": 2.3846,
+      "aov": 2.2381,
+      "activeDays": 19,
+      "totalSpend": 13.0,
+      "totalRevenue": 69.38,
+      "totalOrders": 31,
+      "totalUnits": 31,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 5.3369,
+        "ordersPerKwd": 2.3846,
+        "unitsPerKwd": 2.3846,
+        "totalSpend": 13.0
+      }
+    },
+    "Sanita Paper Cups 9oz, 2x50 Cups": {
+      "roas": 2.1023,
+      "ordersPerKwd": 1.2692,
+      "unitsPerKwd": 1.7308,
+      "aov": 1.6564,
+      "activeDays": 16,
+      "totalSpend": 26.0,
+      "totalRevenue": 54.66,
+      "totalOrders": 33,
+      "totalUnits": 45,
+      "organicDailyUnits": 1.0,
+      "organicDailyRevenue": 1.19,
+      "listing": {
+        "roas": 1.6325,
+        "ordersPerKwd": 1.2987,
+        "unitsPerKwd": 1.3636,
+        "totalSpend": 15.4
+      },
+      "search": {
+        "roas": 2.7849,
+        "ordersPerKwd": 1.2264,
+        "unitsPerKwd": 2.2642,
+        "totalSpend": 10.6
+      }
+    },
+    "Sanita Baking Paper 2Pcs@Sp": {
+      "roas": 2.2684,
+      "ordersPerKwd": 1.7105,
+      "unitsPerKwd": 1.9737,
+      "aov": 1.3262,
+      "activeDays": 10,
+      "totalSpend": 7.6,
+      "totalRevenue": 17.24,
+      "totalOrders": 13,
+      "totalUnits": 15,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 2.2684,
+        "ordersPerKwd": 1.7105,
+        "unitsPerKwd": 1.9737,
+        "totalSpend": 7.6
+      }
+    },
+    "Sanita Club Kitchen Towel Rolls, 6x40 tissues": {
+      "roas": 3.8614,
+      "ordersPerKwd": 4.0909,
+      "unitsPerKwd": 4.6591,
+      "aov": 0.9439,
+      "activeDays": 13,
+      "totalSpend": 8.8,
+      "totalRevenue": 33.98,
+      "totalOrders": 36,
+      "totalUnits": 41,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 3.8614,
+        "ordersPerKwd": 4.0909,
+        "unitsPerKwd": 4.6591,
+        "totalSpend": 8.8
+      }
+    },
+    "Sanita Eco Pack Aluminum Foil, 30cm, 1 Roll": {
+      "roas": 4.8222,
+      "ordersPerKwd": 2.2222,
+      "unitsPerKwd": 2.2222,
+      "aov": 2.17,
+      "activeDays": 7,
+      "totalSpend": 1.8,
+      "totalRevenue": 8.68,
+      "totalOrders": 4,
+      "totalUnits": 4,
+      "organicDailyUnits": 0.51,
+      "organicDailyRevenue": 1.08,
+      "listing": {
+        "roas": 4.8222,
+        "ordersPerKwd": 2.2222,
+        "unitsPerKwd": 2.2222,
+        "totalSpend": 1.8
+      }
+    },
+    "Bambi Wet Wipes Aqua Clean, 2+1x56 Sheets": {
+      "roas": 6.2282,
+      "ordersPerKwd": 2.6923,
+      "unitsPerKwd": 3.0769,
+      "aov": 2.3133,
+      "activeDays": 15,
+      "totalSpend": 7.8,
+      "totalRevenue": 48.58,
+      "totalOrders": 21,
+      "totalUnits": 24,
+      "organicDailyUnits": 0.57,
+      "organicDailyRevenue": 1.23,
+      "listing": {
+        "roas": 6.063,
+        "ordersPerKwd": 2.5926,
+        "unitsPerKwd": 2.963,
+        "totalSpend": 5.4
+      },
+      "search": {
+        "roas": 6.6,
+        "ordersPerKwd": 2.9167,
+        "unitsPerKwd": 3.3333,
+        "totalSpend": 2.4
+      }
+    },
+    "Sanita Club Silky Soft Facial Tissues, 5x170 Sheets": {
+      "roas": 8.775,
+      "ordersPerKwd": 3.5,
+      "unitsPerKwd": 6.0,
+      "aov": 2.5071,
+      "activeDays": 7,
+      "totalSpend": 2.0,
+      "totalRevenue": 17.55,
+      "totalOrders": 7,
+      "totalUnits": 12,
+      "organicDailyUnits": 1.42,
+      "organicDailyRevenue": 2.12,
+      "listing": {
+        "roas": 7.5,
+        "ordersPerKwd": 5.0,
+        "unitsPerKwd": 5.0,
+        "totalSpend": 0.4
+      },
+      "search": {
+        "roas": 9.0938,
+        "ordersPerKwd": 3.125,
+        "unitsPerKwd": 6.25,
+        "totalSpend": 1.6
+      }
+    },
+    "Sanita Bambi 2XL Baby Diapers Size 6 (16+ kg), 52 Pieces": {
+      "roas": 21.59,
+      "ordersPerKwd": 3.0,
+      "unitsPerKwd": 3.5,
+      "aov": 7.1967,
+      "activeDays": 7,
+      "totalSpend": 2.0,
+      "totalRevenue": 43.18,
+      "totalOrders": 6,
+      "totalUnits": 7,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 15.875,
+        "ordersPerKwd": 2.5,
+        "unitsPerKwd": 2.5,
+        "totalSpend": 0.4
+      },
+      "search": {
+        "roas": 23.0187,
+        "ordersPerKwd": 3.125,
+        "unitsPerKwd": 3.75,
+        "totalSpend": 1.6
+      }
+    },
+    "Sanita Charm Cotton Swabs, 3x200 Pieces": {
+      "roas": 1.5,
+      "ordersPerKwd": 1.2,
+      "unitsPerKwd": 1.2,
+      "aov": 1.25,
+      "activeDays": 10,
+      "totalSpend": 5.0,
+      "totalRevenue": 7.5,
+      "totalOrders": 6,
+      "totalUnits": 6,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "listing": {
+        "roas": 2.2727,
+        "ordersPerKwd": 1.8182,
+        "unitsPerKwd": 1.8182,
+        "totalSpend": 2.2
+      },
+      "search": {
+        "roas": 0.8929,
+        "ordersPerKwd": 0.7143,
+        "unitsPerKwd": 0.7143,
+        "totalSpend": 2.8
+      }
+    },
+    "Freshdays Natural Cotton Feel Normal Panty Liners, 72 Pieces": {
+      "roas": 4.14,
+      "ordersPerKwd": 2.0,
+      "unitsPerKwd": 2.0,
+      "aov": 2.07,
+      "activeDays": 5,
+      "totalSpend": 2.0,
+      "totalRevenue": 8.28,
+      "totalOrders": 4,
+      "totalUnits": 4,
+      "organicDailyUnits": 0.97,
+      "organicDailyRevenue": 2.01,
+      "listing": {
+        "roas": 6.21,
+        "ordersPerKwd": 3.0,
+        "unitsPerKwd": 3.0,
+        "totalSpend": 1.0
+      },
+      "search": {
+        "roas": 2.07,
+        "ordersPerKwd": 1.0,
+        "unitsPerKwd": 1.0,
+        "totalSpend": 1.0
+      }
+    },
+    "Sanita Baking Roll, 45cmx 75m": {
+      "roas": 0.0,
+      "ordersPerKwd": 0.0,
+      "unitsPerKwd": 0.0,
+      "aov": 0,
+      "activeDays": 4,
+      "totalSpend": 0.8,
+      "totalRevenue": 0.0,
+      "totalOrders": 0,
+      "totalUnits": 0,
+      "organicDailyUnits": 0.32,
+      "organicDailyRevenue": 1.03,
+      "listing": {
+        "roas": 0.0,
+        "ordersPerKwd": 0.0,
+        "unitsPerKwd": 0.0,
+        "totalSpend": 0.8
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@
 
 	import UploadIcon from '@lucide/svelte/icons/upload';
 	import LayoutDashboardIcon from '@lucide/svelte/icons/layout-dashboard';
+	import TrendingUpIcon from '@lucide/svelte/icons/trending-up';
 	import UsersIcon from '@lucide/svelte/icons/users';
 	import { resolve } from '$app/paths';
 
@@ -41,6 +42,11 @@
 					url: '/products'
 				}
 			]
+		},
+		{
+			title: 'Forecast',
+			url: '/forecast',
+			icon: TrendingUpIcon
 		},
 		{
 			title: 'Upload Data',

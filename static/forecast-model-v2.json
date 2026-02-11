@@ -1,0 +1,5097 @@
+{
+  "spendUtilizationRate": 0.5941,
+  "seasonality": {
+    "1": 1.083,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1.0041,
+    "6": 0.9726,
+    "7": 0.9215,
+    "8": 2.1674,
+    "9": 1,
+    "10": 0.9871,
+    "11": 1.0429,
+    "12": 0.9828
+  },
+  "dayOfWeekIndex": {
+    "0": 0.9864,
+    "1": 1.029,
+    "2": 0.9475,
+    "3": 0.982,
+    "4": 0.957,
+    "5": 1.088,
+    "6": 1.0114
+  },
+  "globalAvg": {
+    "roas": 5.0486,
+    "ordersPerKwd": 87.0909,
+    "unitsPerKwd": 103.3409,
+    "listing": {
+      "roas": 4.8702,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0
+    },
+    "search": {
+      "roas": 5.7594,
+      "ordersPerKwd": 18.8977,
+      "unitsPerKwd": 22.4091
+    }
+  },
+  "categories": {
+    "Baby Care": {
+      "roas": 7.8882,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0,
+      "ctr": 0.0191,
+      "cvr": 0.3269,
+      "totalSpend": 502.1,
+      "productCount": "0"
+    },
+    "Feminine Care": {
+      "roas": 5.5274,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0,
+      "ctr": 0.0361,
+      "cvr": 0.5345,
+      "totalSpend": 793.1,
+      "productCount": "0"
+    },
+    "Household Care": {
+      "roas": 4.2219,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0,
+      "ctr": 0.0206,
+      "cvr": 0.4928,
+      "totalSpend": 1531.1,
+      "productCount": "0"
+    }
+  },
+  "keywords": {
+    "كوب": {
+      "roas": 0.8935,
+      "ordersPerKwd": 4,
+      "ctr": 0.0618,
+      "cvr": 0.129,
+      "totalSpend": 6.2
+    },
+    "paper cups": {
+      "roas": 3.625,
+      "ordersPerKwd": 12,
+      "ctr": 0.1108,
+      "cvr": 0.3333,
+      "totalSpend": 7.2
+    },
+    "kitchen towel": {
+      "roas": 1.2,
+      "ordersPerKwd": 1,
+      "ctr": 0.041,
+      "cvr": 0.125,
+      "totalSpend": 1.6
+    },
+    "sanitary pads": {
+      "roas": 1.2234,
+      "ordersPerKwd": 9,
+      "ctr": 0.08,
+      "cvr": 0.2143,
+      "totalSpend": 9.85
+    },
+    "حفاظات": {
+      "roas": 10.797,
+      "ordersPerKwd": 88,
+      "ctr": 0.0412,
+      "cvr": 0.4272,
+      "totalSpend": 52.5
+    },
+    "garbage": {
+      "roas": 7.7235,
+      "ordersPerKwd": 22,
+      "ctr": 0.096,
+      "cvr": 0.6471,
+      "totalSpend": 6.8
+    },
+    "diaper": {
+      "roas": 13.3795,
+      "ordersPerKwd": 14,
+      "ctr": 0.0353,
+      "cvr": 0.4516,
+      "totalSpend": 7.3
+    },
+    "trash": {
+      "roas": 4.4069,
+      "ordersPerKwd": 14,
+      "ctr": 0.0681,
+      "cvr": 0.4828,
+      "totalSpend": 5.8
+    },
+    "فوط نسائية": {
+      "roas": 5.5839,
+      "ordersPerKwd": 29,
+      "ctr": 0.0892,
+      "cvr": 0.6905,
+      "totalSpend": 9.3
+    },
+    "كوب ورقي": {
+      "roas": 0.875,
+      "ordersPerKwd": 2,
+      "ctr": 0.1067,
+      "cvr": 0.125,
+      "totalSpend": 3.2
+    },
+    "pads": {
+      "roas": 3.9759,
+      "ordersPerKwd": 292,
+      "ctr": 0.0724,
+      "cvr": 0.5428,
+      "totalSpend": 127.25
+    },
+    "حفاضة": {
+      "roas": 8.6667,
+      "ordersPerKwd": 2,
+      "ctr": 0.0357,
+      "cvr": 0.3333,
+      "totalSpend": 1.5
+    },
+    "اكواب": {
+      "roas": 0.9214,
+      "ordersPerKwd": 3,
+      "ctr": 0.0886,
+      "cvr": 0.1429,
+      "totalSpend": 4.2
+    },
+    "أكواب ورقية": {
+      "roas": 0.5375,
+      "ordersPerKwd": 1,
+      "ctr": 0.3158,
+      "cvr": 0.0833,
+      "totalSpend": 2.4
+    },
+    "حفاضات أطفال": {
+      "roas": 0,
+      "ordersPerKwd": 0,
+      "ctr": 0.0505,
+      "cvr": 0,
+      "totalSpend": 1.3
+    },
+    "toilet": {
+      "roas": 6.675,
+      "ordersPerKwd": 11,
+      "ctr": 0.0316,
+      "cvr": 0.9167,
+      "totalSpend": 2.4
+    },
+    "garbage bags": {
+      "roas": 6.1065,
+      "ordersPerKwd": 64,
+      "ctr": 0.1154,
+      "cvr": 0.5517,
+      "totalSpend": 23.2
+    },
+    "paper towels": {
+      "roas": 9.7583,
+      "ordersPerKwd": 4,
+      "ctr": 0.1622,
+      "cvr": 0.6667,
+      "totalSpend": 1.2
+    },
+    "toilet paper": {
+      "roas": 7.5984,
+      "ordersPerKwd": 196,
+      "ctr": 0.1392,
+      "cvr": 0.7935,
+      "totalSpend": 49.4
+    },
+    "toilet tissue": {
+      "roas": 6.6615,
+      "ordersPerKwd": 11,
+      "ctr": 0.1757,
+      "cvr": 0.8462,
+      "totalSpend": 2.6
+    },
+    "كيس قمامة": {
+      "roas": 5.1198,
+      "ordersPerKwd": 117,
+      "ctr": 0.0918,
+      "cvr": 0.4979,
+      "totalSpend": 47
+    },
+    "diapers": {
+      "roas": 11.2916,
+      "ordersPerKwd": 17,
+      "ctr": 0.0315,
+      "cvr": 0.425,
+      "totalSpend": 8.3
+    },
+    "cotton pads": {
+      "roas": 2.9662,
+      "ordersPerKwd": 29,
+      "ctr": 0.0665,
+      "cvr": 0.4462,
+      "totalSpend": 13
+    },
+    "trash bag": {
+      "roas": 5.4994,
+      "ordersPerKwd": 47,
+      "ctr": 0.1051,
+      "cvr": 0.5802,
+      "totalSpend": 16.2
+    },
+    "liners": {
+      "roas": 4.1409,
+      "ordersPerKwd": 5,
+      "ctr": 0.0547,
+      "cvr": 0.4545,
+      "totalSpend": 2.2
+    },
+    "tissues": {
+      "roas": 6.2,
+      "ordersPerKwd": 11,
+      "ctr": 0.0698,
+      "cvr": 0.7333,
+      "totalSpend": 3
+    },
+    "trash bags": {
+      "roas": 3.58,
+      "ordersPerKwd": 8,
+      "ctr": 0.0913,
+      "cvr": 0.4,
+      "totalSpend": 4
+    },
+    "baby wipes": {
+      "roas": 3.96,
+      "ordersPerKwd": 2,
+      "ctr": 0.1852,
+      "cvr": 0.4,
+      "totalSpend": 1
+    },
+    "cotton buds": {
+      "roas": 2.4868,
+      "ordersPerKwd": 18,
+      "ctr": 0.0422,
+      "cvr": 0.3396,
+      "totalSpend": 10.6
+    },
+    "pad": {
+      "roas": 3.7468,
+      "ordersPerKwd": 55,
+      "ctr": 0.08,
+      "cvr": 0.5446,
+      "totalSpend": 23.7
+    },
+    "كيس قمامة كبير": {
+      "roas": 5.2083,
+      "ordersPerKwd": 3,
+      "ctr": 0.1714,
+      "cvr": 0.5,
+      "totalSpend": 1.2
+    },
+    "wipes": {
+      "roas": 8.4857,
+      "ordersPerKwd": 5,
+      "ctr": 0.0875,
+      "cvr": 0.7143,
+      "totalSpend": 1.4
+    },
+    "sanitary pad": {
+      "roas": 4.8923,
+      "ordersPerKwd": 4,
+      "ctr": 0.048,
+      "cvr": 0.6667,
+      "totalSpend": 1.3
+    },
+    "cups": {
+      "roas": 2.7125,
+      "ordersPerKwd": 12,
+      "ctr": 0.0776,
+      "cvr": 0.3333,
+      "totalSpend": 7.2
+    },
+    "paper towel": {
+      "roas": 9.4667,
+      "ordersPerKwd": 13,
+      "ctr": 0.1277,
+      "cvr": 0.7222,
+      "totalSpend": 3.6
+    },
+    "pantyliners": {
+      "roas": 1.96,
+      "ordersPerKwd": 1,
+      "ctr": 0.0385,
+      "cvr": 0.2,
+      "totalSpend": 1
+    },
+    "period pads": {
+      "roas": 1.0563,
+      "ordersPerKwd": 1,
+      "ctr": 0.2051,
+      "cvr": 0.125,
+      "totalSpend": 1.6
+    },
+    "ورق تواليت": {
+      "roas": 5.7083,
+      "ordersPerKwd": 4,
+      "ctr": 0.0789,
+      "cvr": 0.6667,
+      "totalSpend": 1.2
+    },
+    "cup": {
+      "roas": 1.4761,
+      "ordersPerKwd": 6,
+      "ctr": 0.0742,
+      "cvr": 0.2609,
+      "totalSpend": 4.6
+    },
+    "فوطة صحية": {
+      "roas": 3.9212,
+      "ordersPerKwd": 12,
+      "ctr": 0.0742,
+      "cvr": 0.5714,
+      "totalSpend": 5.2
+    },
+    "garbage bag": {
+      "roas": 6.3659,
+      "ordersPerKwd": 107,
+      "ctr": 0.1362,
+      "cvr": 0.5573,
+      "totalSpend": 38.4
+    },
+    "مناديل": {
+      "roas": 4.2381,
+      "ordersPerKwd": 11,
+      "ctr": 0.0126,
+      "cvr": 0.5238,
+      "totalSpend": 4.2
+    },
+    "كيس زبالة": {
+      "roas": 4.6921,
+      "ordersPerKwd": 25,
+      "ctr": 0.1018,
+      "cvr": 0.4386,
+      "totalSpend": 11.4
+    },
+    "pads with wings": {
+      "roas": 10.8,
+      "ordersPerKwd": 4,
+      "ctr": 0.122,
+      "cvr": 0.8,
+      "totalSpend": 1
+    },
+    "cotton": {
+      "roas": 3.9193,
+      "ordersPerKwd": 104,
+      "ctr": 0.0729,
+      "cvr": 0.5226,
+      "totalSpend": 39.8
+    },
+    "cotton balls": {
+      "roas": 2.9393,
+      "ordersPerKwd": 8,
+      "ctr": 0.1053,
+      "cvr": 0.5714,
+      "totalSpend": 2.8
+    },
+    "maternity pads": {
+      "roas": 4.66,
+      "ordersPerKwd": 2,
+      "ctr": 0.122,
+      "cvr": 0.4,
+      "totalSpend": 1
+    },
+    "tissue": {
+      "roas": 7.4871,
+      "ordersPerKwd": 127,
+      "ctr": 0.0676,
+      "cvr": 0.7471,
+      "totalSpend": 34
+    },
+    "منديل": {
+      "roas": 4.0205,
+      "ordersPerKwd": 11,
+      "ctr": 0.0913,
+      "cvr": 0.5,
+      "totalSpend": 4.4
+    },
+    "baby diaper": {
+      "roas": 5.8462,
+      "ordersPerKwd": 1,
+      "ctr": 0.0484,
+      "cvr": 0.1667,
+      "totalSpend": 1.3
+    },
+    "حفاضات": {
+      "roas": 12.2722,
+      "ordersPerKwd": 79,
+      "ctr": 0.0464,
+      "cvr": 0.4593,
+      "totalSpend": 41.3
+    },
+    "feminine pads": {
+      "roas": 3.8367,
+      "ordersPerKwd": 8,
+      "ctr": 0.0921,
+      "cvr": 0.5714,
+      "totalSpend": 3
+    },
+    "أكواب": {
+      "roas": 1.4385,
+      "ordersPerKwd": 3,
+      "ctr": 0.1016,
+      "cvr": 0.2308,
+      "totalSpend": 2.6
+    },
+    "toilet roll": {
+      "roas": 5.6474,
+      "ordersPerKwd": 14,
+      "ctr": 0.1597,
+      "cvr": 0.7368,
+      "totalSpend": 3.8
+    },
+    "فوط يومية": {
+      "roas": 5.6756,
+      "ordersPerKwd": 21,
+      "ctr": 0.0859,
+      "cvr": 0.5,
+      "totalSpend": 9
+    },
+    "حفاضات بامبي": {
+      "roas": 18.5324,
+      "ordersPerKwd": 25,
+      "ctr": 0.1311,
+      "cvr": 0.4902,
+      "totalSpend": 10.2
+    },
+    "pants": {
+      "roas": 13.4222,
+      "ordersPerKwd": 4,
+      "ctr": 0.0608,
+      "cvr": 0.4444,
+      "totalSpend": 1.8
+    },
+    "قمامة": {
+      "roas": 7.4093,
+      "ordersPerKwd": 19,
+      "ctr": 0.056,
+      "cvr": 0.7037,
+      "totalSpend": 5.4
+    }
+  },
+  "products": {
+    "Bambi Wet Wipes Aqua Clean, 2+1x56 Sheets": {
+      "totalSpend": 7.8,
+      "totalRevenue": 50.56,
+      "totalClicks": "39",
+      "totalOrders": "22",
+      "totalUnits": "25",
+      "activeDays": "31",
+      "roas": 6.4821,
+      "ordersPerKwd": 0.7097,
+      "unitsPerKwd": 0.8065,
+      "aov": 2.2982,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 42.5,
+      "organicDailyRevenue": 91.962,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "baby wipes",
+        "wipes",
+        "wet wipes"
+      ],
+      "listing": {
+        "totalSpend": 5.4,
+        "totalRevenue": 34.72,
+        "activeDays": "28",
+        "roas": 6.4296,
+        "ordersPerKwd": 0.5357,
+        "unitsPerKwd": 0.6071
+      },
+      "search": {
+        "totalSpend": 2.4,
+        "totalRevenue": 15.84,
+        "activeDays": "23",
+        "roas": 6.6,
+        "ordersPerKwd": 0.3043,
+        "unitsPerKwd": 0.3478
+      }
+    },
+    "Classic Table Cover, 100x110cm, 2kg": {
+      "totalSpend": 22,
+      "totalRevenue": 111.16,
+      "totalClicks": "110",
+      "totalOrders": "56",
+      "totalUnits": "58",
+      "activeDays": "41",
+      "roas": 5.0527,
+      "ordersPerKwd": 1.3659,
+      "unitsPerKwd": 1.4146,
+      "aov": 1.985,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 142.4286,
+      "organicDailyRevenue": 262.862,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 22,
+        "totalRevenue": 111.16,
+        "activeDays": "41",
+        "roas": 5.0527,
+        "ordersPerKwd": 1.3659,
+        "unitsPerKwd": 1.4146
+      }
+    },
+    "Classic Table Cover 1 Kg x 2 pcs": {
+      "totalSpend": 13,
+      "totalRevenue": 69.38,
+      "totalClicks": "65",
+      "totalOrders": "31",
+      "totalUnits": "31",
+      "activeDays": "19",
+      "roas": 5.3369,
+      "ordersPerKwd": 1.6316,
+      "unitsPerKwd": 1.6316,
+      "aov": 2.2381,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 80.4,
+      "organicDailyRevenue": 181.9808,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 13,
+        "totalRevenue": 69.38,
+        "activeDays": "19",
+        "roas": 5.3369,
+        "ordersPerKwd": 1.6316,
+        "unitsPerKwd": 1.6316
+      }
+    },
+    "Fam Classic Super Pads with Wings, 40 Pieces": {
+      "totalSpend": 21.1,
+      "totalRevenue": 81.41,
+      "totalClicks": "95",
+      "totalOrders": "55",
+      "totalUnits": "68",
+      "activeDays": "39",
+      "roas": 3.8583,
+      "ordersPerKwd": 1.4103,
+      "unitsPerKwd": 1.7436,
+      "aov": 1.4802,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 3584,
+      "organicDailyRevenue": 4135.72,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوط نسائية",
+        "maternity pads",
+        "فوطة صحية",
+        "pad",
+        "sanitary pads with wings",
+        "pads",
+        "sanitary pads",
+        "sanitary pad"
+      ],
+      "listing": {
+        "totalSpend": 8.25,
+        "totalRevenue": 35.92,
+        "activeDays": "23",
+        "roas": 4.3539,
+        "ordersPerKwd": 1.0435,
+        "unitsPerKwd": 1.3043
+      },
+      "search": {
+        "totalSpend": 12.85,
+        "totalRevenue": 45.49,
+        "activeDays": "39",
+        "roas": 3.5401,
+        "ordersPerKwd": 0.7949,
+        "unitsPerKwd": 0.9744
+      }
+    },
+    "Fam Folded Night Pads with Wings, 24 Pieces": {
+      "totalSpend": 1.65,
+      "totalRevenue": 4.88,
+      "totalClicks": "8",
+      "totalOrders": "4",
+      "totalUnits": "4",
+      "activeDays": "33",
+      "roas": 2.9576,
+      "ordersPerKwd": 0.1212,
+      "unitsPerKwd": 0.1212,
+      "aov": 1.22,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1486,
+      "organicDailyRevenue": 1661.745,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "period pads",
+        "pad",
+        "فوط نسائية",
+        "pads",
+        "sanitary pads",
+        "sanitary pad",
+        "sanitary pads with wings",
+        "maternity pads",
+        "فوطة صحية"
+      ],
+      "listing": {
+        "totalSpend": 0.4,
+        "totalRevenue": 1.22,
+        "activeDays": "17",
+        "roas": 3.05,
+        "ordersPerKwd": 0.0588,
+        "unitsPerKwd": 0.0588
+      },
+      "search": {
+        "totalSpend": 1.25,
+        "totalRevenue": 3.66,
+        "activeDays": "27",
+        "roas": 2.928,
+        "ordersPerKwd": 0.1111,
+        "unitsPerKwd": 0.1111
+      }
+    },
+    "Fam Folded Night Pads with Wings, 48 Pieces": {
+      "totalSpend": 44.95,
+      "totalRevenue": 226.07,
+      "totalClicks": "203",
+      "totalOrders": "121",
+      "totalUnits": "139",
+      "activeDays": "39",
+      "roas": 5.0294,
+      "ordersPerKwd": 3.1026,
+      "unitsPerKwd": 3.5641,
+      "aov": 1.8683,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 5776,
+      "organicDailyRevenue": 9728.47,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "sanitary pads with wings",
+        "pad",
+        "maternity pads",
+        "period pads",
+        "sanitary pad",
+        "pads",
+        "فوط نسائية",
+        "sanitary pads",
+        "فوطة صحية"
+      ],
+      "listing": {
+        "totalSpend": 23.35,
+        "totalRevenue": 127.4,
+        "activeDays": "25",
+        "roas": 5.4561,
+        "ordersPerKwd": 2.6,
+        "unitsPerKwd": 3.12
+      },
+      "search": {
+        "totalSpend": 21.6,
+        "totalRevenue": 98.67,
+        "activeDays": "39",
+        "roas": 4.5681,
+        "ordersPerKwd": 1.4359,
+        "unitsPerKwd": 1.5641
+      }
+    },
+    "Fam Maxi Folded Night Sanitary Pads with Wings, 24 Pads": {
+      "totalSpend": 0.4,
+      "totalRevenue": 1.03,
+      "totalClicks": "2",
+      "totalOrders": "1",
+      "totalUnits": "1",
+      "activeDays": "7",
+      "roas": 2.575,
+      "ordersPerKwd": 0.1429,
+      "unitsPerKwd": 0.1429,
+      "aov": 1.03,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1167.6,
+      "organicDailyRevenue": 1420.2484,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 0.4,
+        "totalRevenue": 1.03,
+        "activeDays": "7",
+        "roas": 2.575,
+        "ordersPerKwd": 0.1429,
+        "unitsPerKwd": 0.1429
+      }
+    },
+    "Fam Maxi Folded Night Sanitary Pads with Wings, 48 Pads": {
+      "totalSpend": 52.7,
+      "totalRevenue": 243.64,
+      "totalClicks": "238",
+      "totalOrders": "122",
+      "totalUnits": "154",
+      "activeDays": "58",
+      "roas": 4.6231,
+      "ordersPerKwd": 2.1034,
+      "unitsPerKwd": 2.6552,
+      "aov": 1.997,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 5613.5,
+      "organicDailyRevenue": 8570.2822,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوط يومية",
+        "sanitary pads",
+        "period pads",
+        "sanitary pad",
+        "feminine pads",
+        "pads",
+        "فوطة صحية",
+        "فوط قطنية",
+        "pad",
+        "فوطة يومية",
+        "فوط نسائية"
+      ],
+      "listing": {
+        "totalSpend": 29.8,
+        "totalRevenue": 158.16,
+        "activeDays": "56",
+        "roas": 5.3074,
+        "ordersPerKwd": 1.3036,
+        "unitsPerKwd": 1.7679
+      },
+      "search": {
+        "totalSpend": 22.9,
+        "totalRevenue": 85.48,
+        "activeDays": "37",
+        "roas": 3.7328,
+        "ordersPerKwd": 1.3243,
+        "unitsPerKwd": 1.4865
+      }
+    },
+    "Fam Maxi Folded Night Sanitary Pads with Wings, 48 Pads x 2": {
+      "totalSpend": 43.55,
+      "totalRevenue": 320.1,
+      "totalClicks": "207",
+      "totalOrders": "96",
+      "totalUnits": "104",
+      "activeDays": "32",
+      "roas": 7.3502,
+      "ordersPerKwd": 3,
+      "unitsPerKwd": 3.25,
+      "aov": 3.3344,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 5613.5,
+      "organicDailyRevenue": 8570.2822,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوطة نسائية",
+        "pads",
+        "night pads",
+        "pads with wings"
+      ],
+      "listing": {
+        "totalSpend": 41.65,
+        "totalRevenue": 301.2,
+        "activeDays": "29",
+        "roas": 7.2317,
+        "ordersPerKwd": 3.069,
+        "unitsPerKwd": 3.3448
+      },
+      "search": {
+        "totalSpend": 1.9,
+        "totalRevenue": 18.9,
+        "activeDays": "11",
+        "roas": 9.9474,
+        "ordersPerKwd": 0.6364,
+        "unitsPerKwd": 0.6364
+      }
+    },
+    "Fam Maxi Super Classic Sanitary Pad with Wings, 40 Pads": {
+      "totalSpend": 34.4,
+      "totalRevenue": 118.67,
+      "totalClicks": "150",
+      "totalOrders": "80",
+      "totalUnits": "97",
+      "activeDays": "54",
+      "roas": 3.4497,
+      "ordersPerKwd": 1.4815,
+      "unitsPerKwd": 1.7963,
+      "aov": 1.4834,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 2702.6667,
+      "organicDailyRevenue": 3260.9255,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "sanitary pad",
+        "فوطة يومية",
+        "period pads",
+        "فوطة صحية",
+        "pad",
+        "sanitary pads",
+        "فوط يومية طويلة",
+        "period pad",
+        "فوط نسائية",
+        "pads",
+        "feminine pads",
+        "فوط قطنية",
+        "فوط يومية"
+      ],
+      "listing": {
+        "totalSpend": 18.2,
+        "totalRevenue": 67.3,
+        "activeDays": "48",
+        "roas": 3.6978,
+        "ordersPerKwd": 0.9792,
+        "unitsPerKwd": 1.1458
+      },
+      "search": {
+        "totalSpend": 16.2,
+        "totalRevenue": 51.37,
+        "activeDays": "36",
+        "roas": 3.171,
+        "ordersPerKwd": 0.9167,
+        "unitsPerKwd": 1.1667
+      }
+    },
+    "Fam Relax Feminine Maternity Pads, 20 Pads": {
+      "totalSpend": 40.7,
+      "totalRevenue": 299.96,
+      "totalClicks": "192",
+      "totalOrders": "141",
+      "totalUnits": "294",
+      "activeDays": "56",
+      "roas": 7.37,
+      "ordersPerKwd": 2.5179,
+      "unitsPerKwd": 5.25,
+      "aov": 2.1274,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 10166.5,
+      "organicDailyRevenue": 10472.9957,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "feminine pads",
+        "period pad",
+        "sanitary pads",
+        "فوط يومية طويلة",
+        "فوط قطنية",
+        "sanitary pad",
+        "فوطة صحية",
+        "فوط يومية",
+        "pads",
+        "فوطة يومية",
+        "period pads",
+        "pad",
+        "فوط نسائية"
+      ],
+      "listing": {
+        "totalSpend": 30.6,
+        "totalRevenue": 267,
+        "activeDays": "53",
+        "roas": 8.7255,
+        "ordersPerKwd": 2.2642,
+        "unitsPerKwd": 4.9434
+      },
+      "search": {
+        "totalSpend": 10.1,
+        "totalRevenue": 32.96,
+        "activeDays": "38",
+        "roas": 3.2634,
+        "ordersPerKwd": 0.5526,
+        "unitsPerKwd": 0.8421
+      }
+    },
+    "Fam Relax Maternity Incontinence Pads, 20 Pieces": {
+      "totalSpend": 20.55,
+      "totalRevenue": 106,
+      "totalClicks": "94",
+      "totalOrders": "64",
+      "totalUnits": "108",
+      "activeDays": "36",
+      "roas": 5.1582,
+      "ordersPerKwd": 1.7778,
+      "unitsPerKwd": 3,
+      "aov": 1.6563,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 12013,
+      "organicDailyRevenue": 11610.04,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "maternity pads",
+        "sanitary pad",
+        "sanitary pads",
+        "فوطة صحية",
+        "فوط نسائية",
+        "pad",
+        "pads",
+        "period pads"
+      ],
+      "listing": {
+        "totalSpend": 15.85,
+        "totalRevenue": 86.72,
+        "activeDays": "26",
+        "roas": 5.4713,
+        "ordersPerKwd": 1.9615,
+        "unitsPerKwd": 3.3846
+      },
+      "search": {
+        "totalSpend": 4.7,
+        "totalRevenue": 19.28,
+        "activeDays": "32",
+        "roas": 4.1021,
+        "ordersPerKwd": 0.4063,
+        "unitsPerKwd": 0.625
+      }
+    },
+    "Fam Sanitary Pad with Wings Night, 24 Pads": {
+      "totalSpend": 0,
+      "totalRevenue": 0,
+      "totalClicks": "0",
+      "totalOrders": "0",
+      "totalUnits": "0",
+      "activeDays": "2",
+      "roas": 0,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0,
+      "aov": 0,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1678,
+      "organicDailyRevenue": 1859.435,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 0,
+        "totalRevenue": 0,
+        "activeDays": "2",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Fam Super Sanitary Pads with Wings, 60 Pads": {
+      "totalSpend": 76.2,
+      "totalRevenue": 351.85,
+      "totalClicks": "347",
+      "totalOrders": "192",
+      "totalUnits": "224",
+      "activeDays": "96",
+      "roas": 4.6175,
+      "ordersPerKwd": 2,
+      "unitsPerKwd": 2.3333,
+      "aov": 1.8326,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 4003.8571,
+      "organicDailyRevenue": 6044.1959,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوط نسائية",
+        "period pads",
+        "maternity pads",
+        "فوطة يومية",
+        "feminine pads",
+        "sanitary pads",
+        "pad",
+        "فوط قطنية",
+        "pads",
+        "فوط يومية",
+        "period pad",
+        "sanitary pad",
+        "فوطة صحية"
+      ],
+      "listing": {
+        "totalSpend": 47.35,
+        "totalRevenue": 227,
+        "activeDays": "78",
+        "roas": 4.7941,
+        "ordersPerKwd": 1.6282,
+        "unitsPerKwd": 1.8462
+      },
+      "search": {
+        "totalSpend": 28.85,
+        "totalRevenue": 124.85,
+        "activeDays": "76",
+        "roas": 4.3276,
+        "ordersPerKwd": 0.8553,
+        "unitsPerKwd": 1.0526
+      }
+    },
+    "Freshdays Daily Comfort Long Pantyliners, 72 Pieces": {
+      "totalSpend": 45.55,
+      "totalRevenue": 308,
+      "totalClicks": "227",
+      "totalOrders": "142",
+      "totalUnits": "161",
+      "activeDays": "40",
+      "roas": 6.7618,
+      "ordersPerKwd": 3.55,
+      "unitsPerKwd": 4.025,
+      "aov": 2.169,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1834,
+      "organicDailyRevenue": 3594.64,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "feminine pads",
+        "feminine pad",
+        "pad",
+        "فوطة نسائية",
+        "فوط نسائية",
+        "pantyliners",
+        "فوطة صحية",
+        "pads",
+        "liners"
+      ],
+      "listing": {
+        "totalSpend": 42,
+        "totalRevenue": 291.16,
+        "activeDays": "35",
+        "roas": 6.9324,
+        "ordersPerKwd": 3.8,
+        "unitsPerKwd": 4.3429
+      },
+      "search": {
+        "totalSpend": 3.55,
+        "totalRevenue": 16.84,
+        "activeDays": "39",
+        "roas": 4.7437,
+        "ordersPerKwd": 0.2308,
+        "unitsPerKwd": 0.2308
+      }
+    },
+    "Freshdays Natural Cotton Feel Hypoallergenic Scented Pantyliners, 72 Pieces": {
+      "totalSpend": 2.45,
+      "totalRevenue": 8.28,
+      "totalClicks": "12",
+      "totalOrders": "3",
+      "totalUnits": "4",
+      "activeDays": "37",
+      "roas": 3.3796,
+      "ordersPerKwd": 0.0811,
+      "unitsPerKwd": 0.1081,
+      "aov": 2.76,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 13,
+      "organicDailyRevenue": 26.91,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "feminine pads",
+        "pad",
+        "liners",
+        "pantyliners",
+        "pads",
+        "فوطة نسائية"
+      ],
+      "listing": {
+        "totalSpend": 1.6,
+        "totalRevenue": 6.21,
+        "activeDays": "20",
+        "roas": 3.8813,
+        "ordersPerKwd": 0.1,
+        "unitsPerKwd": 0.15
+      },
+      "search": {
+        "totalSpend": 0.85,
+        "totalRevenue": 2.07,
+        "activeDays": "36",
+        "roas": 2.4353,
+        "ordersPerKwd": 0.0278,
+        "unitsPerKwd": 0.0278
+      }
+    },
+    "Freshdays Natural Cotton Feel Long Daily Pantyliners, 72 Pantyliners Mega Pack": {
+      "totalSpend": 182.6,
+      "totalRevenue": 1163.6,
+      "totalClicks": "913",
+      "totalOrders": "518",
+      "totalUnits": "618",
+      "activeDays": "92",
+      "roas": 6.3724,
+      "ordersPerKwd": 5.6304,
+      "unitsPerKwd": 6.7174,
+      "aov": 2.2463,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 2042.6667,
+      "organicDailyRevenue": 3571.725,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوطة يومية",
+        "period pad",
+        "pantyliners",
+        "pantyliner",
+        "فوط يومية طويلة",
+        "feminine pads",
+        "pad",
+        "فوطة صحية",
+        "sanitary pads",
+        "فوط نسائية",
+        "pads",
+        "sanitary pad",
+        "فوط يومية",
+        "maxi pads",
+        "فوط قطنية",
+        "period pads",
+        "daily pantyliners"
+      ],
+      "listing": {
+        "totalSpend": 171.4,
+        "totalRevenue": 1102.23,
+        "activeDays": "73",
+        "roas": 6.4307,
+        "ordersPerKwd": 6.7123,
+        "unitsPerKwd": 8
+      },
+      "search": {
+        "totalSpend": 11.2,
+        "totalRevenue": 61.37,
+        "activeDays": "66",
+        "roas": 5.4795,
+        "ordersPerKwd": 0.4242,
+        "unitsPerKwd": 0.5152
+      }
+    },
+    "Freshdays Natural Cotton Feel Long Scented Daily Pantyliners, 72 Pantyliners Mega Pack": {
+      "totalSpend": 104.6,
+      "totalRevenue": 563.33,
+      "totalClicks": "523",
+      "totalOrders": "260",
+      "totalUnits": "303",
+      "activeDays": "129",
+      "roas": 5.3856,
+      "ordersPerKwd": 2.0155,
+      "unitsPerKwd": 2.3488,
+      "aov": 2.1667,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 668,
+      "organicDailyRevenue": 1176.7431,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "maxi pads",
+        "pads",
+        "feminine pads",
+        "pad",
+        "feminine pad",
+        "pantyliner",
+        "daily pantyliners",
+        "pantyliners",
+        "فوطة صحية",
+        "فوطة يومية",
+        "liners",
+        "فوطة نسائية",
+        "فوط يومية",
+        "period pad",
+        "sanitary pads",
+        "sanitary pad",
+        "period pads",
+        "فوط نسائية"
+      ],
+      "listing": {
+        "totalSpend": 100.4,
+        "totalRevenue": 542.69,
+        "activeDays": "100",
+        "roas": 5.4053,
+        "ordersPerKwd": 2.51,
+        "unitsPerKwd": 2.91
+      },
+      "search": {
+        "totalSpend": 4.2,
+        "totalRevenue": 20.64,
+        "activeDays": "86",
+        "roas": 4.9143,
+        "ordersPerKwd": 0.1047,
+        "unitsPerKwd": 0.1395
+      }
+    },
+    "Freshdays Natural Cotton Feel Long Scented Daily Pantyliners, 72 Pantyliners Mega Pack x 2": {
+      "totalSpend": 9.4,
+      "totalRevenue": 40.75,
+      "totalClicks": "47",
+      "totalOrders": "11",
+      "totalUnits": "11",
+      "activeDays": "42",
+      "roas": 4.3351,
+      "ordersPerKwd": 0.2619,
+      "unitsPerKwd": 0.2619,
+      "aov": 3.7045,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 668,
+      "organicDailyRevenue": 1176.7431,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "pantyliners",
+        "فوطة يومية",
+        "pantyliner",
+        "daily pantyliners"
+      ],
+      "listing": {
+        "totalSpend": 9.2,
+        "totalRevenue": 40.75,
+        "activeDays": "38",
+        "roas": 4.4293,
+        "ordersPerKwd": 0.2895,
+        "unitsPerKwd": 0.2895
+      },
+      "search": {
+        "totalSpend": 0.2,
+        "totalRevenue": 0,
+        "activeDays": "10",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Freshdays Natural Cotton Feel Normal Daily Pantyliners, 72 Pantyliners Mega Pack": {
+      "totalSpend": 31.4,
+      "totalRevenue": 140.72,
+      "totalClicks": "157",
+      "totalOrders": "68",
+      "totalUnits": "74",
+      "activeDays": "89",
+      "roas": 4.4815,
+      "ordersPerKwd": 0.764,
+      "unitsPerKwd": 0.8315,
+      "aov": 2.0694,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 270.8333,
+      "organicDailyRevenue": 479.0948,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوطة يومية",
+        "pantyliner",
+        "period pad",
+        "pantyliners",
+        "فوط نسائية",
+        "sanitary pads",
+        "فوط يومية",
+        "feminine pads",
+        "فوط يومية طويلة",
+        "فوطة صحية",
+        "sanitary pad",
+        "pads",
+        "pad",
+        "period pads"
+      ],
+      "listing": {
+        "totalSpend": 29,
+        "totalRevenue": 132.8,
+        "activeDays": "73",
+        "roas": 4.5793,
+        "ordersPerKwd": 0.8767,
+        "unitsPerKwd": 0.9589
+      },
+      "search": {
+        "totalSpend": 2.4,
+        "totalRevenue": 7.92,
+        "activeDays": "50",
+        "roas": 3.3,
+        "ordersPerKwd": 0.08,
+        "unitsPerKwd": 0.08
+      }
+    },
+    "Freshdays Natural Cotton Feel Normal Panty Liners, 72 Pieces": {
+      "totalSpend": 2,
+      "totalRevenue": 8.28,
+      "totalClicks": "10",
+      "totalOrders": "4",
+      "totalUnits": "4",
+      "activeDays": "38",
+      "roas": 4.14,
+      "ordersPerKwd": 0.1053,
+      "unitsPerKwd": 0.1053,
+      "aov": 2.07,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 145,
+      "organicDailyRevenue": 301.05,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوط نسائية",
+        "pad",
+        "feminine pad",
+        "فوطة صحية",
+        "feminine pads",
+        "pantyliners",
+        "pads",
+        "liners"
+      ],
+      "listing": {
+        "totalSpend": 1,
+        "totalRevenue": 6.21,
+        "activeDays": "21",
+        "roas": 6.21,
+        "ordersPerKwd": 0.1429,
+        "unitsPerKwd": 0.1429
+      },
+      "search": {
+        "totalSpend": 1,
+        "totalRevenue": 2.07,
+        "activeDays": "38",
+        "roas": 2.07,
+        "ordersPerKwd": 0.0263,
+        "unitsPerKwd": 0.0263
+      }
+    },
+    "Freshdays Normal Scented Pantyliners, 72 Pads": {
+      "totalSpend": 29.8,
+      "totalRevenue": 86.94,
+      "totalClicks": "149",
+      "totalOrders": "43",
+      "totalUnits": "47",
+      "activeDays": "86",
+      "roas": 2.9174,
+      "ordersPerKwd": 0.5,
+      "unitsPerKwd": 0.5465,
+      "aov": 2.0219,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 154,
+      "organicDailyRevenue": 261.9632,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوط يومية",
+        "pads",
+        "feminine pads",
+        "sanitary pad",
+        "maxi pads",
+        "pantyliners",
+        "period pad",
+        "فوط يومية طويلة",
+        "daily pantyliners",
+        "pad",
+        "فوط نسائية",
+        "sanitary pads",
+        "فوطة يومية",
+        "period pads",
+        "pantyliner",
+        "فوطة صحية"
+      ],
+      "listing": {
+        "totalSpend": 28,
+        "totalRevenue": 84.87,
+        "activeDays": "67",
+        "roas": 3.0311,
+        "ordersPerKwd": 0.6269,
+        "unitsPerKwd": 0.6866
+      },
+      "search": {
+        "totalSpend": 1.8,
+        "totalRevenue": 2.07,
+        "activeDays": "57",
+        "roas": 1.15,
+        "ordersPerKwd": 0.0175,
+        "unitsPerKwd": 0.0175
+      }
+    },
+    "Hala White 2Ply Facial Tissues Box, 5x170 Sheets": {
+      "totalSpend": 46.6,
+      "totalRevenue": 278.51,
+      "totalClicks": "233",
+      "totalOrders": "187",
+      "totalUnits": "261",
+      "activeDays": "64",
+      "roas": 5.9766,
+      "ordersPerKwd": 2.9219,
+      "unitsPerKwd": 4.0781,
+      "aov": 1.4894,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 7626.5714,
+      "organicDailyRevenue": 8158.4426,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 46.6,
+        "totalRevenue": 278.51,
+        "activeDays": "64",
+        "roas": 5.9766,
+        "ordersPerKwd": 2.9219,
+        "unitsPerKwd": 4.0781
+      }
+    },
+    "Hala White Facial Tissues 2ply, 5x170 tissues": {
+      "totalSpend": 30.4,
+      "totalRevenue": 187,
+      "totalClicks": "152",
+      "totalOrders": "120",
+      "totalUnits": "169",
+      "activeDays": "27",
+      "roas": 6.1513,
+      "ordersPerKwd": 4.4444,
+      "unitsPerKwd": 6.2593,
+      "aov": 1.5583,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "tissues",
+        "tissue",
+        "مناديل ورقية",
+        "منديل"
+      ],
+      "listing": {
+        "totalSpend": 13.4,
+        "totalRevenue": 71.48,
+        "activeDays": "26",
+        "roas": 5.3343,
+        "ordersPerKwd": 1.8077,
+        "unitsPerKwd": 2.5
+      },
+      "search": {
+        "totalSpend": 17,
+        "totalRevenue": 115.52,
+        "activeDays": "17",
+        "roas": 6.7953,
+        "ordersPerKwd": 4.2941,
+        "unitsPerKwd": 6.1176
+      }
+    },
+    "Private Extra Thin Night Pads with Wings, 14 Pieces": {
+      "totalSpend": 10.7,
+      "totalRevenue": 61.8,
+      "totalClicks": "48",
+      "totalOrders": "29",
+      "totalUnits": "65",
+      "activeDays": "38",
+      "roas": 5.7757,
+      "ordersPerKwd": 0.7632,
+      "unitsPerKwd": 1.7105,
+      "aov": 2.131,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوط نسائية",
+        "pad",
+        "period pad",
+        "sanitary pad",
+        "sanitary pads",
+        "period pads",
+        "pads",
+        "فوطة صحية"
+      ],
+      "listing": {
+        "totalSpend": 8.95,
+        "totalRevenue": 51,
+        "activeDays": "24",
+        "roas": 5.6983,
+        "ordersPerKwd": 1,
+        "unitsPerKwd": 2.2083
+      },
+      "search": {
+        "totalSpend": 1.75,
+        "totalRevenue": 10.8,
+        "activeDays": "31",
+        "roas": 6.1714,
+        "ordersPerKwd": 0.1613,
+        "unitsPerKwd": 0.3871
+      }
+    },
+    "Private Extra Thin Normal Pads with Wings, 16 Pieces": {
+      "totalSpend": 10.65,
+      "totalRevenue": 38.4,
+      "totalClicks": "50",
+      "totalOrders": "27",
+      "totalUnits": "40",
+      "activeDays": "37",
+      "roas": 3.6056,
+      "ordersPerKwd": 0.7297,
+      "unitsPerKwd": 1.0811,
+      "aov": 1.4222,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "pads",
+        "فوط نسائية",
+        "pad",
+        "period pad",
+        "فوطة صحية",
+        "sanitary pad",
+        "sanitary pads"
+      ],
+      "listing": {
+        "totalSpend": 9.55,
+        "totalRevenue": 34.4,
+        "activeDays": "24",
+        "roas": 3.6021,
+        "ordersPerKwd": 1,
+        "unitsPerKwd": 1.5
+      },
+      "search": {
+        "totalSpend": 1.1,
+        "totalRevenue": 4,
+        "activeDays": "30",
+        "roas": 3.6364,
+        "ordersPerKwd": 0.1,
+        "unitsPerKwd": 0.1333
+      }
+    },
+    "Private Maxi Pocket Night Feminine Pads, 24 Pieces": {
+      "totalSpend": 27.35,
+      "totalRevenue": 98.65,
+      "totalClicks": "130",
+      "totalOrders": "66",
+      "totalUnits": "75",
+      "activeDays": "75",
+      "roas": 3.6069,
+      "ordersPerKwd": 0.88,
+      "unitsPerKwd": 1,
+      "aov": 1.4947,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 596.6667,
+      "organicDailyRevenue": 817.0967,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "pads",
+        "فوطة يومية",
+        "فوط نسائية",
+        "فوطة صحية",
+        "sanitary pad",
+        "feminine pads",
+        "pad",
+        "sanitary pads",
+        "period pad",
+        "فوط يومية",
+        "period pads",
+        "فوطة نسائية"
+      ],
+      "listing": {
+        "totalSpend": 21.1,
+        "totalRevenue": 73.3,
+        "activeDays": "47",
+        "roas": 3.4739,
+        "ordersPerKwd": 1.0638,
+        "unitsPerKwd": 1.1702
+      },
+      "search": {
+        "totalSpend": 6.25,
+        "totalRevenue": 25.35,
+        "activeDays": "68",
+        "roas": 4.056,
+        "ordersPerKwd": 0.2353,
+        "unitsPerKwd": 0.2941
+      }
+    },
+    "Private Maxi Pocket Night Sanitary Pads, 48 Pads": {
+      "totalSpend": 20.9,
+      "totalRevenue": 131.24,
+      "totalClicks": "103",
+      "totalOrders": "58",
+      "totalUnits": "74",
+      "activeDays": "64",
+      "roas": 6.2794,
+      "ordersPerKwd": 0.9063,
+      "unitsPerKwd": 1.1563,
+      "aov": 2.2628,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 768.2857,
+      "organicDailyRevenue": 1369.7297,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "pad",
+        "فوط نسائية",
+        "period pads",
+        "feminine pads",
+        "فوط يومية",
+        "فوطة صحية",
+        "فوط يومية طويلة",
+        "pads",
+        "sanitary pads",
+        "فوطة نسائية"
+      ],
+      "listing": {
+        "totalSpend": 15.8,
+        "totalRevenue": 113.71,
+        "activeDays": "53",
+        "roas": 7.1968,
+        "ordersPerKwd": 0.9245,
+        "unitsPerKwd": 1.2075
+      },
+      "search": {
+        "totalSpend": 5.1,
+        "totalRevenue": 17.53,
+        "activeDays": "40",
+        "roas": 3.4373,
+        "ordersPerKwd": 0.225,
+        "unitsPerKwd": 0.25
+      }
+    },
+    "Private Maxi Pocket Super Sanitary Pads, 30 Pads x 2": {
+      "totalSpend": 1.4,
+      "totalRevenue": 5,
+      "totalClicks": "7",
+      "totalOrders": "2",
+      "totalUnits": "2",
+      "activeDays": "15",
+      "roas": 3.5714,
+      "ordersPerKwd": 0.1333,
+      "unitsPerKwd": 0.1333,
+      "aov": 2.5,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 544.2,
+      "organicDailyRevenue": 658.8366,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوطة نسائية"
+      ],
+      "listing": {
+        "totalSpend": 1.4,
+        "totalRevenue": 5,
+        "activeDays": "15",
+        "roas": 3.5714,
+        "ordersPerKwd": 0.1333,
+        "unitsPerKwd": 0.1333
+      },
+      "search": {
+        "totalSpend": 0,
+        "totalRevenue": 0,
+        "activeDays": "1",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Private Maxi Pocket Super Sanitary Pads, 50 Pads": {
+      "totalSpend": 37.7,
+      "totalRevenue": 185.37,
+      "totalClicks": "181",
+      "totalOrders": "99",
+      "totalUnits": "119",
+      "activeDays": "63",
+      "roas": 4.917,
+      "ordersPerKwd": 1.5714,
+      "unitsPerKwd": 1.8889,
+      "aov": 1.8724,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 910.5714,
+      "organicDailyRevenue": 1482.7201,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "period pads",
+        "فوط يومية طويلة",
+        "pad",
+        "فوطة يومية",
+        "sanitary pads",
+        "فوطة صحية",
+        "فوطة نسائية",
+        "فوط نسائية",
+        "feminine pads",
+        "pads",
+        "period pad",
+        "فوط يومية"
+      ],
+      "listing": {
+        "totalSpend": 27,
+        "totalRevenue": 138.01,
+        "activeDays": "49",
+        "roas": 5.1115,
+        "ordersPerKwd": 1.5102,
+        "unitsPerKwd": 1.7959
+      },
+      "search": {
+        "totalSpend": 10.7,
+        "totalRevenue": 47.36,
+        "activeDays": "38",
+        "roas": 4.4262,
+        "ordersPerKwd": 0.6579,
+        "unitsPerKwd": 0.8158
+      }
+    },
+    "Private Monthly Extra Thin Night Pads, 14 Pads Economical Pack": {
+      "totalSpend": 31.7,
+      "totalRevenue": 143,
+      "totalClicks": "153",
+      "totalOrders": "89",
+      "totalUnits": "143",
+      "activeDays": "67",
+      "roas": 4.511,
+      "ordersPerKwd": 1.3284,
+      "unitsPerKwd": 2.1343,
+      "aov": 1.6067,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1217.7143,
+      "organicDailyRevenue": 1195.0751,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوطة نسائية",
+        "period pad",
+        "فوط يومية طويلة",
+        "فوطة صحية",
+        "sanitary pads",
+        "فوط يومية",
+        "فوط قطنية",
+        "period pads",
+        "feminine pads",
+        "pad",
+        "pads",
+        "فوطة يومية",
+        "فوط نسائية"
+      ],
+      "listing": {
+        "totalSpend": 22.6,
+        "totalRevenue": 117,
+        "activeDays": "55",
+        "roas": 5.177,
+        "ordersPerKwd": 1.2909,
+        "unitsPerKwd": 2.1273
+      },
+      "search": {
+        "totalSpend": 9.1,
+        "totalRevenue": 26,
+        "activeDays": "44",
+        "roas": 2.8571,
+        "ordersPerKwd": 0.4091,
+        "unitsPerKwd": 0.5909
+      }
+    },
+    "Private Monthly Extra Thin Super Pads, 16 Pads Economical Pack": {
+      "totalSpend": 29.8,
+      "totalRevenue": 71.2,
+      "totalClicks": "143",
+      "totalOrders": "62",
+      "totalUnits": "81",
+      "activeDays": "56",
+      "roas": 2.3893,
+      "ordersPerKwd": 1.1071,
+      "unitsPerKwd": 1.4464,
+      "aov": 1.1484,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 879.7143,
+      "organicDailyRevenue": 799.6414,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "فوطة صحية",
+        "pad",
+        "فوطة نسائية",
+        "period pads",
+        "pads",
+        "sanitary pads",
+        "feminine pad",
+        "فوط نسائية",
+        "فوط يومية طويلة",
+        "فوط يومية",
+        "feminine pads"
+      ],
+      "listing": {
+        "totalSpend": 21,
+        "totalRevenue": 49.05,
+        "activeDays": "42",
+        "roas": 2.3357,
+        "ordersPerKwd": 0.9762,
+        "unitsPerKwd": 1.3095
+      },
+      "search": {
+        "totalSpend": 8.8,
+        "totalRevenue": 22.15,
+        "activeDays": "33",
+        "roas": 2.517,
+        "ordersPerKwd": 0.6364,
+        "unitsPerKwd": 0.7879
+      }
+    },
+    "Private Natural Cotton Feel Night Pads with Wings, 48 Pieces": {
+      "totalSpend": 10.15,
+      "totalRevenue": 53.7,
+      "totalClicks": "47",
+      "totalOrders": "25",
+      "totalUnits": "28",
+      "activeDays": "38",
+      "roas": 5.2906,
+      "ordersPerKwd": 0.6579,
+      "unitsPerKwd": 0.7368,
+      "aov": 2.148,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "period pad",
+        "فوطة صحية",
+        "pad",
+        "pads",
+        "sanitary pads",
+        "sanitary pad",
+        "فوط نسائية"
+      ],
+      "listing": {
+        "totalSpend": 8.15,
+        "totalRevenue": 38.02,
+        "activeDays": "23",
+        "roas": 4.665,
+        "ordersPerKwd": 0.8261,
+        "unitsPerKwd": 0.8696
+      },
+      "search": {
+        "totalSpend": 2,
+        "totalRevenue": 15.68,
+        "activeDays": "35",
+        "roas": 7.84,
+        "ordersPerKwd": 0.1714,
+        "unitsPerKwd": 0.2286
+      }
+    },
+    "Private Natural Cotton Feel Super Pads with Wings, 50 Pieces": {
+      "totalSpend": 34.7,
+      "totalRevenue": 161.05,
+      "totalClicks": "159",
+      "totalOrders": "81",
+      "totalUnits": "97",
+      "activeDays": "39",
+      "roas": 4.6412,
+      "ordersPerKwd": 2.0769,
+      "unitsPerKwd": 2.4872,
+      "aov": 1.9883,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "sanitary pad",
+        "pads",
+        "pad",
+        "period pads",
+        "فوطة صحية",
+        "فوط نسائية",
+        "period pad",
+        "sanitary pads"
+      ],
+      "listing": {
+        "totalSpend": 30.25,
+        "totalRevenue": 143.79,
+        "activeDays": "25",
+        "roas": 4.7534,
+        "ordersPerKwd": 2.84,
+        "unitsPerKwd": 3.48
+      },
+      "search": {
+        "totalSpend": 4.45,
+        "totalRevenue": 17.26,
+        "activeDays": "37",
+        "roas": 3.8787,
+        "ordersPerKwd": 0.2703,
+        "unitsPerKwd": 0.2703
+      }
+    },
+    "Private Sanitary Pad Night 24 Pads": {
+      "totalSpend": 11,
+      "totalRevenue": 34.02,
+      "totalClicks": "54",
+      "totalOrders": "24",
+      "totalUnits": "28",
+      "activeDays": "28",
+      "roas": 3.0927,
+      "ordersPerKwd": 0.8571,
+      "unitsPerKwd": 1,
+      "aov": 1.4175,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 687.75,
+      "organicDailyRevenue": 814.3623,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "period pad",
+        "فوط نسائية",
+        "feminine pads",
+        "فوطة صحية",
+        "فوطة نسائية",
+        "sanitary pads",
+        "فوط يومية",
+        "pads",
+        "pad"
+      ],
+      "listing": {
+        "totalSpend": 8.8,
+        "totalRevenue": 29.03,
+        "activeDays": "27",
+        "roas": 3.2989,
+        "ordersPerKwd": 0.7407,
+        "unitsPerKwd": 0.8519
+      },
+      "search": {
+        "totalSpend": 2.2,
+        "totalRevenue": 4.99,
+        "activeDays": "10",
+        "roas": 2.2682,
+        "ordersPerKwd": 0.4,
+        "unitsPerKwd": 0.5
+      }
+    },
+    "Private Sanitary Pad Night 24 Pads x 2": {
+      "totalSpend": 20.05,
+      "totalRevenue": 111.64,
+      "totalClicks": "96",
+      "totalOrders": "44",
+      "totalUnits": "46",
+      "activeDays": "35",
+      "roas": 5.5681,
+      "ordersPerKwd": 1.2571,
+      "unitsPerKwd": 1.3143,
+      "aov": 2.5373,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 687.75,
+      "organicDailyRevenue": 814.3623,
+      "categories": [
+        "Feminine Care"
+      ],
+      "keywords": [
+        "feminine pad",
+        "pads",
+        "night pad",
+        "فوطة يومية",
+        "فوطة نسائية",
+        "sanitary pads",
+        "night pads",
+        "pad"
+      ],
+      "listing": {
+        "totalSpend": 20.05,
+        "totalRevenue": 111.64,
+        "activeDays": "33",
+        "roas": 5.5681,
+        "ordersPerKwd": 1.3333,
+        "unitsPerKwd": 1.3939
+      },
+      "search": {
+        "totalSpend": 0,
+        "totalRevenue": 0,
+        "activeDays": "10",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Sanita Aluminum Foil, 200 sqft, 1 Roll": {
+      "totalSpend": 15.8,
+      "totalRevenue": 109.73,
+      "totalClicks": "79",
+      "totalOrders": "43",
+      "totalUnits": "50",
+      "activeDays": "59",
+      "roas": 6.9449,
+      "ordersPerKwd": 0.7288,
+      "unitsPerKwd": 0.8475,
+      "aov": 2.5519,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 139.2857,
+      "organicDailyRevenue": 318.6586,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 15.8,
+        "totalRevenue": 109.73,
+        "activeDays": "59",
+        "roas": 6.9449,
+        "ordersPerKwd": 0.7288,
+        "unitsPerKwd": 0.8475
+      }
+    },
+    "Sanita Aluminum Foil Strong & Economical Pack 2 x 450 mm": {
+      "totalSpend": 1.8,
+      "totalRevenue": 13.32,
+      "totalClicks": "9",
+      "totalOrders": "3",
+      "totalUnits": "3",
+      "activeDays": "16",
+      "roas": 7.4,
+      "ordersPerKwd": 0.1875,
+      "unitsPerKwd": 0.1875,
+      "aov": 4.44,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 38.5,
+      "organicDailyRevenue": 157.0375,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 1.8,
+        "totalRevenue": 13.32,
+        "activeDays": "16",
+        "roas": 7.4,
+        "ordersPerKwd": 0.1875,
+        "unitsPerKwd": 0.1875
+      }
+    },
+    "Sanita Baking Paper 2Pcs@Sp": {
+      "totalSpend": 7.6,
+      "totalRevenue": 17.24,
+      "totalClicks": "38",
+      "totalOrders": "13",
+      "totalUnits": "15",
+      "activeDays": "15",
+      "roas": 2.2684,
+      "ordersPerKwd": 0.8667,
+      "unitsPerKwd": 1,
+      "aov": 1.3262,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 115,
+      "organicDailyRevenue": 142.9915,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 7.6,
+        "totalRevenue": 17.24,
+        "activeDays": "15",
+        "roas": 2.2684,
+        "ordersPerKwd": 0.8667,
+        "unitsPerKwd": 1
+      }
+    },
+    "Sanita Baking Paper 2Pcs,  x 2": {
+      "totalSpend": 4.8,
+      "totalRevenue": 8.08,
+      "totalClicks": "24",
+      "totalOrders": "4",
+      "totalUnits": "4",
+      "activeDays": "16",
+      "roas": 1.6833,
+      "ordersPerKwd": 0.25,
+      "unitsPerKwd": 0.25,
+      "aov": 2.02,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 4.8,
+        "totalRevenue": 8.08,
+        "activeDays": "16",
+        "roas": 1.6833,
+        "ordersPerKwd": 0.25,
+        "unitsPerKwd": 0.25
+      }
+    },
+    "Sanita Baking Roll, 45cmx 75m": {
+      "totalSpend": 0.8,
+      "totalRevenue": 0,
+      "totalClicks": "4",
+      "totalOrders": "0",
+      "totalUnits": "0",
+      "activeDays": "12",
+      "roas": 0,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0,
+      "aov": 0,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 9.5,
+      "organicDailyRevenue": 30.9,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 0.8,
+        "totalRevenue": 0,
+        "activeDays": "12",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Sanita Bambi 2XL Baby Diapers Size 6 (16+ kg), 52 Pieces": {
+      "totalSpend": 2,
+      "totalRevenue": 48.26,
+      "totalClicks": "10",
+      "totalOrders": "7",
+      "totalUnits": "8",
+      "activeDays": "39",
+      "roas": 24.13,
+      "ordersPerKwd": 0.1795,
+      "unitsPerKwd": 0.2051,
+      "aov": 6.8943,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "diaper",
+        "حفاضات أطفال",
+        "حفاضة",
+        "حفاضات",
+        "حفاظات",
+        "diapers",
+        "حفاضات اطفال",
+        "حفاضات بامبي",
+        "baby diaper"
+      ],
+      "listing": {
+        "totalSpend": 0.4,
+        "totalRevenue": 6.35,
+        "activeDays": "24",
+        "roas": 15.875,
+        "ordersPerKwd": 0.0417,
+        "unitsPerKwd": 0.0417
+      },
+      "search": {
+        "totalSpend": 1.6,
+        "totalRevenue": 41.91,
+        "activeDays": "38",
+        "roas": 26.1938,
+        "ordersPerKwd": 0.1579,
+        "unitsPerKwd": 0.1842
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 3, Medium, 6-11kg, 92 Count": {
+      "totalSpend": 7.4,
+      "totalRevenue": 55.65,
+      "totalClicks": "37",
+      "totalOrders": "9",
+      "totalUnits": "9",
+      "activeDays": "17",
+      "roas": 7.5203,
+      "ordersPerKwd": 0.5294,
+      "unitsPerKwd": 0.5294,
+      "aov": 6.1833,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 84,
+      "organicDailyRevenue": 476.3307,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "nappy",
+        "حفاضات",
+        "حفاضات حجم صغير",
+        "حفاضات أطفال",
+        "baby diapers",
+        "حفاضة",
+        "diapers",
+        "diaper",
+        "حفاظات",
+        "حفاضات اطفال"
+      ],
+      "listing": {
+        "totalSpend": 5.8,
+        "totalRevenue": 43.61,
+        "activeDays": "17",
+        "roas": 7.519,
+        "ordersPerKwd": 0.4118,
+        "unitsPerKwd": 0.4118
+      },
+      "search": {
+        "totalSpend": 1.6,
+        "totalRevenue": 12.04,
+        "activeDays": "17",
+        "roas": 7.525,
+        "ordersPerKwd": 0.1176,
+        "unitsPerKwd": 0.1176
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack Size 4, Large, 8-16 KG, 80 Count": {
+      "totalSpend": 66.4,
+      "totalRevenue": 636.98,
+      "totalClicks": "315",
+      "totalOrders": "102",
+      "totalUnits": "108",
+      "activeDays": "88",
+      "roas": 9.5931,
+      "ordersPerKwd": 1.1591,
+      "unitsPerKwd": 1.2273,
+      "aov": 6.2449,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 128.4286,
+      "organicDailyRevenue": 743.8656,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "nappy",
+        "حفاضات اطفال",
+        "diapers",
+        "diaper",
+        "حفاضات أطفال",
+        "حفاضات عروض",
+        "baby diapers",
+        "nappies",
+        "حفاضات حديثي الولادة",
+        "حفاظات",
+        "newborn diapers",
+        "حفاضات عضوية",
+        "baby",
+        "newborn diaper",
+        "حفاضة",
+        "حفاضات",
+        "baby diaper",
+        "حفاضات حجم صغير"
+      ],
+      "listing": {
+        "totalSpend": 56.9,
+        "totalRevenue": 526.64,
+        "activeDays": "75",
+        "roas": 9.2555,
+        "ordersPerKwd": 1.1467,
+        "unitsPerKwd": 1.1867
+      },
+      "search": {
+        "totalSpend": 9.5,
+        "totalRevenue": 110.34,
+        "activeDays": "56",
+        "roas": 11.6147,
+        "ordersPerKwd": 0.2857,
+        "unitsPerKwd": 0.3393
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack Size 4, Large, 8-16 KG, 80 Count x 2": {
+      "totalSpend": 3.4,
+      "totalRevenue": 0,
+      "totalClicks": "17",
+      "totalOrders": "0",
+      "totalUnits": "0",
+      "activeDays": "27",
+      "roas": 0,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0,
+      "aov": 0,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 128.4286,
+      "organicDailyRevenue": 743.8656,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "حفاضة",
+        "حفاظات"
+      ],
+      "listing": {
+        "totalSpend": 3.2,
+        "totalRevenue": 0,
+        "activeDays": "22",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      },
+      "search": {
+        "totalSpend": 0.2,
+        "totalRevenue": 0,
+        "activeDays": "11",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 5, X-Large, 12-22kg, 74 Count": {
+      "totalSpend": 91.1,
+      "totalRevenue": 782.43,
+      "totalClicks": "408",
+      "totalOrders": "128",
+      "totalUnits": "135",
+      "activeDays": "130",
+      "roas": 8.5887,
+      "ordersPerKwd": 0.9846,
+      "unitsPerKwd": 1.0385,
+      "aov": 6.1127,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 220.4286,
+      "organicDailyRevenue": 1243.9731,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "حفاضات عضوية",
+        "حفاضات عروض",
+        "newborn diaper",
+        "حفاضات كبيرة",
+        "حفاضات اطفال",
+        "diapers",
+        "حفاضات الأطفال",
+        "baby",
+        "حفاضات حجم كبير",
+        "حفاضات بامبي",
+        "nappies",
+        "حفاظات",
+        "حفاضة",
+        "newborn diapers",
+        "diaper",
+        "baby diapers",
+        "nappy",
+        "حفاضات أطفال",
+        "baby diaper",
+        "حفاضات"
+      ],
+      "listing": {
+        "totalSpend": 75.1,
+        "totalRevenue": 604.39,
+        "activeDays": "102",
+        "roas": 8.0478,
+        "ordersPerKwd": 0.9706,
+        "unitsPerKwd": 1.0294
+      },
+      "search": {
+        "totalSpend": 16,
+        "totalRevenue": 178.04,
+        "activeDays": "98",
+        "roas": 11.1275,
+        "ordersPerKwd": 0.2959,
+        "unitsPerKwd": 0.3061
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 6, XX-Large, 16+kg, 52 Pieces": {
+      "totalSpend": 52.2,
+      "totalRevenue": 304.51,
+      "totalClicks": "174",
+      "totalOrders": "49",
+      "totalUnits": "51",
+      "activeDays": "20",
+      "roas": 5.8335,
+      "ordersPerKwd": 2.45,
+      "unitsPerKwd": 2.55,
+      "aov": 6.2145,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 150,
+      "organicDailyRevenue": 872.4131,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "nappy",
+        "baby diapers",
+        "حفاضات اطفال",
+        "حفاضة",
+        "حفاضات",
+        "baby diaper",
+        "حفاظات",
+        "diaper",
+        "حفاضات حجم صغير",
+        "حفاضات أطفال",
+        "newborn diaper",
+        "حفاضات عضوية",
+        "newborn diapers",
+        "diapers",
+        "حفاضات عروض",
+        "nappies"
+      ],
+      "listing": {
+        "totalSpend": 44,
+        "totalRevenue": 214.02,
+        "activeDays": "19",
+        "roas": 4.8641,
+        "ordersPerKwd": 1.7895,
+        "unitsPerKwd": 1.8947
+      },
+      "search": {
+        "totalSpend": 8.2,
+        "totalRevenue": 90.49,
+        "activeDays": "18",
+        "roas": 11.0354,
+        "ordersPerKwd": 0.8333,
+        "unitsPerKwd": 0.8333
+      }
+    },
+    "Sanita Bambi Baby Diapers Mega Pack, Size 6, XX-Large, 16+kg, 52 Pieces x 2": {
+      "totalSpend": 1.2,
+      "totalRevenue": 0,
+      "totalClicks": "6",
+      "totalOrders": "0",
+      "totalUnits": "0",
+      "activeDays": "16",
+      "roas": 0,
+      "ordersPerKwd": 0,
+      "unitsPerKwd": 0,
+      "aov": 0,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 150,
+      "organicDailyRevenue": 872.4131,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "diaper",
+        "حفاضات",
+        "diapers"
+      ],
+      "listing": {
+        "totalSpend": 1.2,
+        "totalRevenue": 0,
+        "activeDays": "13",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      },
+      "search": {
+        "totalSpend": 0,
+        "totalRevenue": 0,
+        "activeDays": "4",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Sanita Bambi Baby Diapers Super Pack, Size 4, Large, 8-16kg, 124 Pieces": {
+      "totalSpend": 21.7,
+      "totalRevenue": 232.18,
+      "totalClicks": "92",
+      "totalOrders": "31",
+      "totalUnits": "32",
+      "activeDays": "111",
+      "roas": 10.6995,
+      "ordersPerKwd": 0.2793,
+      "unitsPerKwd": 0.2883,
+      "aov": 7.4897,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 218.1429,
+      "organicDailyRevenue": 1439.6657,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "baby diaper",
+        "حفاظات",
+        "diaper",
+        "baby",
+        "حفاضات بامبي",
+        "حفاضة",
+        "حفاضات حديثي الولادة",
+        "حفاضات أطفال",
+        "diapers",
+        "حفاضات الأطفال",
+        "حفاضات",
+        "حفاضات اطفال"
+      ],
+      "listing": {
+        "totalSpend": 14.1,
+        "totalRevenue": 158.84,
+        "activeDays": "82",
+        "roas": 11.2652,
+        "ordersPerKwd": 0.2683,
+        "unitsPerKwd": 0.2683
+      },
+      "search": {
+        "totalSpend": 7.6,
+        "totalRevenue": 73.34,
+        "activeDays": "88",
+        "roas": 9.65,
+        "ordersPerKwd": 0.1023,
+        "unitsPerKwd": 0.1136
+      }
+    },
+    "Sanita Bambi Baby Diapers Super Pack, Size 5, X-Large, 12-22kg, 108 Pieces": {
+      "totalSpend": 50.4,
+      "totalRevenue": 528.2,
+      "totalClicks": "234",
+      "totalOrders": "72",
+      "totalUnits": "76",
+      "activeDays": "109",
+      "roas": 10.4802,
+      "ordersPerKwd": 0.6606,
+      "unitsPerKwd": 0.6972,
+      "aov": 7.3361,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 480,
+      "organicDailyRevenue": 3169.4971,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "diaper",
+        "حفاضة",
+        "حفاضات حجم كبير",
+        "حفاضات",
+        "baby diaper",
+        "حفاضات الأطفال",
+        "حفاضات بامبي",
+        "diapers",
+        "حفاظات",
+        "حفاضات اطفال",
+        "baby",
+        "حفاضات أطفال"
+      ],
+      "listing": {
+        "totalSpend": 36.7,
+        "totalRevenue": 346.94,
+        "activeDays": "69",
+        "roas": 9.4534,
+        "ordersPerKwd": 0.6957,
+        "unitsPerKwd": 0.7391
+      },
+      "search": {
+        "totalSpend": 13.7,
+        "totalRevenue": 181.26,
+        "activeDays": "95",
+        "roas": 13.2307,
+        "ordersPerKwd": 0.2526,
+        "unitsPerKwd": 0.2632
+      }
+    },
+    "Sanita Bambi Baby Diapers Super Pack, Size 6, XX Large, 16+kg, 72 Pieces": {
+      "totalSpend": 42.8,
+      "totalRevenue": 635.36,
+      "totalClicks": "181",
+      "totalOrders": "84",
+      "totalUnits": "91",
+      "activeDays": "111",
+      "roas": 14.8449,
+      "ordersPerKwd": 0.7568,
+      "unitsPerKwd": 0.8198,
+      "aov": 7.5638,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 479,
+      "organicDailyRevenue": 3140.8057,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "حفاضات حجم كبير",
+        "حفاضات بامبي",
+        "baby",
+        "حفاضات",
+        "diaper",
+        "baby diaper",
+        "حفاضة",
+        "حفاضات أطفال",
+        "حفاضات اطفال",
+        "حفاظات",
+        "diapers"
+      ],
+      "listing": {
+        "totalSpend": 28.5,
+        "totalRevenue": 401.66,
+        "activeDays": "79",
+        "roas": 14.0933,
+        "ordersPerKwd": 0.6835,
+        "unitsPerKwd": 0.7342
+      },
+      "search": {
+        "totalSpend": 14.3,
+        "totalRevenue": 233.7,
+        "activeDays": "92",
+        "roas": 16.3427,
+        "ordersPerKwd": 0.3261,
+        "unitsPerKwd": 0.3587
+      }
+    },
+    "Sanita Bambi Pants Jumbo Box, Size 4, Large, 8-14kg, 100 Count": {
+      "totalSpend": 15.5,
+      "totalRevenue": 59.36,
+      "totalClicks": "53",
+      "totalOrders": "8",
+      "totalUnits": "8",
+      "activeDays": "100",
+      "roas": 3.8297,
+      "ordersPerKwd": 0.08,
+      "unitsPerKwd": 0.08,
+      "aov": 7.42,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 95.5714,
+      "organicDailyRevenue": 655.3237,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "حفاضات",
+        "حفاظات",
+        "حفاضات بامبي",
+        "حفاضات حجم كبير",
+        "حفاضات كبيرة",
+        "حفاضات اطفال",
+        "baby pants",
+        "baby diaper",
+        "حفاضة",
+        "diapers pants",
+        "diapers",
+        "baby diapers",
+        "حفاضات أطفال",
+        "diaper pants",
+        "pants diaper",
+        "diaper"
+      ],
+      "listing": {
+        "totalSpend": 11.2,
+        "totalRevenue": 23.11,
+        "activeDays": "78",
+        "roas": 2.0634,
+        "ordersPerKwd": 0.0385,
+        "unitsPerKwd": 0.0385
+      },
+      "search": {
+        "totalSpend": 4.3,
+        "totalRevenue": 36.25,
+        "activeDays": "67",
+        "roas": 8.4302,
+        "ordersPerKwd": 0.0746,
+        "unitsPerKwd": 0.0746
+      }
+    },
+    "Sanita Bambi Pants Jumbo Box, Size 6, XX Large, 16+kg, 80 Count": {
+      "totalSpend": 152.4,
+      "totalRevenue": 1096.24,
+      "totalClicks": "341",
+      "totalOrders": "134",
+      "totalUnits": "140",
+      "activeDays": "128",
+      "roas": 7.1932,
+      "ordersPerKwd": 1.0469,
+      "unitsPerKwd": 1.0938,
+      "aov": 8.1809,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 596.2857,
+      "organicDailyRevenue": 4140.8099,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "حفاظات",
+        "baby diaper",
+        "حفاضات",
+        "diapers pants",
+        "diapers",
+        "حفاضة",
+        "pants",
+        "baby diapers",
+        "diaper pants",
+        "حفاضات كبيرة",
+        "حفاضات اطفال",
+        "baby pants",
+        "pants diaper",
+        "حفاضات بامبي",
+        "حفاضات أطفال",
+        "diaper",
+        "حفاضات حجم كبير"
+      ],
+      "listing": {
+        "totalSpend": 137.6,
+        "totalRevenue": 901.08,
+        "activeDays": "107",
+        "roas": 6.5485,
+        "ordersPerKwd": 1.0093,
+        "unitsPerKwd": 1.0654
+      },
+      "search": {
+        "totalSpend": 14.8,
+        "totalRevenue": 195.16,
+        "activeDays": "101",
+        "roas": 13.1865,
+        "ordersPerKwd": 0.2574,
+        "unitsPerKwd": 0.2574
+      }
+    },
+    "Sanita Bambi Pants Jumbo Pack, Size 5, X Large, 12-18kg, 88 Count": {
+      "totalSpend": 20.5,
+      "totalRevenue": 285.23,
+      "totalClicks": "82",
+      "totalOrders": "37",
+      "totalUnits": "39",
+      "activeDays": "112",
+      "roas": 13.9137,
+      "ordersPerKwd": 0.3304,
+      "unitsPerKwd": 0.3482,
+      "aov": 7.7089,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 376.4286,
+      "organicDailyRevenue": 2587.4389,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "baby diaper",
+        "diaper pants",
+        "pants",
+        "حفاضات كبيرة",
+        "حفاضات اطفال",
+        "diapers pants",
+        "baby diapers",
+        "حفاضات بامبي",
+        "baby pants",
+        "حفاضات",
+        "pants diaper",
+        "diaper",
+        "diapers",
+        "حفاظات",
+        "حفاضات حجم كبير",
+        "حفاضات أطفال",
+        "حفاضة"
+      ],
+      "listing": {
+        "totalSpend": 14.3,
+        "totalRevenue": 195.19,
+        "activeDays": "75",
+        "roas": 13.6497,
+        "ordersPerKwd": 0.3467,
+        "unitsPerKwd": 0.36
+      },
+      "search": {
+        "totalSpend": 6.2,
+        "totalRevenue": 90.04,
+        "activeDays": "94",
+        "roas": 14.5226,
+        "ordersPerKwd": 0.117,
+        "unitsPerKwd": 0.1277
+      }
+    },
+    "Sanita Bambi Pants Style Diaper Jumbo Pack, Size 6, XX Large, 16+kg, 40 Count": {
+      "totalSpend": 97.4,
+      "totalRevenue": 786.24,
+      "totalClicks": "434",
+      "totalOrders": "171",
+      "totalUnits": "190",
+      "activeDays": "115",
+      "roas": 8.0723,
+      "ordersPerKwd": 1.487,
+      "unitsPerKwd": 1.6522,
+      "aov": 4.5979,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 364.8571,
+      "organicDailyRevenue": 1592.1309,
+      "categories": [
+        "Baby Care"
+      ],
+      "keywords": [
+        "حفاضات أطفال",
+        "حفاضة",
+        "حفاظات",
+        "baby diaper",
+        "pants",
+        "حفاضات",
+        "baby diapers",
+        "baby pants",
+        "حفاضات اطفال",
+        "حفاضات حديثي الولادة",
+        "diapers",
+        "diaper"
+      ],
+      "listing": {
+        "totalSpend": 67.7,
+        "totalRevenue": 504.14,
+        "activeDays": "86",
+        "roas": 7.4467,
+        "ordersPerKwd": 1.2791,
+        "unitsPerKwd": 1.4302
+      },
+      "search": {
+        "totalSpend": 29.7,
+        "totalRevenue": 282.1,
+        "activeDays": "102",
+        "roas": 9.4983,
+        "ordersPerKwd": 0.598,
+        "unitsPerKwd": 0.6569
+      }
+    },
+    "Sanita Bouquet 2 Ply Toilet Paper, 200 Sheets, 12 Rolls": {
+      "totalSpend": 39.6,
+      "totalRevenue": 248.8,
+      "totalClicks": "198",
+      "totalOrders": "130",
+      "totalUnits": "153",
+      "activeDays": "54",
+      "roas": 6.2828,
+      "ordersPerKwd": 2.4074,
+      "unitsPerKwd": 2.8333,
+      "aov": 1.9138,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 775.7143,
+      "organicDailyRevenue": 1319.4553,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 39.6,
+        "totalRevenue": 248.8,
+        "activeDays": "54",
+        "roas": 6.2828,
+        "ordersPerKwd": 2.4074,
+        "unitsPerKwd": 2.8333
+      }
+    },
+    "Sanita Bouquet Kitchen Towel, 180 Sheets, 3 Rolls": {
+      "totalSpend": 8,
+      "totalRevenue": 43.65,
+      "totalClicks": "40",
+      "totalOrders": "24",
+      "totalUnits": "28",
+      "activeDays": "72",
+      "roas": 5.4562,
+      "ordersPerKwd": 0.3333,
+      "unitsPerKwd": 0.3889,
+      "aov": 1.8188,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 349.2857,
+      "organicDailyRevenue": 532.7791,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 8,
+        "totalRevenue": 43.65,
+        "activeDays": "72",
+        "roas": 5.4562,
+        "ordersPerKwd": 0.3333,
+        "unitsPerKwd": 0.3889
+      }
+    },
+    "Sanita Bouquet Kitchen Towel (3+1 Free) Rolls, 3 Ply, 54 sheets": {
+      "totalSpend": 7,
+      "totalRevenue": 30.16,
+      "totalClicks": "35",
+      "totalOrders": "26",
+      "totalUnits": "29",
+      "activeDays": "9",
+      "roas": 4.3086,
+      "ordersPerKwd": 2.8889,
+      "unitsPerKwd": 3.2222,
+      "aov": 1.16,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1527.3333,
+      "organicDailyRevenue": 1636.3333,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 7,
+        "totalRevenue": 30.16,
+        "activeDays": "9",
+        "roas": 4.3086,
+        "ordersPerKwd": 2.8889,
+        "unitsPerKwd": 3.2222
+      }
+    },
+    "Sanita Bouquet Premium 3Ply Kitchen Towel, 54 Sheets, 3+1 Rolls": {
+      "totalSpend": 41,
+      "totalRevenue": 198.98,
+      "totalClicks": "205",
+      "totalOrders": "146",
+      "totalUnits": "176",
+      "activeDays": "71",
+      "roas": 4.8532,
+      "ordersPerKwd": 2.0563,
+      "unitsPerKwd": 2.4789,
+      "aov": 1.3629,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1126.5,
+      "organicDailyRevenue": 1347.1475,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 41,
+        "totalRevenue": 198.98,
+        "activeDays": "71",
+        "roas": 4.8532,
+        "ordersPerKwd": 2.0563,
+        "unitsPerKwd": 2.4789
+      }
+    },
+    "Sanita Bouquet Soft & Quilted Toilet Rolls, 12x200 tissues": {
+      "totalSpend": 18.8,
+      "totalRevenue": 161.15,
+      "totalClicks": "94",
+      "totalOrders": "74",
+      "totalUnits": "85",
+      "activeDays": "28",
+      "roas": 8.5718,
+      "ordersPerKwd": 2.6429,
+      "unitsPerKwd": 3.0357,
+      "aov": 2.1777,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "ورق حمام",
+        "toilet tissue",
+        "toilet",
+        "toilet paper",
+        "ورق تواليت"
+      ],
+      "listing": {
+        "totalSpend": 8.4,
+        "totalRevenue": 65.04,
+        "activeDays": "26",
+        "roas": 7.7429,
+        "ordersPerKwd": 1.1923,
+        "unitsPerKwd": 1.3077
+      },
+      "search": {
+        "totalSpend": 10.4,
+        "totalRevenue": 96.11,
+        "activeDays": "27",
+        "roas": 9.2413,
+        "ordersPerKwd": 1.5926,
+        "unitsPerKwd": 1.8889
+      }
+    },
+    "Sanita Charm 100% Cotton Balls, 200 Balls": {
+      "totalSpend": 31,
+      "totalRevenue": 72.28,
+      "totalClicks": "155",
+      "totalOrders": "58",
+      "totalUnits": "80",
+      "activeDays": "25",
+      "roas": 2.3316,
+      "ordersPerKwd": 2.32,
+      "unitsPerKwd": 3.2,
+      "aov": 1.2462,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 95.5,
+      "organicDailyRevenue": 86.305,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "buds",
+        "cotton buds",
+        "cotton",
+        "cotton balls",
+        "cotton pads",
+        "فوطة قطنية"
+      ],
+      "listing": {
+        "totalSpend": 16,
+        "totalRevenue": 18.94,
+        "activeDays": "25",
+        "roas": 1.1838,
+        "ordersPerKwd": 0.84,
+        "unitsPerKwd": 0.84
+      },
+      "search": {
+        "totalSpend": 15,
+        "totalRevenue": 53.34,
+        "activeDays": "21",
+        "roas": 3.556,
+        "ordersPerKwd": 1.7619,
+        "unitsPerKwd": 2.8095
+      }
+    },
+    "Sanita Charm 100% Cotton Earbuds, 3x200 Count": {
+      "totalSpend": 13.9,
+      "totalRevenue": 20.87,
+      "totalClicks": "65",
+      "totalOrders": "17",
+      "totalUnits": "20",
+      "activeDays": "64",
+      "roas": 1.5014,
+      "ordersPerKwd": 0.2656,
+      "unitsPerKwd": 0.3125,
+      "aov": 1.2276,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 55,
+      "organicDailyRevenue": 61.5386,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "cotton pads",
+        "cotton balls",
+        "أعواد آذان",
+        "baby care",
+        "cotton buds",
+        "أعواد قطن",
+        "cotton",
+        "baby"
+      ],
+      "listing": {
+        "totalSpend": 8.1,
+        "totalRevenue": 10.67,
+        "activeDays": "58",
+        "roas": 1.3173,
+        "ordersPerKwd": 0.1552,
+        "unitsPerKwd": 0.1724
+      },
+      "search": {
+        "totalSpend": 5.8,
+        "totalRevenue": 10.2,
+        "activeDays": "33",
+        "roas": 1.7586,
+        "ordersPerKwd": 0.2424,
+        "unitsPerKwd": 0.303
+      }
+    },
+    "Sanita Charm 100% Cotton Round Pads, 3x80 Pads": {
+      "totalSpend": 137.2,
+      "totalRevenue": 402.96,
+      "totalClicks": "599",
+      "totalOrders": "267",
+      "totalUnits": "292",
+      "activeDays": "93",
+      "roas": 2.937,
+      "ordersPerKwd": 2.871,
+      "unitsPerKwd": 3.1398,
+      "aov": 1.5092,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 237.8333,
+      "organicDailyRevenue": 328.21,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "buds",
+        "baby",
+        "أعواد قطن",
+        "أعواد آذان",
+        "فوطة قطنية",
+        "cotton pads",
+        "cotton balls",
+        "cotton buds",
+        "cotton",
+        "baby care"
+      ],
+      "listing": {
+        "totalSpend": 100.6,
+        "totalRevenue": 249.78,
+        "activeDays": "88",
+        "roas": 2.4829,
+        "ordersPerKwd": 1.9205,
+        "unitsPerKwd": 2.0568
+      },
+      "search": {
+        "totalSpend": 36.6,
+        "totalRevenue": 153.18,
+        "activeDays": "64",
+        "roas": 4.1852,
+        "ordersPerKwd": 1.5313,
+        "unitsPerKwd": 1.7344
+      }
+    },
+    "Sanita Charm Cotton Swabs, 3x200 Pieces": {
+      "totalSpend": 5,
+      "totalRevenue": 7.5,
+      "totalClicks": "25",
+      "totalOrders": "6",
+      "totalUnits": "6",
+      "activeDays": "25",
+      "roas": 1.5,
+      "ordersPerKwd": 0.24,
+      "unitsPerKwd": 0.24,
+      "aov": 1.25,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "cotton buds",
+        "cotton balls",
+        "cotton",
+        "buds",
+        "cotton pads"
+      ],
+      "listing": {
+        "totalSpend": 2.2,
+        "totalRevenue": 5,
+        "activeDays": "25",
+        "roas": 2.2727,
+        "ordersPerKwd": 0.16,
+        "unitsPerKwd": 0.16
+      },
+      "search": {
+        "totalSpend": 2.8,
+        "totalRevenue": 2.5,
+        "activeDays": "21",
+        "roas": 0.8929,
+        "ordersPerKwd": 0.0952,
+        "unitsPerKwd": 0.0952
+      }
+    },
+    "Sanita Charm White Cotton Balls, 100 Pieces": {
+      "totalSpend": 10.4,
+      "totalRevenue": 15.5,
+      "totalClicks": "51",
+      "totalOrders": "21",
+      "totalUnits": "25",
+      "activeDays": "63",
+      "roas": 1.4904,
+      "ordersPerKwd": 0.3333,
+      "unitsPerKwd": 0.3968,
+      "aov": 0.7381,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 204,
+      "organicDailyRevenue": 130.56,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "cotton balls",
+        "baby",
+        "فوطة قطنية",
+        "cotton",
+        "buds",
+        "cotton buds",
+        "cotton pads",
+        "baby care",
+        "أعواد قطن"
+      ],
+      "listing": {
+        "totalSpend": 4.4,
+        "totalRevenue": 5.58,
+        "activeDays": "55",
+        "roas": 1.2682,
+        "ordersPerKwd": 0.1273,
+        "unitsPerKwd": 0.1636
+      },
+      "search": {
+        "totalSpend": 6,
+        "totalRevenue": 9.92,
+        "activeDays": "45",
+        "roas": 1.6533,
+        "ordersPerKwd": 0.3111,
+        "unitsPerKwd": 0.3556
+      }
+    },
+    "Sanita Cling Film, 45cm, 1 Roll": {
+      "totalSpend": 43.2,
+      "totalRevenue": 73.35,
+      "totalClicks": "216",
+      "totalOrders": "111",
+      "totalUnits": "131",
+      "activeDays": "55",
+      "roas": 1.6979,
+      "ordersPerKwd": 2.0182,
+      "unitsPerKwd": 2.3818,
+      "aov": 0.6608,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 510.2857,
+      "organicDailyRevenue": 288.7679,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 43.2,
+        "totalRevenue": 73.35,
+        "activeDays": "55",
+        "roas": 1.6979,
+        "ordersPerKwd": 2.0182,
+        "unitsPerKwd": 2.3818
+      }
+    },
+    "Sanita Cling Film Eco Pack, 450mm x 200m, 1 Roll": {
+      "totalSpend": 39.8,
+      "totalRevenue": 237.57,
+      "totalClicks": "199",
+      "totalOrders": "98",
+      "totalUnits": "111",
+      "activeDays": "65",
+      "roas": 5.9691,
+      "ordersPerKwd": 1.5077,
+      "unitsPerKwd": 1.7077,
+      "aov": 2.4242,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 240.8,
+      "organicDailyRevenue": 524.367,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 39.8,
+        "totalRevenue": 237.57,
+        "activeDays": "65",
+        "roas": 5.9691,
+        "ordersPerKwd": 1.5077,
+        "unitsPerKwd": 1.7077
+      }
+    },
+    "Sanita Cling Film Eco Pack, 45cm, 1 Roll": {
+      "totalSpend": 1,
+      "totalRevenue": 2.74,
+      "totalClicks": "5",
+      "totalOrders": "1",
+      "totalUnits": "1",
+      "activeDays": "2",
+      "roas": 2.74,
+      "ordersPerKwd": 0.5,
+      "unitsPerKwd": 0.5,
+      "aov": 2.74,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 386,
+      "organicDailyRevenue": 827.5375,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 1,
+        "totalRevenue": 2.74,
+        "activeDays": "2",
+        "roas": 2.74,
+        "ordersPerKwd": 0.5,
+        "unitsPerKwd": 0.5
+      }
+    },
+    "Sanita Club 2ply Facial Tissues, 5x170 Sheets": {
+      "totalSpend": 8.4,
+      "totalRevenue": 59.35,
+      "totalClicks": "42",
+      "totalOrders": "26",
+      "totalUnits": "37",
+      "activeDays": "53",
+      "roas": 7.0655,
+      "ordersPerKwd": 0.4906,
+      "unitsPerKwd": 0.6981,
+      "aov": 2.2827,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 2759.7143,
+      "organicDailyRevenue": 4491.6716,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 8.4,
+        "totalRevenue": 59.35,
+        "activeDays": "53",
+        "roas": 7.0655,
+        "ordersPerKwd": 0.4906,
+        "unitsPerKwd": 0.6981
+      }
+    },
+    "Sanita Club 2Ply Toilet Tissue Rolls, 200 Sheets, 8+2 Rolls": {
+      "totalSpend": 33,
+      "totalRevenue": 162.27,
+      "totalClicks": "165",
+      "totalOrders": "122",
+      "totalUnits": "140",
+      "activeDays": "28",
+      "roas": 4.9173,
+      "ordersPerKwd": 4.3571,
+      "unitsPerKwd": 5,
+      "aov": 1.3301,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "toilet paper",
+        "toilet",
+        "ورق تواليت",
+        "toilet tissue",
+        "ورق حمام"
+      ],
+      "listing": {
+        "totalSpend": 16,
+        "totalRevenue": 66.12,
+        "activeDays": "25",
+        "roas": 4.1325,
+        "ordersPerKwd": 2,
+        "unitsPerKwd": 2.28
+      },
+      "search": {
+        "totalSpend": 17,
+        "totalRevenue": 96.15,
+        "activeDays": "27",
+        "roas": 5.6559,
+        "ordersPerKwd": 2.6667,
+        "unitsPerKwd": 3.0741
+      }
+    },
+    "Sanita Club 2Ply Toilet Tissues, 200 Sheets, 16+4 Pieces": {
+      "totalSpend": 11.8,
+      "totalRevenue": 115.13,
+      "totalClicks": "59",
+      "totalOrders": "44",
+      "totalUnits": "57",
+      "activeDays": "28",
+      "roas": 9.7568,
+      "ordersPerKwd": 1.5714,
+      "unitsPerKwd": 2.0357,
+      "aov": 2.6166,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "toilet",
+        "toilet tissue",
+        "ورق حمام",
+        "toilet paper",
+        "ورق تواليت"
+      ],
+      "listing": {
+        "totalSpend": 4.6,
+        "totalRevenue": 36.94,
+        "activeDays": "21",
+        "roas": 8.0304,
+        "ordersPerKwd": 0.6667,
+        "unitsPerKwd": 0.8571
+      },
+      "search": {
+        "totalSpend": 7.2,
+        "totalRevenue": 78.19,
+        "activeDays": "27",
+        "roas": 10.8597,
+        "ordersPerKwd": 1.1111,
+        "unitsPerKwd": 1.4444
+      }
+    },
+    "Sanita Club 2 Ply Toilet Tissues, 360 Sheets, 10 Rolls": {
+      "totalSpend": 26,
+      "totalRevenue": 156.37,
+      "totalClicks": "130",
+      "totalOrders": "82",
+      "totalUnits": "88",
+      "activeDays": "83",
+      "roas": 6.0142,
+      "ordersPerKwd": 0.988,
+      "unitsPerKwd": 1.0602,
+      "aov": 1.907,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 285.2857,
+      "organicDailyRevenue": 444.4919,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "toilet rolls",
+        "مناديل المراحيض",
+        "toilet roll",
+        "ورق حمام",
+        "toilet tissues",
+        "toilet",
+        "toilet paper rolls",
+        "toilet tissue",
+        "bathroom tissue",
+        "paper rolls",
+        "toilet paper",
+        "ورق تواليت",
+        "مناديل",
+        "مناديل حمام",
+        "bathroom roll"
+      ],
+      "listing": {
+        "totalSpend": 18,
+        "totalRevenue": 102.35,
+        "activeDays": "77",
+        "roas": 5.6861,
+        "ordersPerKwd": 0.6883,
+        "unitsPerKwd": 0.7532
+      },
+      "search": {
+        "totalSpend": 8,
+        "totalRevenue": 54.02,
+        "activeDays": "30",
+        "roas": 6.7525,
+        "ordersPerKwd": 0.9667,
+        "unitsPerKwd": 1
+      }
+    },
+    "Sanita Club Biodegradable Garbage Bags, 55 Gallons, 2x15 Bags": {
+      "totalSpend": 112.6,
+      "totalRevenue": 648.42,
+      "totalClicks": "563",
+      "totalOrders": "292",
+      "totalUnits": "344",
+      "activeDays": "76",
+      "roas": 5.7586,
+      "ordersPerKwd": 3.8421,
+      "unitsPerKwd": 4.5263,
+      "aov": 2.2206,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1510.2857,
+      "organicDailyRevenue": 2736.5909,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "كيس زبالة",
+        "كيس قمامة كبير",
+        "garbage bag",
+        "garbage bags",
+        "small trash bag",
+        "small garbage bag",
+        "قمامة",
+        "trash bags",
+        "garbage",
+        "أكياس قمامة",
+        "waste bag",
+        "كيس قمامة صغير",
+        "كيس قمامة",
+        "trash bag",
+        "كيس نفايات",
+        "rubbish bag"
+      ],
+      "listing": {
+        "totalSpend": 72.8,
+        "totalRevenue": 429.54,
+        "activeDays": "75",
+        "roas": 5.9003,
+        "ordersPerKwd": 2.5867,
+        "unitsPerKwd": 3.04
+      },
+      "search": {
+        "totalSpend": 39.8,
+        "totalRevenue": 218.88,
+        "activeDays": "52",
+        "roas": 5.4995,
+        "ordersPerKwd": 1.8846,
+        "unitsPerKwd": 2.2308
+      }
+    },
+    "Sanita Club Biodegradable Garbage Bags, 70 Gallons, 2 Rolls": {
+      "totalSpend": 22.2,
+      "totalRevenue": 134.32,
+      "totalClicks": "111",
+      "totalOrders": "60",
+      "totalUnits": "64",
+      "activeDays": "48",
+      "roas": 6.0505,
+      "ordersPerKwd": 1.25,
+      "unitsPerKwd": 1.3333,
+      "aov": 2.2387,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 121.5,
+      "organicDailyRevenue": 272.9625,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "كيس نفايات",
+        "كيس قمامة",
+        "كيس قمامة صغير",
+        "قمامة",
+        "garbage",
+        "كيس زبالة",
+        "garbage bag",
+        "garbage bags",
+        "small garbage bag",
+        "كيس قمامة كبير"
+      ],
+      "listing": {
+        "totalSpend": 11.4,
+        "totalRevenue": 57.79,
+        "activeDays": "45",
+        "roas": 5.0693,
+        "ordersPerKwd": 0.6,
+        "unitsPerKwd": 0.6222
+      },
+      "search": {
+        "totalSpend": 10.8,
+        "totalRevenue": 76.53,
+        "activeDays": "38",
+        "roas": 7.0861,
+        "ordersPerKwd": 0.8684,
+        "unitsPerKwd": 0.9474
+      }
+    },
+    "Sanita Club Biodegradable Garbage Bags, 70 Gallons, 2 Rolls, x 2": {
+      "totalSpend": 30.6,
+      "totalRevenue": 193.27,
+      "totalClicks": "153",
+      "totalOrders": "53",
+      "totalUnits": "53",
+      "activeDays": "18",
+      "roas": 6.316,
+      "ordersPerKwd": 2.9444,
+      "unitsPerKwd": 2.9444,
+      "aov": 3.6466,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 121.5,
+      "organicDailyRevenue": 272.9625,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "garbage",
+        "كيس نفايات",
+        "كيس زبالة",
+        "garbage bags",
+        "كيس قمامة",
+        "كيس قمامة كبير",
+        "garbage bag"
+      ],
+      "listing": {
+        "totalSpend": 15,
+        "totalRevenue": 97.77,
+        "activeDays": "14",
+        "roas": 6.518,
+        "ordersPerKwd": 1.9286,
+        "unitsPerKwd": 1.9286
+      },
+      "search": {
+        "totalSpend": 15.6,
+        "totalRevenue": 95.5,
+        "activeDays": "18",
+        "roas": 6.1218,
+        "ordersPerKwd": 1.4444,
+        "unitsPerKwd": 1.4444
+      }
+    },
+    "Sanita Club Biodegradable Trash Bags, 10 Gallons, 90 Bags": {
+      "totalSpend": 63.6,
+      "totalRevenue": 319.76,
+      "totalClicks": "318",
+      "totalOrders": "176",
+      "totalUnits": "195",
+      "activeDays": "74",
+      "roas": 5.0277,
+      "ordersPerKwd": 2.3784,
+      "unitsPerKwd": 2.6351,
+      "aov": 1.8168,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 437,
+      "organicDailyRevenue": 687.3834,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "كيس قمامة",
+        "كيس نفايات",
+        "كيس قمامة كبير",
+        "trash bag",
+        "قمامة",
+        "garbage bags",
+        "trash bags",
+        "trash",
+        "كيس قمامة صغير",
+        "كيس زبالة"
+      ],
+      "listing": {
+        "totalSpend": 49.6,
+        "totalRevenue": 243.19,
+        "activeDays": "69",
+        "roas": 4.903,
+        "ordersPerKwd": 1.9275,
+        "unitsPerKwd": 2.1449
+      },
+      "search": {
+        "totalSpend": 14,
+        "totalRevenue": 76.57,
+        "activeDays": "26",
+        "roas": 5.4693,
+        "ordersPerKwd": 1.6538,
+        "unitsPerKwd": 1.8077
+      }
+    },
+    "Sanita Club Embossed 2 Ply Toilet Paper Rolls, 10x200 Sheets": {
+      "totalSpend": 82.6,
+      "totalRevenue": 349.46,
+      "totalClicks": "413",
+      "totalOrders": "265",
+      "totalUnits": "286",
+      "activeDays": "70",
+      "roas": 4.2308,
+      "ordersPerKwd": 3.7857,
+      "unitsPerKwd": 4.0857,
+      "aov": 1.3187,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1227,
+      "organicDailyRevenue": 1392.4847,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "toilet roll",
+        "ورق تواليت",
+        "مناديل حمام",
+        "مناديل",
+        "مناديل المراحيض",
+        "toilet tissue",
+        "toilet paper",
+        "toilet tissues",
+        "toilet paper rolls",
+        "bathroom tissue",
+        "toilet rolls"
+      ],
+      "listing": {
+        "totalSpend": 68.4,
+        "totalRevenue": 285.62,
+        "activeDays": "66",
+        "roas": 4.1757,
+        "ordersPerKwd": 3.2424,
+        "unitsPerKwd": 3.5455
+      },
+      "search": {
+        "totalSpend": 14.2,
+        "totalRevenue": 63.84,
+        "activeDays": "11",
+        "roas": 4.4958,
+        "ordersPerKwd": 4.6364,
+        "unitsPerKwd": 4.7273
+      }
+    },
+    "Sanita Club Everyday 2Ply Facial Tissue Box, 5x130 Sheets": {
+      "totalSpend": 57,
+      "totalRevenue": 310,
+      "totalClicks": "285",
+      "totalOrders": "206",
+      "totalUnits": "279",
+      "activeDays": "84",
+      "roas": 5.4386,
+      "ordersPerKwd": 2.4524,
+      "unitsPerKwd": 3.3214,
+      "aov": 1.5049,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 8274.2857,
+      "organicDailyRevenue": 9401.6783,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "tissues",
+        "مناديل الوجه",
+        "facial tissue",
+        "tissue",
+        "منديل",
+        "مناديل ورقية"
+      ],
+      "listing": {
+        "totalSpend": 49,
+        "totalRevenue": 267.76,
+        "activeDays": "83",
+        "roas": 5.4645,
+        "ordersPerKwd": 2.1205,
+        "unitsPerKwd": 2.9277
+      },
+      "search": {
+        "totalSpend": 8,
+        "totalRevenue": 42.24,
+        "activeDays": "14",
+        "roas": 5.28,
+        "ordersPerKwd": 2.1429,
+        "unitsPerKwd": 2.5714
+      }
+    },
+    "Sanita Club Facial Tissues 2ply, 5x170 tissues": {
+      "totalSpend": 11.4,
+      "totalRevenue": 96.78,
+      "totalClicks": "57",
+      "totalOrders": "41",
+      "totalUnits": "60",
+      "activeDays": "27",
+      "roas": 8.4895,
+      "ordersPerKwd": 1.5185,
+      "unitsPerKwd": 2.2222,
+      "aov": 2.3605,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "facial tissue",
+        "منديل",
+        "tissues",
+        "tissue",
+        "مناديل الوجه",
+        "مناديل ورقية"
+      ],
+      "listing": {
+        "totalSpend": 5,
+        "totalRevenue": 36.18,
+        "activeDays": "26",
+        "roas": 7.236,
+        "ordersPerKwd": 0.5769,
+        "unitsPerKwd": 0.8462
+      },
+      "search": {
+        "totalSpend": 6.4,
+        "totalRevenue": 60.6,
+        "activeDays": "18",
+        "roas": 9.4687,
+        "ordersPerKwd": 1.4444,
+        "unitsPerKwd": 2.1111
+      }
+    },
+    "Sanita Club Fashion Table Cover - Small, 5x4 Rolls": {
+      "totalSpend": 35,
+      "totalRevenue": 190.58,
+      "totalClicks": "175",
+      "totalOrders": "76",
+      "totalUnits": "78",
+      "activeDays": "50",
+      "roas": 5.4451,
+      "ordersPerKwd": 1.52,
+      "unitsPerKwd": 1.56,
+      "aov": 2.5076,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 187.8571,
+      "organicDailyRevenue": 461.1414,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 35,
+        "totalRevenue": 190.58,
+        "activeDays": "50",
+        "roas": 5.4451,
+        "ordersPerKwd": 1.52,
+        "unitsPerKwd": 1.56
+      }
+    },
+    "Sanita Club Garbage Bag, 76x95cm, 50 Gallons, 2x20 Pieces": {
+      "totalSpend": 74,
+      "totalRevenue": 348.42,
+      "totalClicks": "370",
+      "totalOrders": "176",
+      "totalUnits": "195",
+      "activeDays": "73",
+      "roas": 4.7084,
+      "ordersPerKwd": 2.411,
+      "unitsPerKwd": 2.6712,
+      "aov": 1.9797,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 296.7143,
+      "organicDailyRevenue": 500.262,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "كيس نفايات",
+        "trash bags",
+        "small garbage bag",
+        "garbage bag",
+        "قمامة",
+        "garbage bags",
+        "كيس قمامة كبير",
+        "garbage",
+        "كيس قمامة صغير",
+        "كيس زبالة",
+        "trash bag",
+        "كيس قمامة",
+        "أكياس قمامة",
+        "waste bags",
+        "small trash bags",
+        "small trash bag",
+        "sanita garbage bag",
+        "rubbish bag",
+        "أكياس زبالة"
+      ],
+      "listing": {
+        "totalSpend": 37.4,
+        "totalRevenue": 133.63,
+        "activeDays": "72",
+        "roas": 3.573,
+        "ordersPerKwd": 0.9722,
+        "unitsPerKwd": 1.0278
+      },
+      "search": {
+        "totalSpend": 36.6,
+        "totalRevenue": 214.79,
+        "activeDays": "53",
+        "roas": 5.8686,
+        "ordersPerKwd": 2,
+        "unitsPerKwd": 2.283
+      }
+    },
+    "Sanita Club Garbage Bags, Xx-Large, 125x105cm, 2x10 Bags": {
+      "totalSpend": 2.8,
+      "totalRevenue": 11.35,
+      "totalClicks": "14",
+      "totalOrders": "5",
+      "totalUnits": "5",
+      "activeDays": "15",
+      "roas": 4.0536,
+      "ordersPerKwd": 0.3333,
+      "unitsPerKwd": 0.3333,
+      "aov": 2.27,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 72,
+      "organicDailyRevenue": 154.846,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "كيس قمامة",
+        "garbage",
+        "garbage bag",
+        "كيس قمامة كبير",
+        "كيس زبالة"
+      ],
+      "listing": {
+        "totalSpend": 1.6,
+        "totalRevenue": 2.27,
+        "activeDays": "15",
+        "roas": 1.4188,
+        "ordersPerKwd": 0.0667,
+        "unitsPerKwd": 0.0667
+      },
+      "search": {
+        "totalSpend": 1.2,
+        "totalRevenue": 9.08,
+        "activeDays": "5",
+        "roas": 7.5667,
+        "ordersPerKwd": 0.8,
+        "unitsPerKwd": 0.8
+      }
+    },
+    "Sanita Club Kitchen Towel Rolls, 6x40 tissues": {
+      "totalSpend": 8.8,
+      "totalRevenue": 35.88,
+      "totalClicks": "44",
+      "totalOrders": "37",
+      "totalUnits": "43",
+      "activeDays": "14",
+      "roas": 4.0773,
+      "ordersPerKwd": 2.6429,
+      "unitsPerKwd": 3.0714,
+      "aov": 0.9697,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 8.8,
+        "totalRevenue": 35.88,
+        "activeDays": "14",
+        "roas": 4.0773,
+        "ordersPerKwd": 2.6429,
+        "unitsPerKwd": 3.0714
+      }
+    },
+    "Sanita Club Kitchen Towels Rolls Value Pack, 5+1 Rolls": {
+      "totalSpend": 26.2,
+      "totalRevenue": 87.41,
+      "totalClicks": "131",
+      "totalOrders": "88",
+      "totalUnits": "95",
+      "activeDays": "52",
+      "roas": 3.3363,
+      "ordersPerKwd": 1.6923,
+      "unitsPerKwd": 1.8269,
+      "aov": 0.9933,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 836.8571,
+      "organicDailyRevenue": 729.273,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 26.2,
+        "totalRevenue": 87.41,
+        "activeDays": "52",
+        "roas": 3.3363,
+        "ordersPerKwd": 1.6923,
+        "unitsPerKwd": 1.8269
+      }
+    },
+    "Sanita Club Maxi Roll, 500m, 2 Rolls": {
+      "totalSpend": 6.6,
+      "totalRevenue": 57.46,
+      "totalClicks": "33",
+      "totalOrders": "24",
+      "totalUnits": "27",
+      "activeDays": "64",
+      "roas": 8.7061,
+      "ordersPerKwd": 0.375,
+      "unitsPerKwd": 0.4219,
+      "aov": 2.3942,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 323.8571,
+      "organicDailyRevenue": 631.1861,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 6.6,
+        "totalRevenue": 57.46,
+        "activeDays": "64",
+        "roas": 8.7061,
+        "ordersPerKwd": 0.375,
+        "unitsPerKwd": 0.4219
+      }
+    },
+    "Sanita Club Silky Soft Facial Tissues, 5x170 Sheets": {
+      "totalSpend": 2,
+      "totalRevenue": 17.55,
+      "totalClicks": "10",
+      "totalOrders": "7",
+      "totalUnits": "12",
+      "activeDays": "20",
+      "roas": 8.775,
+      "ordersPerKwd": 0.35,
+      "unitsPerKwd": 0.6,
+      "aov": 2.5071,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 202.75,
+      "organicDailyRevenue": 301.4813,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "tissues",
+        "مناديل ورقية",
+        "منديل",
+        "tissue",
+        "مناديل الوجه"
+      ],
+      "listing": {
+        "totalSpend": 0.4,
+        "totalRevenue": 3,
+        "activeDays": "14",
+        "roas": 7.5,
+        "ordersPerKwd": 0.1429,
+        "unitsPerKwd": 0.1429
+      },
+      "search": {
+        "totalSpend": 1.6,
+        "totalRevenue": 14.55,
+        "activeDays": "12",
+        "roas": 9.0938,
+        "ordersPerKwd": 0.4167,
+        "unitsPerKwd": 0.8333
+      }
+    },
+    "Sanita Club  Toilet Paper (16+4) Roll, 2 Ply, 200 Sheets": {
+      "totalSpend": 27,
+      "totalRevenue": 212.54,
+      "totalClicks": "135",
+      "totalOrders": "93",
+      "totalUnits": "104",
+      "activeDays": "60",
+      "roas": 7.8719,
+      "ordersPerKwd": 1.55,
+      "unitsPerKwd": 1.7333,
+      "aov": 2.2854,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 435.7143,
+      "organicDailyRevenue": 783.9536,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "مناديل حمام",
+        "bathroom roll",
+        "ورق تواليت",
+        "toilet paper",
+        "مناديل",
+        "toilet roll",
+        "toilet paper rolls",
+        "toilet rolls",
+        "toilet tissue",
+        "bathroom tissue",
+        "toilet tissues",
+        "paper rolls"
+      ],
+      "listing": {
+        "totalSpend": 18,
+        "totalRevenue": 129.24,
+        "activeDays": "59",
+        "roas": 7.18,
+        "ordersPerKwd": 1.0339,
+        "unitsPerKwd": 1.1186
+      },
+      "search": {
+        "totalSpend": 9,
+        "totalRevenue": 83.3,
+        "activeDays": "9",
+        "roas": 9.2556,
+        "ordersPerKwd": 3.5556,
+        "unitsPerKwd": 4.2222
+      }
+    },
+    "Sanita Cooking and Baking Paper, 10M": {
+      "totalSpend": 38,
+      "totalRevenue": 82.77,
+      "totalClicks": "190",
+      "totalOrders": "83",
+      "totalUnits": "89",
+      "activeDays": "52",
+      "roas": 2.1782,
+      "ordersPerKwd": 1.5962,
+      "unitsPerKwd": 1.7115,
+      "aov": 0.9972,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 638,
+      "organicDailyRevenue": 585.3464,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 38,
+        "totalRevenue": 82.77,
+        "activeDays": "52",
+        "roas": 2.1782,
+        "ordersPerKwd": 1.5962,
+        "unitsPerKwd": 1.7115
+      }
+    },
+    "Sanita Cooking and Baking Paper, 10M x 2": {
+      "totalSpend": 16.4,
+      "totalRevenue": 49.5,
+      "totalClicks": "82",
+      "totalOrders": "30",
+      "totalUnits": "31",
+      "activeDays": "29",
+      "roas": 3.0183,
+      "ordersPerKwd": 1.0345,
+      "unitsPerKwd": 1.069,
+      "aov": 1.65,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 638,
+      "organicDailyRevenue": 585.3464,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 16.4,
+        "totalRevenue": 49.5,
+        "activeDays": "29",
+        "roas": 3.0183,
+        "ordersPerKwd": 1.0345,
+        "unitsPerKwd": 1.069
+      }
+    },
+    "Sanita Cooking & Baking Paper (10mx30cm), 1 Piece": {
+      "totalSpend": 9,
+      "totalRevenue": 19.62,
+      "totalClicks": "45",
+      "totalOrders": "20",
+      "totalUnits": "22",
+      "activeDays": "16",
+      "roas": 2.18,
+      "ordersPerKwd": 1.25,
+      "unitsPerKwd": 1.375,
+      "aov": 0.981,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 9,
+        "totalRevenue": 19.62,
+        "activeDays": "16",
+        "roas": 2.18,
+        "ordersPerKwd": 1.25,
+        "unitsPerKwd": 1.375
+      }
+    },
+    "Sanita Easy Lock Biodegradable Food Storage Bags, Large, 40 Bags": {
+      "totalSpend": 5.2,
+      "totalRevenue": 20.82,
+      "totalClicks": "26",
+      "totalOrders": "10",
+      "totalUnits": "13",
+      "activeDays": "48",
+      "roas": 4.0038,
+      "ordersPerKwd": 0.2083,
+      "unitsPerKwd": 0.2708,
+      "aov": 2.082,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 153.3333,
+      "organicDailyRevenue": 243.8422,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 5.2,
+        "totalRevenue": 20.82,
+        "activeDays": "48",
+        "roas": 4.0038,
+        "ordersPerKwd": 0.2083,
+        "unitsPerKwd": 0.2708
+      }
+    },
+    "Sanita Easy Lock Oxo-Biodegradable Large Storage Bags (26.8x27.3cm), 40 Pieces": {
+      "totalSpend": 9.8,
+      "totalRevenue": 32.74,
+      "totalClicks": "49",
+      "totalOrders": "18",
+      "totalUnits": "19",
+      "activeDays": "30",
+      "roas": 3.3408,
+      "ordersPerKwd": 0.6,
+      "unitsPerKwd": 0.6333,
+      "aov": 1.8189,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "food storage bags",
+        "food storage bag",
+        "تخزين الطعام"
+      ],
+      "listing": {
+        "totalSpend": 9.6,
+        "totalRevenue": 31.23,
+        "activeDays": "23",
+        "roas": 3.2531,
+        "ordersPerKwd": 0.7391,
+        "unitsPerKwd": 0.7826
+      },
+      "search": {
+        "totalSpend": 0.2,
+        "totalRevenue": 1.51,
+        "activeDays": "17",
+        "roas": 7.55,
+        "ordersPerKwd": 0.0588,
+        "unitsPerKwd": 0.0588
+      }
+    },
+    "Sanita Eco Pack Aluminum Foil, 30cm, 1 Roll": {
+      "totalSpend": 1.8,
+      "totalRevenue": 8.68,
+      "totalClicks": "9",
+      "totalOrders": "4",
+      "totalUnits": "4",
+      "activeDays": "15",
+      "roas": 4.8222,
+      "ordersPerKwd": 0.2667,
+      "unitsPerKwd": 0.2667,
+      "aov": 2.17,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 30.5,
+      "organicDailyRevenue": 65.0175,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 1.8,
+        "totalRevenue": 8.68,
+        "activeDays": "15",
+        "roas": 4.8222,
+        "ordersPerKwd": 0.2667,
+        "unitsPerKwd": 0.2667
+      }
+    },
+    "Sanita Facial Tissue Bundle": {
+      "totalSpend": 47.2,
+      "totalRevenue": 284.56,
+      "totalClicks": "236",
+      "totalOrders": "94",
+      "totalUnits": "106",
+      "activeDays": "47",
+      "roas": 6.0288,
+      "ordersPerKwd": 2,
+      "unitsPerKwd": 2.2553,
+      "aov": 3.0272,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 47.2,
+        "totalRevenue": 284.56,
+        "activeDays": "47",
+        "roas": 6.0288,
+        "ordersPerKwd": 2,
+        "unitsPerKwd": 2.2553
+      }
+    },
+    "Sanita Food Storage Bags, No.10, 4 Pieces": {
+      "totalSpend": 32.4,
+      "totalRevenue": 91.94,
+      "totalClicks": "162",
+      "totalOrders": "58",
+      "totalUnits": "60",
+      "activeDays": "55",
+      "roas": 2.8377,
+      "ordersPerKwd": 1.0545,
+      "unitsPerKwd": 1.0909,
+      "aov": 1.5852,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 125,
+      "organicDailyRevenue": 169.2725,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "food storage bag"
+      ],
+      "listing": {
+        "totalSpend": 32.4,
+        "totalRevenue": 91.94,
+        "activeDays": "54",
+        "roas": 2.8377,
+        "ordersPerKwd": 1.0741,
+        "unitsPerKwd": 1.1111
+      },
+      "search": {
+        "totalSpend": 0,
+        "totalRevenue": 0,
+        "activeDays": "1",
+        "roas": 0,
+        "ordersPerKwd": 0,
+        "unitsPerKwd": 0
+      }
+    },
+    "Sanita Food Storage Bags, No.12, 4 Pieces": {
+      "totalSpend": 42.6,
+      "totalRevenue": 126.21,
+      "totalClicks": "213",
+      "totalOrders": "81",
+      "totalUnits": "88",
+      "activeDays": "76",
+      "roas": 2.9627,
+      "ordersPerKwd": 1.0658,
+      "unitsPerKwd": 1.1579,
+      "aov": 1.5581,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 178.8571,
+      "organicDailyRevenue": 266.4921,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "food storage bags",
+        "food storage bag",
+        "تخزين الطعام"
+      ],
+      "listing": {
+        "totalSpend": 42.2,
+        "totalRevenue": 124.82,
+        "activeDays": "71",
+        "roas": 2.9578,
+        "ordersPerKwd": 1.1268,
+        "unitsPerKwd": 1.2254
+      },
+      "search": {
+        "totalSpend": 0.4,
+        "totalRevenue": 1.39,
+        "activeDays": "13",
+        "roas": 3.475,
+        "ordersPerKwd": 0.0769,
+        "unitsPerKwd": 0.0769
+      }
+    },
+    "Sanita Food Wrap Bundle": {
+      "totalSpend": 16.4,
+      "totalRevenue": 82.02,
+      "totalClicks": "82",
+      "totalOrders": "21",
+      "totalUnits": "21",
+      "activeDays": "42",
+      "roas": 5.0012,
+      "ordersPerKwd": 0.5,
+      "unitsPerKwd": 0.5,
+      "aov": 3.9057,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 16.4,
+        "totalRevenue": 82.02,
+        "activeDays": "42",
+        "roas": 5.0012,
+        "ordersPerKwd": 0.5,
+        "unitsPerKwd": 0.5
+      }
+    },
+    "Sanita Gipsy Maxi Kitchen Towel Roll, 1000 tissues": {
+      "totalSpend": 10.2,
+      "totalRevenue": 47.39,
+      "totalClicks": "51",
+      "totalOrders": "36",
+      "totalUnits": "52",
+      "activeDays": "18",
+      "roas": 4.6461,
+      "ordersPerKwd": 2,
+      "unitsPerKwd": 2.8889,
+      "aov": 1.3164,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 10.2,
+        "totalRevenue": 47.39,
+        "activeDays": "18",
+        "roas": 4.6461,
+        "ordersPerKwd": 2,
+        "unitsPerKwd": 2.8889
+      }
+    },
+    "Sanita Gipsy Maxi Roll, 1000 Sheets, 1 Roll": {
+      "totalSpend": 34.2,
+      "totalRevenue": 133.6,
+      "totalClicks": "171",
+      "totalOrders": "110",
+      "totalUnits": "152",
+      "activeDays": "55",
+      "roas": 3.9064,
+      "ordersPerKwd": 2,
+      "unitsPerKwd": 2.7636,
+      "aov": 1.2145,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1323.4286,
+      "organicDailyRevenue": 1151.928,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 34.2,
+        "totalRevenue": 133.6,
+        "activeDays": "55",
+        "roas": 3.9064,
+        "ordersPerKwd": 2,
+        "unitsPerKwd": 2.7636
+      }
+    },
+    "Sanita Hassir Sufra Matwiya Table Cover, 28 Sheets": {
+      "totalSpend": 42.2,
+      "totalRevenue": 216,
+      "totalClicks": "211",
+      "totalOrders": "65",
+      "totalUnits": "74",
+      "activeDays": "59",
+      "roas": 5.1185,
+      "ordersPerKwd": 1.1017,
+      "unitsPerKwd": 1.2542,
+      "aov": 3.3231,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 249.1429,
+      "organicDailyRevenue": 690.3371,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 42.2,
+        "totalRevenue": 216,
+        "activeDays": "59",
+        "roas": 5.1185,
+        "ordersPerKwd": 1.1017,
+        "unitsPerKwd": 1.2542
+      }
+    },
+    "Sanita High Thickness Paper Cups, 9oz, 50 Cups x 2": {
+      "totalSpend": 20.6,
+      "totalRevenue": 33.21,
+      "totalClicks": "103",
+      "totalOrders": "26",
+      "totalUnits": "27",
+      "activeDays": "13",
+      "roas": 1.6121,
+      "ordersPerKwd": 2,
+      "unitsPerKwd": 2.0769,
+      "aov": 1.2773,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 271.3333,
+      "organicDailyRevenue": 199.65,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 20.6,
+        "totalRevenue": 33.21,
+        "activeDays": "13",
+        "roas": 1.6121,
+        "ordersPerKwd": 2,
+        "unitsPerKwd": 2.0769
+      }
+    },
+    "Sanita Manachef Paper Towels, 6x80 Sheets": {
+      "totalSpend": 7,
+      "totalRevenue": 74.98,
+      "totalClicks": "35",
+      "totalOrders": "30",
+      "totalUnits": "37",
+      "activeDays": "26",
+      "roas": 10.7114,
+      "ordersPerKwd": 1.1538,
+      "unitsPerKwd": 1.4231,
+      "aov": 2.4993,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 2503.1429,
+      "organicDailyRevenue": 4518.6729,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "kitchen towel",
+        "مناشف ورقية",
+        "kitchen towels",
+        "مناشف مطبخ",
+        "منشفة مطبخ",
+        "paper towels",
+        "paper towel"
+      ],
+      "listing": {
+        "totalSpend": 0,
+        "totalRevenue": 23.43,
+        "activeDays": "5",
+        "roas": 0,
+        "ordersPerKwd": 2,
+        "unitsPerKwd": 2.2
+      },
+      "search": {
+        "totalSpend": 7,
+        "totalRevenue": 51.55,
+        "activeDays": "23",
+        "roas": 7.3643,
+        "ordersPerKwd": 0.8696,
+        "unitsPerKwd": 1.1304
+      }
+    },
+    "Sanita Paper Cups 4oz, 2x50 Cups": {
+      "totalSpend": 13,
+      "totalRevenue": 24.99,
+      "totalClicks": "65",
+      "totalOrders": "14",
+      "totalUnits": "17",
+      "activeDays": "17",
+      "roas": 1.9223,
+      "ordersPerKwd": 0.8235,
+      "unitsPerKwd": 1,
+      "aov": 1.785,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 23,
+      "organicDailyRevenue": 35.42,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "cups",
+        "أكواب",
+        "straws",
+        "cup",
+        "أكواب ورقية",
+        "كوب",
+        "paper cups",
+        "كوب ورقي"
+      ],
+      "listing": {
+        "totalSpend": 7.6,
+        "totalRevenue": 10.06,
+        "activeDays": "17",
+        "roas": 1.3237,
+        "ordersPerKwd": 0.3529,
+        "unitsPerKwd": 0.4118
+      },
+      "search": {
+        "totalSpend": 5.4,
+        "totalRevenue": 14.93,
+        "activeDays": "16",
+        "roas": 2.7648,
+        "ordersPerKwd": 0.5,
+        "unitsPerKwd": 0.625
+      }
+    },
+    "Sanita Paper Cups, 4oz, 50 Pieces": {
+      "totalSpend": 59.8,
+      "totalRevenue": 80.93,
+      "totalClicks": "299",
+      "totalOrders": "81",
+      "totalUnits": "107",
+      "activeDays": "44",
+      "roas": 1.3533,
+      "ordersPerKwd": 1.8409,
+      "unitsPerKwd": 2.4318,
+      "aov": 0.9991,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 206.4,
+      "organicDailyRevenue": 143.892,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 59.8,
+        "totalRevenue": 80.93,
+        "activeDays": "44",
+        "roas": 1.3533,
+        "ordersPerKwd": 1.8409,
+        "unitsPerKwd": 2.4318
+      }
+    },
+    "Sanita Paper Cups, 4oz, 50 Pieces x 2": {
+      "totalSpend": 44.8,
+      "totalRevenue": 44.27,
+      "totalClicks": "224",
+      "totalOrders": "29",
+      "totalUnits": "32",
+      "activeDays": "52",
+      "roas": 0.9882,
+      "ordersPerKwd": 0.5577,
+      "unitsPerKwd": 0.6154,
+      "aov": 1.5266,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 206.4,
+      "organicDailyRevenue": 143.892,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "cups",
+        "paper cup",
+        "كوب ورقي",
+        "paper cups",
+        "كوب",
+        "أكواب ورقية",
+        "اكواب ورقية",
+        "اكواب",
+        "أكواب",
+        "cup"
+      ],
+      "listing": {
+        "totalSpend": 29.8,
+        "totalRevenue": 27.49,
+        "activeDays": "32",
+        "roas": 0.9225,
+        "ordersPerKwd": 0.5625,
+        "unitsPerKwd": 0.5938
+      },
+      "search": {
+        "totalSpend": 15,
+        "totalRevenue": 16.78,
+        "activeDays": "20",
+        "roas": 1.1187,
+        "ordersPerKwd": 0.55,
+        "unitsPerKwd": 0.65
+      }
+    },
+    "Sanita Paper Cups 7oz, 2x50 Cups": {
+      "totalSpend": 16.2,
+      "totalRevenue": 21.39,
+      "totalClicks": "81",
+      "totalOrders": "23",
+      "totalUnits": "27",
+      "activeDays": "14",
+      "roas": 1.3204,
+      "ordersPerKwd": 1.6429,
+      "unitsPerKwd": 1.9286,
+      "aov": 0.93,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 69.25,
+      "organicDailyRevenue": 57.6858,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "أكواب",
+        "cups",
+        "cup",
+        "أكواب ورقية",
+        "paper cups",
+        "كوب ورقي",
+        "straws",
+        "كوب"
+      ],
+      "listing": {
+        "totalSpend": 8.8,
+        "totalRevenue": 10.39,
+        "activeDays": "14",
+        "roas": 1.1807,
+        "ordersPerKwd": 0.8571,
+        "unitsPerKwd": 0.9286
+      },
+      "search": {
+        "totalSpend": 7.4,
+        "totalRevenue": 11,
+        "activeDays": "11",
+        "roas": 1.4865,
+        "ordersPerKwd": 1,
+        "unitsPerKwd": 1.2727
+      }
+    },
+    "Sanita Paper Cups 9oz, 2x50 Cups": {
+      "totalSpend": 26,
+      "totalRevenue": 57.08,
+      "totalClicks": "130",
+      "totalOrders": "35",
+      "totalUnits": "47",
+      "activeDays": "17",
+      "roas": 2.1954,
+      "ordersPerKwd": 2.0588,
+      "unitsPerKwd": 2.7647,
+      "aov": 1.6309,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 90,
+      "organicDailyRevenue": 107.45,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "straws",
+        "أكواب",
+        "كوب ورقي",
+        "paper cups",
+        "أكواب ورقية",
+        "cups",
+        "كوب",
+        "cup"
+      ],
+      "listing": {
+        "totalSpend": 15.4,
+        "totalRevenue": 26.25,
+        "activeDays": "17",
+        "roas": 1.7045,
+        "ordersPerKwd": 1.2353,
+        "unitsPerKwd": 1.2941
+      },
+      "search": {
+        "totalSpend": 10.6,
+        "totalRevenue": 30.83,
+        "activeDays": "16",
+        "roas": 2.9085,
+        "ordersPerKwd": 0.875,
+        "unitsPerKwd": 1.5625
+      }
+    },
+    "Sanita Premium Aluminum Foil, 37.5sqft, 3 Pieces": {
+      "totalSpend": 66.4,
+      "totalRevenue": 230.72,
+      "totalClicks": "332",
+      "totalOrders": "183",
+      "totalUnits": "188",
+      "activeDays": "62",
+      "roas": 3.4747,
+      "ordersPerKwd": 2.9516,
+      "unitsPerKwd": 3.0323,
+      "aov": 1.2608,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 556.1429,
+      "organicDailyRevenue": 685.5693,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [],
+      "listing": {
+        "totalSpend": 66.4,
+        "totalRevenue": 230.72,
+        "activeDays": "62",
+        "roas": 3.4747,
+        "ordersPerKwd": 2.9516,
+        "unitsPerKwd": 3.0323
+      }
+    },
+    "Sanita Tie Bag Economy Bio 30 Gallon 20*2 Medium Bags Per Roll": {
+      "totalSpend": 9,
+      "totalRevenue": 23.7,
+      "totalClicks": "45",
+      "totalOrders": "11",
+      "totalUnits": "12",
+      "activeDays": "79",
+      "roas": 2.6333,
+      "ordersPerKwd": 0.1392,
+      "unitsPerKwd": 0.1519,
+      "aov": 2.1545,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "garbage bag",
+        "small garbage bag",
+        "كيس قمامة",
+        "كيس نفايات",
+        "garbage",
+        "كيس قمامة كبير",
+        "قمامة",
+        "كيس قمامة صغير",
+        "كيس زبالة"
+      ],
+      "listing": {
+        "totalSpend": 6.4,
+        "totalRevenue": 9.7,
+        "activeDays": "78",
+        "roas": 1.5156,
+        "ordersPerKwd": 0.0641,
+        "unitsPerKwd": 0.0641
+      },
+      "search": {
+        "totalSpend": 2.6,
+        "totalRevenue": 14,
+        "activeDays": "36",
+        "roas": 5.3846,
+        "ordersPerKwd": 0.1667,
+        "unitsPerKwd": 0.1944
+      }
+    },
+    "Sanita Tissue Bundle": {
+      "totalSpend": 30.4,
+      "totalRevenue": 180.19,
+      "totalClicks": "152",
+      "totalOrders": "48",
+      "totalUnits": "49",
+      "activeDays": "57",
+      "roas": 5.9273,
+      "ordersPerKwd": 0.8421,
+      "unitsPerKwd": 0.8596,
+      "aov": 3.754,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 0,
+      "organicDailyRevenue": 0,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "منديل",
+        "tissues",
+        "tissue",
+        "مناديل ورقية",
+        "facial tissue"
+      ],
+      "listing": {
+        "totalSpend": 21.4,
+        "totalRevenue": 120.07,
+        "activeDays": "50",
+        "roas": 5.6107,
+        "ordersPerKwd": 0.62,
+        "unitsPerKwd": 0.62
+      },
+      "search": {
+        "totalSpend": 9,
+        "totalRevenue": 60.12,
+        "activeDays": "17",
+        "roas": 6.68,
+        "ordersPerKwd": 1,
+        "unitsPerKwd": 1.0588
+      }
+    },
+    "Sanita Trash Bags, 10 Gallons, 2 Pieces": {
+      "totalSpend": 92,
+      "totalRevenue": 471.7,
+      "totalClicks": "460",
+      "totalOrders": "238",
+      "totalUnits": "281",
+      "activeDays": "73",
+      "roas": 5.1272,
+      "ordersPerKwd": 3.2603,
+      "unitsPerKwd": 3.8493,
+      "aov": 1.9819,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 729.4286,
+      "organicDailyRevenue": 1198.179,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "قمامة",
+        "كيس قمامة صغير",
+        "waste bag",
+        "trash bag",
+        "أكياس زبالة",
+        "trash bags",
+        "كيس قمامة",
+        "أكياس قمامة",
+        "rubbish bag",
+        "waste bags",
+        "small trash bag",
+        "trash",
+        "garbage bag",
+        "garbage bags",
+        "كيس نفايات",
+        "كيس زبالة",
+        "small trash bags",
+        "sanita garbage bag"
+      ],
+      "listing": {
+        "totalSpend": 75,
+        "totalRevenue": 389.32,
+        "activeDays": "67",
+        "roas": 5.1909,
+        "ordersPerKwd": 2.9104,
+        "unitsPerKwd": 3.5075
+      },
+      "search": {
+        "totalSpend": 17,
+        "totalRevenue": 82.38,
+        "activeDays": "24",
+        "roas": 4.8459,
+        "ordersPerKwd": 1.7917,
+        "unitsPerKwd": 1.9167
+      }
+    },
+    "Sanita Trash Bags, 5 Gallons, 3 Pieces": {
+      "totalSpend": 11.4,
+      "totalRevenue": 79.39,
+      "totalClicks": "57",
+      "totalOrders": "44",
+      "totalUnits": "49",
+      "activeDays": "20",
+      "roas": 6.964,
+      "ordersPerKwd": 2.2,
+      "unitsPerKwd": 2.45,
+      "aov": 1.8043,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 1371.5,
+      "organicDailyRevenue": 1953.5955,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "كيس قمامة",
+        "قمامة",
+        "trash bag",
+        "كيس زبالة",
+        "garbage bags",
+        "trash",
+        "كيس قمامة كبير",
+        "trash bags"
+      ],
+      "listing": {
+        "totalSpend": 4,
+        "totalRevenue": 37.25,
+        "activeDays": "15",
+        "roas": 9.3125,
+        "ordersPerKwd": 1.2667,
+        "unitsPerKwd": 1.5333
+      },
+      "search": {
+        "totalSpend": 7.4,
+        "totalRevenue": 42.14,
+        "activeDays": "19",
+        "roas": 5.6946,
+        "ordersPerKwd": 1.3158,
+        "unitsPerKwd": 1.3684
+      }
+    },
+    "Sanita Trash Bags, 8 Gallons, 3 Pieces": {
+      "totalSpend": 31,
+      "totalRevenue": 166.39,
+      "totalClicks": "155",
+      "totalOrders": "89",
+      "totalUnits": "102",
+      "activeDays": "38",
+      "roas": 5.3674,
+      "ordersPerKwd": 2.3421,
+      "unitsPerKwd": 2.6842,
+      "aov": 1.8696,
+      "ctr": 0,
+      "cvr": 0,
+      "organicDailyUnits": 608,
+      "organicDailyRevenue": 870.9237,
+      "categories": [
+        "Household Care"
+      ],
+      "keywords": [
+        "كيس نفايات",
+        "أكياس قمامة",
+        "أكياس زبالة",
+        "قمامة",
+        "كيس قمامة كبير",
+        "trash",
+        "trash bag",
+        "garbage bag",
+        "waste bag",
+        "trash bags",
+        "نفاية",
+        "rubbish bag",
+        "كيس قمامة صغير",
+        "sanita garbage bag",
+        "كيس قمامة",
+        "garbage bags",
+        "small trash bag",
+        "small trash bags",
+        "كيس زبالة"
+      ],
+      "listing": {
+        "totalSpend": 13.8,
+        "totalRevenue": 81.17,
+        "activeDays": "30",
+        "roas": 5.8819,
+        "ordersPerKwd": 1.4333,
+        "unitsPerKwd": 1.6333
+      },
+      "search": {
+        "totalSpend": 17.2,
+        "totalRevenue": 85.22,
+        "activeDays": "35",
+        "roas": 4.9547,
+        "ordersPerKwd": 1.3143,
+        "unitsPerKwd": 1.5143
+      }
+    }
+  },
+  "builtAt": "2026-02-11T11:56:51.797Z"
+}
