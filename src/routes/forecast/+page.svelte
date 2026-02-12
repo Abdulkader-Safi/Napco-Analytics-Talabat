@@ -29,6 +29,7 @@
 	import PackageIcon from '@lucide/svelte/icons/package';
 	import MousePointerClickIcon from '@lucide/svelte/icons/mouse-pointer-click';
 	import ChevronDownIcon from '@lucide/svelte/icons/chevron-down';
+	import * as Collapsible from '$lib/components/ui/collapsible/index.js';
 	import type { ProductForecast } from '$lib/forecast';
 
 	let { data, form } = $props();
@@ -201,18 +202,18 @@
 
 {#snippet roasBadge({ roas }: { roas: number })}
 	{@const variant = roas >= 1 ? 'default' : 'destructive'}
-	<Badge {variant} class="tabular-nums">
+	<Badge {variant} class="bg-[#0B75FF] tabular-nums">
 		{(roas * 100).toFixed(0)}%
 	</Badge>
 {/snippet}
 
 {#snippet confidenceBadge({ confidence }: { confidence: string })}
 	{#if confidence === 'high'}
-		<Badge variant="default">High</Badge>
+		<Badge style="background-color: #22c55e; color: white;">High</Badge>
 	{:else if confidence === 'medium'}
-		<Badge variant="secondary">Medium</Badge>
+		<Badge style="background-color: #f97316; color: white;">Medium</Badge>
 	{:else}
-		<Badge variant="outline">Low</Badge>
+		<Badge style="background-color: #ef4444; color: white;">Low</Badge>
 	{/if}
 {/snippet}
 
@@ -232,128 +233,143 @@
 				</Breadcrumb.Root>
 			</div>
 		</header>
-		<div class="flex flex-1 flex-col gap-6 p-4 pt-0">
+		<div class="flex flex-1 flex-col gap-8 p-4 pt-0">
+			<!-- Page Title (standalone, outside cards) -->
+			<div>
+				<h2 class="text-2xl font-semibold tracking-tight">Ad Sales Forecast</h2>
+				<p class="text-sm text-muted-foreground">
+					Predict revenue, orders, and units for your ad campaigns. Model built from {data.metadata
+						.productCount} products and {data.metadata.keywordCount} keywords.
+				</p>
+			</div>
+
 			<!-- Input Form -->
-			<Card.Root>
-				<Card.Header>
-					<Card.Title>Ad Sales Forecast</Card.Title>
-					<Card.Description>
-						Predict revenue, orders, and units for your ad campaigns. Model built from {data
-							.metadata.productCount} products and {data.metadata.keywordCount} keywords.
-					</Card.Description>
-				</Card.Header>
-				<Card.Content>
-					<form method="POST" action="?/forecast" class="space-y-6">
-						<!-- Campaign Type Toggle -->
-						<div class="space-y-2">
-							<span class="text-sm font-medium">Campaign Type</span>
-							<div class="flex gap-2">
-								<button
-									type="button"
-									class="rounded-md border px-4 py-2 text-sm font-medium transition-colors {campaignType ===
-									'listing'
-										? 'bg-primary text-primary-foreground'
-										: 'bg-background hover:bg-muted'}"
-									onclick={() => {
-										campaignType = 'listing';
-										selectedProducts = [];
-									}}
-								>
-									Listing
-								</button>
-								<button
-									type="button"
-									class="rounded-md border px-4 py-2 text-sm font-medium transition-colors {campaignType ===
-									'search'
-										? 'bg-primary text-primary-foreground'
-										: 'bg-background hover:bg-muted'}"
-									onclick={() => {
-										campaignType = 'search';
-										selectedProducts = [];
-									}}
-								>
-									Search
-								</button>
-							</div>
-							<input type="hidden" name="campaignType" value={campaignType} />
-						</div>
-
-						<!-- Category (listing only) -->
-						{#if campaignType === 'listing'}
+			<form method="POST" action="?/forecast" class="space-y-4">
+				<!-- Two-column grid: Configuration + Products -->
+				<div class="grid gap-4 lg:grid-cols-[1fr_1.5fr]">
+					<!-- Left Card: Configuration -->
+					<Card.Root>
+						<Card.Header>
+							<Card.Title>Configuration</Card.Title>
+						</Card.Header>
+						<Card.Content class="space-y-4">
+							<!-- Campaign Type Segmented Control -->
 							<div class="space-y-2">
-								<label for="category" class="text-sm font-medium">Category</label>
-								<select
-									id="category"
-									name="category"
-									bind:value={selectedCategory}
-									onchange={() => {
-										selectedProducts = [];
-									}}
-									class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none"
-								>
-									<option value="">All categories</option>
-									{#each data.categories as cat (cat.name)}
-										<option value={cat.name}>
-											{cat.name} (ROAS: {(cat.roas * 100).toFixed(0)}%)
-										</option>
-									{/each}
-								</select>
-							</div>
-						{/if}
-
-						<!-- Keywords (search only) -->
-						{#if campaignType === 'search'}
-							<div class="space-y-2">
-								<label for="keywordSearch" class="text-sm font-medium">
-									Keywords ({selectedKeywords.length} selected)
-								</label>
-								<Input
-									id="keywordSearch"
-									type="text"
-									placeholder="Search keywords..."
-									bind:value={keywordSearch}
-								/>
-								<div class="max-h-48 overflow-y-auto rounded-md border p-2">
-									{#each filteredKeywords as kw (kw.name)}
-										<label
-											class="flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 text-sm hover:bg-muted"
-										>
-											<input
-												type="checkbox"
-												name="keywords"
-												value={kw.name}
-												checked={selectedKeywords.includes(kw.name)}
-												onchange={() => toggleKeyword(kw.name)}
-												class="rounded"
-											/>
-											<span class="flex-1 truncate">{kw.name}</span>
-											<Badge variant="secondary" class="text-xs tabular-nums">
-												{(kw.roas * 100).toFixed(0)}%
-											</Badge>
-										</label>
-									{/each}
-									{#if filteredKeywords.length === 0}
-										<p class="py-2 text-center text-sm text-muted-foreground">No keywords found</p>
-									{/if}
+								<span class="text-sm font-medium">Campaign Type</span>
+								<div class="inline-flex w-full rounded-lg bg-muted p-1">
+									<button
+										type="button"
+										class="flex-1 rounded-md px-4 py-1.5 text-sm font-medium transition-all {campaignType ===
+										'listing'
+											? 'bg-background text-foreground shadow-sm'
+											: 'text-muted-foreground hover:text-foreground'}"
+										onclick={() => {
+											campaignType = 'listing';
+											selectedProducts = [];
+										}}
+									>
+										Listing
+									</button>
+									<button
+										type="button"
+										class="flex-1 rounded-md px-4 py-1.5 text-sm font-medium transition-all {campaignType ===
+										'search'
+											? 'bg-background text-foreground shadow-sm'
+											: 'text-muted-foreground hover:text-foreground'}"
+										onclick={() => {
+											campaignType = 'search';
+											selectedProducts = [];
+										}}
+									>
+										Search
+									</button>
 								</div>
+								<input type="hidden" name="campaignType" value={campaignType} />
 							</div>
-						{/if}
 
-						<!-- Products Multi-select -->
-						<div class="space-y-2">
+							<!-- Category (listing only) -->
+							{#if campaignType === 'listing'}
+								<div class="space-y-2">
+									<label for="category" class="text-sm font-medium">Category</label>
+									<select
+										id="category"
+										name="category"
+										bind:value={selectedCategory}
+										onchange={() => {
+											selectedProducts = [];
+										}}
+										class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none"
+									>
+										<option value="">All categories</option>
+										{#each data.categories as cat (cat.name)}
+											<option value={cat.name}>
+												{cat.name} (ROAS: {(cat.roas * 100).toFixed(0)}%)
+											</option>
+										{/each}
+									</select>
+								</div>
+							{/if}
+
+							<!-- Keywords (search only) -->
+							{#if campaignType === 'search'}
+								<div class="space-y-2">
+									<label for="keywordSearch" class="text-sm font-medium">
+										Keywords ({selectedKeywords.length} selected)
+									</label>
+									<Input
+										id="keywordSearch"
+										type="text"
+										placeholder="Search keywords..."
+										bind:value={keywordSearch}
+									/>
+									<div class="max-h-48 overflow-y-auto rounded-md border p-2">
+										{#each filteredKeywords as kw (kw.name)}
+											<label
+												class="flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 text-sm hover:bg-muted"
+											>
+												<input
+													type="checkbox"
+													name="keywords"
+													value={kw.name}
+													checked={selectedKeywords.includes(kw.name)}
+													onchange={() => toggleKeyword(kw.name)}
+													class="rounded"
+												/>
+												<span class="flex-1 truncate">{kw.name}</span>
+												<Badge variant="secondary" class="text-xs tabular-nums">
+													{(kw.roas * 100).toFixed(0)}%
+												</Badge>
+											</label>
+										{/each}
+										{#if filteredKeywords.length === 0}
+											<p class="py-2 text-center text-sm text-muted-foreground">
+												No keywords found
+											</p>
+										{/if}
+									</div>
+								</div>
+							{/if}
+						</Card.Content>
+					</Card.Root>
+
+					<!-- Right Card: Products -->
+					<Card.Root>
+						<Card.Header>
 							<div class="flex items-center justify-between">
-								<label for="productSearch" class="text-sm font-medium">
+								<Card.Title>
 									Products ({selectedProducts.length} selected)
 									{#if campaignType === 'listing' && selectedCategory}
-										<span class="text-muted-foreground">— filtered by {selectedCategory}</span>
+										<span class="text-sm font-normal text-muted-foreground"
+											>— {selectedCategory}</span
+										>
 									{:else if campaignType === 'search' && selectedKeywords.length > 0}
-										<span class="text-muted-foreground"
-											>— filtered by {selectedKeywords.length} keyword{selectedKeywords.length > 1
+										<span class="text-sm font-normal text-muted-foreground"
+											>— {selectedKeywords.length} keyword{selectedKeywords.length > 1
 												? 's'
 												: ''}</span
 										>
 									{/if}
-								</label>
+								</Card.Title>
 								<button
 									type="button"
 									class="text-xs text-muted-foreground hover:text-foreground"
@@ -365,16 +381,20 @@
 										}
 									}}
 								>
-									{selectedProducts.length === filteredProducts.length ? 'Deselect All' : 'Select All'}
+									{selectedProducts.length === filteredProducts.length
+										? 'Deselect All'
+										: 'Select All'}
 								</button>
 							</div>
+						</Card.Header>
+						<Card.Content class="space-y-3">
 							<Input
 								id="productSearch"
 								type="text"
 								placeholder="Search products..."
 								bind:value={productSearch}
 							/>
-							<div class="max-h-48 overflow-y-auto rounded-md border p-2">
+							<div class="max-h-80 overflow-y-auto rounded-md border p-2">
 								{#each filteredProducts as product (product.name)}
 									<label
 										class="flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 text-sm hover:bg-muted"
@@ -389,11 +409,17 @@
 										/>
 										<span class="flex-1 truncate">{product.name}</span>
 										{#if product.confidence === 'high'}
-											<Badge variant="default" class="text-xs">High</Badge>
+											<Badge style="background-color: #22c55e; color: white;" class="text-xs"
+												>High</Badge
+											>
 										{:else if product.confidence === 'medium'}
-											<Badge variant="secondary" class="text-xs">Med</Badge>
+											<Badge style="background-color: #f97316; color: white;" class="text-xs"
+												>Med</Badge
+											>
 										{:else}
-											<Badge variant="outline" class="text-xs">Low</Badge>
+											<Badge style="background-color: #ef4444; color: white;" class="text-xs"
+												>Low</Badge
+											>
 										{/if}
 									</label>
 								{/each}
@@ -406,11 +432,15 @@
 								<strong>Med:</strong> 20+ days &amp; 10+ KWD.
 								<strong>Low:</strong> limited data, uses global averages.
 							</p>
-						</div>
+						</Card.Content>
+					</Card.Root>
+				</div>
 
-						<!-- Budget & Dates -->
-						<div class="grid gap-4 sm:grid-cols-3">
-							<div class="space-y-2">
+				<!-- Bottom Card: Budget, Dates, Submit -->
+				<Card.Root>
+					<Card.Content class="pt-6">
+						<div class="flex flex-col gap-4 sm:flex-row sm:items-end">
+							<div class="flex-1 space-y-2">
 								<label for="budget" class="text-sm font-medium">Budget (KWD)</label>
 								<Input
 									id="budget"
@@ -422,81 +452,95 @@
 									bind:value={budget}
 								/>
 							</div>
-							<div class="space-y-2">
+							<div class="flex-1 space-y-2">
 								<label for="startDate" class="text-sm font-medium">Start Date</label>
 								<Input id="startDate" name="startDate" type="date" bind:value={startDate} />
 							</div>
-							<div class="space-y-2">
+							<div class="flex-1 space-y-2">
 								<label for="endDate" class="text-sm font-medium">End Date</label>
 								<Input id="endDate" name="endDate" type="date" bind:value={endDate} />
 							</div>
+							<Button
+								type="submit"
+								class="border bg-white text-black shadow-xs hover:bg-[#0975FF] hover:text-white sm:w-auto"
+							>
+								<TrendingUpIcon class="mr-2 size-4" />
+								Generate Forecast
+							</Button>
 						</div>
-
 						{#if form?.error}
-							<p class="text-sm text-destructive">{form.error}</p>
+							<p class="mt-3 text-sm text-destructive">{form.error}</p>
 						{/if}
-
-						<Button type="submit" class="w-full sm:w-auto">
-							<TrendingUpIcon class="mr-2 size-4" />
-							Generate Forecast
-						</Button>
-					</form>
-				</Card.Content>
-			</Card.Root>
+					</Card.Content>
+				</Card.Root>
+			</form>
 
 			<!-- Results -->
 			{#if form?.success && form?.result}
 				{@const result = form.result}
 
-				<!-- Summary Cards -->
+				<!-- Separator + Results Summary -->
+				<div class="space-y-3">
+					<Separator />
+					<p class="text-sm text-muted-foreground">
+						<span class="font-medium text-foreground">Forecast Results</span>
+						— {result.products.length} product{result.products.length !== 1 ? 's' : ''}
+						· {form.input.startDate} to {form.input.endDate}
+						· {form.input.budget} KWD budget
+					</p>
+				</div>
+
+				<!-- Summary Cards (color-coded) -->
 				<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-					<Card.Root>
+					<Card.Root class="border-l-4 border-l-[var(--color-chart-1)]">
 						<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 							<Card.Title class="text-sm font-medium">Est. Revenue</Card.Title>
-							<DollarSignIcon class="size-4 text-muted-foreground" />
+							<DollarSignIcon class="size-4 text-[var(--color-chart-1)]" />
 						</Card.Header>
 						<Card.Content>
-							<div class="text-2xl font-bold">{result.totalRevenue.toFixed(2)}</div>
+							<div class="text-2xl font-bold tabular-nums">{result.totalRevenue.toFixed(2)}</div>
 							<p class="text-xs text-muted-foreground">KWD</p>
 						</Card.Content>
 					</Card.Root>
-					<Card.Root>
+					<Card.Root class="border-l-4 border-l-[var(--color-chart-2)]">
 						<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 							<Card.Title class="text-sm font-medium">Est. Orders</Card.Title>
-							<ShoppingCartIcon class="size-4 text-muted-foreground" />
+							<ShoppingCartIcon class="size-4 text-[var(--color-chart-2)]" />
 						</Card.Header>
 						<Card.Content>
-							<div class="text-2xl font-bold">{result.totalOrders}</div>
+							<div class="text-2xl font-bold tabular-nums">{result.totalOrders}</div>
 							<p class="text-xs text-muted-foreground">total orders</p>
 						</Card.Content>
 					</Card.Root>
-					<Card.Root>
+					<Card.Root class="border-l-4 border-l-[var(--color-chart-3)]">
 						<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 							<Card.Title class="text-sm font-medium">Est. Units</Card.Title>
-							<PackageIcon class="size-4 text-muted-foreground" />
+							<PackageIcon class="size-4 text-[var(--color-chart-3)]" />
 						</Card.Header>
 						<Card.Content>
-							<div class="text-2xl font-bold">{result.totalUnits}</div>
+							<div class="text-2xl font-bold tabular-nums">{result.totalUnits}</div>
 							<p class="text-xs text-muted-foreground">units sold</p>
 						</Card.Content>
 					</Card.Root>
-					<Card.Root>
+					<Card.Root class="border-l-4 border-l-[var(--color-chart-4)]">
 						<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 							<Card.Title class="text-sm font-medium">ROAS</Card.Title>
-							<TrendingUpIcon class="size-4 text-muted-foreground" />
+							<TrendingUpIcon class="size-4 text-[var(--color-chart-4)]" />
 						</Card.Header>
 						<Card.Content>
-							<div class="text-2xl font-bold">{(result.roas * 100).toFixed(0)}%</div>
+							<div class="text-2xl font-bold tabular-nums">{(result.roas * 100).toFixed(0)}%</div>
 							<p class="text-xs text-muted-foreground">return on ad spend</p>
 						</Card.Content>
 					</Card.Root>
-					<Card.Root>
+					<Card.Root class="border-l-4 border-l-[var(--color-chart-5)]">
 						<Card.Header class="flex flex-row items-center justify-between space-y-0 pb-2">
 							<Card.Title class="text-sm font-medium">Est. Clicks</Card.Title>
-							<MousePointerClickIcon class="size-4 text-muted-foreground" />
+							<MousePointerClickIcon class="size-4 text-[var(--color-chart-5)]" />
 						</Card.Header>
 						<Card.Content>
-							<div class="text-2xl font-bold">{result.totalClicks.toLocaleString()}</div>
+							<div class="text-2xl font-bold tabular-nums">
+								{result.totalClicks.toLocaleString()}
+							</div>
 							<p class="text-xs text-muted-foreground">spend: {result.totalSpend.toFixed(2)} KWD</p>
 						</Card.Content>
 					</Card.Root>
@@ -578,58 +622,64 @@
 					</p>
 				</div>
 
-				<!-- Daily Breakdown -->
+				<!-- Daily Breakdown (Collapsible) -->
 				{#if result.aggregatedDaily && result.aggregatedDaily.length > 0}
-					<div class="space-y-2">
-						<button
-							class="flex items-center gap-2 text-xl font-semibold tracking-tight hover:text-foreground"
-							onclick={() => (showDailyBreakdown = !showDailyBreakdown)}
-						>
-							Daily Breakdown
-							<ChevronDownIcon
-								class="size-5 transition-transform {showDailyBreakdown ? 'rotate-180' : ''}"
-							/>
-						</button>
-						{#if showDailyBreakdown}
-							<div class="max-h-96 overflow-y-auto rounded-md border">
-								<Table.Root>
-									<Table.Header>
-										<Table.Row>
-											<Table.Head>Date</Table.Head>
-											<Table.Head>Spend (KWD)</Table.Head>
-											<Table.Head>Revenue (KWD)</Table.Head>
-											<Table.Head>Orders</Table.Head>
-											<Table.Head>Seasonality</Table.Head>
-										</Table.Row>
-									</Table.Header>
-									<Table.Body>
-										{#each result.aggregatedDaily as day (day.date)}
+					<Collapsible.Root bind:open={showDailyBreakdown}>
+						<div class="flex items-center gap-3">
+							<Collapsible.Trigger
+								class="flex items-center gap-2 text-xl font-semibold tracking-tight hover:text-foreground"
+							>
+								Daily Breakdown
+								<ChevronDownIcon
+									class="size-5 transition-transform {showDailyBreakdown ? 'rotate-180' : ''}"
+								/>
+							</Collapsible.Trigger>
+							<Badge variant="secondary" class="tabular-nums">
+								{result.aggregatedDaily.length} days
+							</Badge>
+						</div>
+						<Collapsible.Content>
+							<div class="mt-2 space-y-2">
+								<div class="max-h-96 overflow-y-auto rounded-md border">
+									<Table.Root>
+										<Table.Header>
 											<Table.Row>
-												<Table.Cell>{day.date}</Table.Cell>
-												<Table.Cell>{day.spend.toFixed(2)}</Table.Cell>
-												<Table.Cell>{day.revenue.toFixed(2)}</Table.Cell>
-												<Table.Cell>{day.orders.toFixed(1)}</Table.Cell>
-												<Table.Cell>
-													<Badge
-														variant={day.seasonalityFactor >= 1 ? 'default' : 'outline'}
-														class="tabular-nums"
-													>
-														{day.seasonalityFactor.toFixed(3)}
-													</Badge>
-												</Table.Cell>
+												<Table.Head>Date</Table.Head>
+												<Table.Head>Spend (KWD)</Table.Head>
+												<Table.Head>Revenue (KWD)</Table.Head>
+												<Table.Head>Orders</Table.Head>
+												<Table.Head>Seasonality</Table.Head>
 											</Table.Row>
-										{/each}
-									</Table.Body>
-								</Table.Root>
+										</Table.Header>
+										<Table.Body>
+											{#each result.aggregatedDaily as day (day.date)}
+												<Table.Row>
+													<Table.Cell>{day.date}</Table.Cell>
+													<Table.Cell>{day.spend.toFixed(2)}</Table.Cell>
+													<Table.Cell>{day.revenue.toFixed(2)}</Table.Cell>
+													<Table.Cell>{day.orders.toFixed(1)}</Table.Cell>
+													<Table.Cell>
+														<Badge
+															variant={day.seasonalityFactor >= 1 ? 'default' : 'outline'}
+															class="tabular-nums"
+														>
+															{day.seasonalityFactor.toFixed(3)}
+														</Badge>
+													</Table.Cell>
+												</Table.Row>
+											{/each}
+										</Table.Body>
+									</Table.Root>
+								</div>
+								<p class="text-xs text-muted-foreground">
+									Seasonality is a combined multiplier of monthly performance and day-of-week
+									performance relative to the overall average. A value above 1.0 means that day is
+									expected to perform better than average, below 1.0 means worse. For example, 1.08
+									= 8% above average, 0.92 = 8% below average.
+								</p>
 							</div>
-							<p class="text-xs text-muted-foreground">
-								Seasonality is a combined multiplier of monthly performance and day-of-week
-								performance relative to the overall average. A value above 1.0 means that day is
-								expected to perform better than average, below 1.0 means worse. For example, 1.08 =
-								8% above average, 0.92 = 8% below average.
-							</p>
-						{/if}
-					</div>
+						</Collapsible.Content>
+					</Collapsible.Root>
 				{/if}
 			{/if}
 		</div>
